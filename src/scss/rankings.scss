@@ -1,0 +1,58 @@
+.rankings {	
+	padding-top: 40px;
+
+	&__cnt {
+		border-bottom: 1px solid #E0E7F2;
+		padding-bottom: 40px;
+		margin-bottom: 40px;
+	}
+
+	&__header {
+		display: flex;
+		align-items: baseline;
+		gap: 8px;
+		margin-bottom: 12px;
+	}
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		margin-bottom: 27px;
+	}
+
+	&__tag {
+		input[type=checkbox] {
+			visibility: hidden;
+			opacity: 0;
+			z-index: -1;
+			width: 1px;
+			height: 1px;
+			position: absolute;
+		}
+	
+		&-container {
+			display: flex;
+			align-items: center;
+			gap: 6px;
+			height: 36px;
+			width: fit-content;
+			border: 1px solid #DEE4E8;
+			font-size: 14px;		
+			border-radius: 6px;
+			cursor: pointer;
+			user-select: none;
+			padding: 0 9px;
+	
+			img {
+				height: 24px;			
+			}
+		}
+	
+		input[type=checkbox]:checked + div {
+			background: rgba(25, 103, 255, 0.08);
+			border: 1px solid #193EFF;
+			color: #0E00FF;
+		}
+	}
+}

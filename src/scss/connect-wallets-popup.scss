@@ -1,0 +1,148 @@
+.connect-wallets-popup {
+	border-radius: 16px;
+	background-color: white;
+	min-width: 380px;
+	padding: 32px 36px 25px;
+
+	&_dark {
+		background: linear-gradient(235.69deg, #3970D1 2.8%, rgba(57, 112, 209, 0.991353) 4.13%, rgba(57, 112, 209, 0.96449) 5.45%, rgba(57, 112, 209, 0.91834) 6.78%, rgba(57, 112, 209, 0.852589) 8.11%, rgba(57, 112, 209, 0.768225) 9.44%, rgba(57, 112, 209, 0.668116) 10.77%, rgba(57, 112, 209, 0.557309) 12.09%, rgba(57, 112, 209, 0.442691) 13.42%, rgba(57, 112, 209, 0.331884) 14.75%, rgba(57, 112, 209, 0.231775) 16.08%, rgba(57, 112, 209, 0.147411) 17.41%, rgba(57, 112, 209, 0.0816599) 18.73%, rgba(57, 112, 209, 0.03551) 20.06%, rgba(57, 112, 209, 0.0086472) 21.39%, rgba(57, 112, 209, 0) 22.72%), linear-gradient(55.69deg, #3970D1 2.29%, rgba(57, 112, 209, 0.991353) 3.8%, rgba(57, 112, 209, 0.96449) 5.31%, rgba(57, 112, 209, 0.91834) 6.82%, rgba(57, 112, 209, 0.852589) 8.33%, rgba(57, 112, 209, 0.768225) 9.84%, rgba(57, 112, 209, 0.668116) 11.35%, rgba(57, 112, 209, 0.557309) 12.86%, rgba(57, 112, 209, 0.442691) 14.38%, rgba(57, 112, 209, 0.331884) 15.89%, rgba(57, 112, 209, 0.231775) 17.4%, rgba(57, 112, 209, 0.147411) 18.91%, rgba(57, 112, 209, 0.0816599) 20.42%, rgba(57, 112, 209, 0.03551) 21.93%, rgba(57, 112, 209, 0.0086472) 23.44%, rgba(57, 112, 209, 0) 24.95%), #2C2D54;
+		
+		&::after {
+			content: '';
+			position: absolute;
+			top: 2px;
+			left: 2px;
+			width: calc(100% - 4px);
+			height: calc(100% - 4px);
+			background-color: black;
+			border-radius: 14px;
+		}
+	}
+
+	&__content {
+		position: relative;
+		z-index: 12;
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 1;
+		color: white;				
+		width: fit-content;
+		margin: 0 auto 10px auto;
+	}
+
+	&__description {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.86;		
+		text-align: center;
+		color: rgba(255, 255, 255, 0.35);
+	}
+
+	&__wallets {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__wallet {
+		display: flex;
+		align-items: center;		
+		gap: 9px;
+		height: 66px;
+		position: relative;
+		
+		&:not(:last-child) {
+			border-bottom: 1px dashed #000F33;
+		}
+
+		&::before {
+			content: '';
+			width: 2px;
+			height: 36px;
+			border-radius: 2px;
+			background: rgba(2, 56, 152, 0.25);
+			position: absolute;
+			left: -12px;
+			top: calc(50% - 18px);
+			transition: all .1s;
+		}
+
+		&:hover::before {
+			background-color: #023898;
+		}
+
+		&-icons {
+			position: relative;
+			width: 36px;
+			height: 36px;
+		}
+
+		&-icon {
+			width: 36px;			
+			flex: none;
+		}
+
+		&-network-icon {
+			width: 14px;			
+			width: 14px;
+			border-radius: 50%;
+			border: 1px solid white;
+			position: absolute;
+			right: -2px;
+			bottom: -2px;
+		}
+
+		&-connected {
+			display: flex;
+			align-items: center;
+			gap: 9px;
+		}
+
+		&-title {
+			display: flex;
+			flex-direction: column;
+			gap: 4px;
+		}
+
+		&-network {
+			font-weight: 500;
+			font-size: 12px;		
+			color: #565B78;
+		}
+
+		&-name {
+			font-weight: 500;
+			font-size: 16px;
+			color: white;
+		}
+
+		&-btn {
+			height: 36px;
+			border-radius: 4px;
+			background-color: #023898;
+			font-weight: 500;
+			font-size: 14px;
+			color: white;
+			border: none;
+			cursor: pointer;
+			padding: 0 16px;
+			margin-left: auto;
+		}
+	}
+
+	&__disconnect-btn {
+		height: 36px;
+		width: 133px;
+		background: none;
+		border: none;
+		font-weight: 600;
+		font-size: 16px;	
+		text-align: center;
+		letter-spacing: -0.02em;
+		color: #F54B40;
+		cursor: pointer;
+		margin-left: auto;
+	}
+}

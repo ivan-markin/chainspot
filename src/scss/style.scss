@@ -1,0 +1,207 @@
+@import './normalize.scss';
+@import './fonts.scss';
+@import './variables';
+@import './swiper/swiper.scss';
+
+// Blocks
+@import './alert.scss';
+@import './ad-block.scss';
+@import './header.scss';
+@import './logo.scss';
+@import './logo-link.scss';
+@import './btn.scss';
+@import './main-menu.scss';
+@import './main.scss';
+@import './primary-title.scss';
+@import './hero-section.scss';
+@import './block-title.scss';
+@import './rankings.scss';
+@import './block-subtitle.scss';
+@import './filter.scss';
+@import './see-all-btn.scss';
+@import './sort-panel.scss';
+@import './pagination.scss';
+@import './search-input.scss';
+@import './select.scss';
+@import './bridge-cards.scss';
+@import './bridge-card.scss';
+@import './card-tags.scss';
+@import './card-tag.scss';
+@import './news.scss';
+@import './footer.scss';
+@import './white-link.scss';
+@import './mobile-menu-btn.scss';
+@import './mobile-menu.scss';
+@import './gas-station-wrapper.scss';
+@import './gas-station.scss';
+@import './choose-token-button.scss';
+@import './checkbox.scss';
+@import './edit-button.scss';
+@import './btn-select.scss';
+@import './connect-wallets-popup.scss';
+@import './top-up-popup.scss';
+@import './switch-network-popup.scss';
+@import './popup.scss';
+@import './tokens-list-item.scss';
+@import './popup-search-input.scss';
+@import './wrong-network-popup.scss';
+@import './connect-to-a-wallet-popup.scss';
+@import './loader-white.scss';
+@import './wallet-info-button.scss';
+@import './loader-huge.scss';
+@import './erase-btn.scss';
+@import './error-message.scss';
+@import './bridges.scss';
+@import './check-label.scss';
+@import './loader.scss';
+@import './blue-gradient-text.scss';
+@import './blue-social-link.scss';
+@import './page-title.scss';
+@import './data-v.scss';
+@import './multi-switch.scss';
+@import './arrowed-link.scss';
+@import './scale-control.scss';
+@import './analytics.scss';
+@import './chainspot-badge.scss';
+@import './token-cnt.scss';
+@import './from-col.scss';
+@import './most-pop-slider.scss';
+@import './select-btn.scss';
+@import './btn-table.scss';
+@import './info-btn.scss';
+@import './tab-switch.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Onest', 'Roboto', sans-serif;
+  color: var(--font-dark);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.container {  
+  min-width: 320px;  
+  overflow-x: hidden;  
+
+  &_dark {
+    background: #000212;    
+  }
+
+  &_bnb,
+  &_polygon,
+  &_avalanche,
+  &_fantom,
+  &_aurora,
+  &_optimism,
+  &_tron,
+  &_arbitrum,
+  &_harmony,
+  &_bitgert,
+  &_toncoin,
+  &_near,
+  &_everscale,
+  &_boba,
+  &_celo {
+    background-position: left top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #000212;
+
+    @media (max-width: 768px) {
+      background-size: 250%;
+    }
+  }   
+
+  &_bnb {
+    background-image: url('../img/bnb-bg.png');      
+  }
+
+  &_polygon {
+    background-image: url('../img/polygon-bg.png');    
+  }
+
+  &_avalanche {
+    background-image: url('../img/avalanche-bg.png');
+  }
+
+  &_fantom {
+    background-image: url('../img/fantom-bg.png');    
+  }
+
+  &_aurora {
+    background-image: url('../img/aurora-bg.png');
+  }
+
+  &_optimism {
+    background-image: url('../img/optimism-bg.png');    
+  }
+
+  &_tron {
+    background-image: url('../img/tron-bg.png');    
+  }
+
+  &_arbitrum {
+    background-image: url('../img/arbitrum-bg.png');    
+  }
+
+  &_harmony {
+    background-image: url('../img/harmony-bg.png');    
+  }
+
+  &_bitgert {
+    background-image: url('../img/bitgert-bg.png');    
+  }
+
+  &_toncoin {
+    background-image: url('../img/toncoin-bg.png');    
+  }
+
+  &_near {
+    background-image: url('../img/near-bg.png');    
+  }
+
+  &_everscale {
+    background-image: url('../img/everscale-bg.png');    
+  }
+
+  &_boba {
+    background-image: url('../img/boba-bg.png');    
+  }
+
+  &_celo {
+    background-image: url('../img/celo-bg.png');      
+  }   
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1340px;
+  padding: 0 40px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
+}
+
+

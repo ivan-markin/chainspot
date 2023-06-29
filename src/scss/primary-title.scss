@@ -1,0 +1,23 @@
+.primary-title {
+	font-family: 'Onest', 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 1.17;	
+	text-align: center;
+	letter-spacing: -0.015em;
+	color: var(--font-dark);
+	margin: 0 0 20px;
+
+	@media (max-width: 768px) {
+		font-size: 32px;
+		width: 80%;
+	}
+
+	span {
+		background: linear-gradient(90.15deg, #193EFF 25.47%, #0373FF 60.21%, #10E5F2 94.2%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+	}
+}

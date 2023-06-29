@@ -1,0 +1,71 @@
+.connect-to-a-wallet-popup {
+	
+	.popup__container {
+		width: 95%;
+		max-width: 500px;
+		min-width: auto;
+		min-height: auto;
+		padding: 24px;
+	}
+
+	.popup__close {
+		top: 22px;
+		right: 22px;
+	}
+
+	&__title {		
+		margin: 0 auto 10px 0;
+	}
+
+	&__description {		
+		font-size: 14px;
+		line-height: 1.43;	
+		color: #565B78;
+		position: relative;
+		z-index: 999999;
+		margin: 0 0 24px;
+	}
+
+	&__wallet-cnt {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		width: 100%;
+		height: 60px;
+		border: 1px solid #2C2D54;
+		border-radius: 18px;
+		background: none;
+		font-weight: 500;
+		font-size: 16px;
+		color: white;		
+		position: relative;
+		z-index: 999999;
+		transition: all .1s;
+		padding: 0 16px;
+	}
+
+	&__waiting {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		font-size: 14px;	 	
+		color: #565B78;
+		margin-left: auto;
+	}
+
+	&__initializing {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		font-size: 14px;	 	
+		color: white;
+	}
+
+	&__cta {
+		position: relative;
+		z-index: 999999;
+		width: 100%;
+		height: 56px;
+		margin-top: 15px;
+	}
+}

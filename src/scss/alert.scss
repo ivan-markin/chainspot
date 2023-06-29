@@ -1,0 +1,44 @@
+.alert {
+	width: 285px;	
+	border-radius: 4px;
+	position: absolute;
+	right: 40px;
+	top: 135px;
+	background: #3A27F8 url('../img/alert-icon.svg') no-repeat 15px 13px;
+	padding: 15px 35px 15px 47px;
+
+	@media (max-width: 768px) {
+		right: 20px;
+		top: 95px;
+	}
+
+	&_success {
+		background-color: #09B37B;	
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 14px;	
+		color: #FAFAFA;
+		margin: 0 0 8px;
+	}
+
+	&__caption {
+		font-size: 14px;
+		line-height: 1.2;
+		color: #FAFAFA;
+		margin: 0;
+	}
+
+	&__close {
+		width: 14px;
+		height: 14px;
+		background: url('../img/alert-close-icon.svg') no-repeat center;
+		background-size: contain;
+		position: absolute;
+		top: 15px;
+		right: 12px;
+		border: none;
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  @@include('html/head.html', {
+    "title": "Transfers"
+  })
+
+<body>  
+
+  @@include('html/mobile-menu.html', {})
+  
+  <div class="container">
+    
+    @@include('html/header.html', {
+      'className': 'header_inner'
+    })
+
+    <main class="main">       
+      <section class="page-container">
+        <div class="wrapper">
+          <div class="transfers-wrapper">            
+            
+            <div class="faq">
+              @@include('html/transfers-tabs.html', {
+                'transfers': '', 
+                'history': '', 
+                'faq': 'active', 
+              })
+
+              <div class="faq__header">
+                <h1 class="faq__title">Frequently Asked <span>Questions</span></h1>
+              </div>
+              <div class="faq__container">
+                <div class="faq__item">
+                  <div class="faq__item-header">
+                    <button class="faq__item-close"></button>
+                    <h2 class="faq__item-title">What is DeBridges Router?</h2>
+                  </div>                  
+                  <p class="faq__item-content">DeBridges is a cross-chain messaging and asset-transferring protocol that allows transferring liquidity across supported networks and chains in a secure, efficient and decentralized manner.</p>
+                </div>
+                <div class="faq__item">
+                  <div class="faq__item-header">
+                    <button class="faq__item-close"></button>
+                    <h2 class="faq__item-title">Can I use DeBridges Router? What are the steps?</h2>
+                  </div>                  
+                  <p class="faq__item-content">Sure you can. Just connect your wallet with enough liquidity to carry out the desired transactions, choose a destination and a target token, enter the desired amount, choose a route and press swap - et voilà! 
+                    DeBridges Router is truly a no-brainer.</p>
+                </div>
+                <div class="faq__item">
+                  <div class="faq__item-header">
+                    <button class="faq__item-close"></button>
+                    <h2 class="faq__item-title">What does "Open Beta" status mean? Are there any limitations?</h2>
+                  </div>                  
+                  <p class="faq__item-content">The only limitation we currently have is the minimum transaction amount (the equivalent of $50). This is a temporary measure - we introduced it because we are constantly connecting new bridges and DEXes, so the service may be unavailable periodically due to the updates. This doesn’t affect transaction safety. 
+                    There are no other functional or operational limitations for the open beta.</p>
+                </div>
+                <div class="faq__item">
+                  <div class="faq__item-header">
+                    <button class="faq__item-close"></button>
+                    <h2 class="faq__item-title">What networks are supported by DeBridges Router?</h2>
+                  </div>                  
+                  <p class="faq__item-content">As of October 2022, DeBridges Router supports transactions between the following networks:
+                    Moonriver, Harmony, Ethereum, BSC, Moonbeam, CELO, Evmos, Fantom, Arbitrum One, FUSE, Avalanche, OKXChain, Polygon, Aurora, Cronos, Telos, Optimism, Boba, Gnosis. 
+                    The list of supported networks is constantly expanding - we're keeping an eye on it!</p>
+                </div>
+                <div class="faq__item">
+                  <div class="faq__item-header">
+                    <button class="faq__item-close"></button>
+                    <h2 class="faq__item-title">What are the criteria for the optimal route? Can I choose an alternative route?</h2>
+                  </div>                  
+                  <p class="faq__item-content">DeBridges is a cross-chain messaging and asset-transferring protocol that allows transferring liquidity across supported networks and chains in a secure, efficient and decentralized manner.</p>
+                </div>
+                <div class="faq__item">
+                  <div class="faq__item-header">
+                    <button class="faq__item-close"></button>
+                    <h2 class="faq__item-title">What is DeBridges Router?</h2>
+                  </div>                  
+                  <div class="faq__item-content">
+                    <span>The optimal route is chosen based on the following parameters:</span>
+                    <ul class="marked-list">                    
+                      <li>Reliability of the blockchain bridge through which the transfer occurs</li>
+                      <li>Reliability of DEX</li>
+                      <li>The fees of involved bridge and networks</li>
+                      <li>Expected transaction time</li>
+                    </ul>  
+                  </div>
+                </div>
+                <div class="faq__item">
+                  <div class="faq__item-header">
+                    <button class="faq__item-close"></button>
+                    <h2 class="faq__item-title">Can I customize route options?</h2>
+                  </div>                  
+                  <p class="faq__item-content">This feature (along with a visual representation of the available routes) is currently being refined and tested before release. Stay tuned, we are planning even more functional updates.</p>
+                </div>
+                <div class="faq__item">
+                  <div class="faq__item-header">
+                    <button class="faq__item-close"></button>
+                    <h2 class="faq__item-title">Why do I see the "Insufficient funds on departure chain" notification?</h2>
+                  </div>                  
+                  <p class="faq__item-content">This error means there are not enough tokens in the connected wallet to complete the transaction. Firstly, make sure that you connected the correct wallet (it happens even to the best of us from time to time). 
+                    The solution is either to reduce the transaction amount or transfer more funds to the connected wallet. Please keep in mind that there have to be enough tokens in the connected wallet to cover the gas fee.</p>
+                </div>
+                <div class="faq__item">
+                  <div class="faq__item-header">
+                    <button class="faq__item-close"></button>
+                    <h2 class="faq__item-title">Why is the exchange rate automatically updated and the destination token amount recalculated before any transaction?</h2>
+                  </div>                  
+                  <p class="faq__item-content">Hundreds and thousands of transactions occur every second on various DEXes, which can affect the user's chosen route and change the value of the token transfer.</p>
+                </div>
+                <div class="faq__item">
+                  <div class="faq__item-header">
+                    <button class="faq__item-close"></button>
+                    <h2 class="faq__item-title">Is there a transaction fee?</h2>
+                  </div>                  
+                  <p class="faq__item-content">Yes, a modest fee is included in the gas price (hence the “transaction fee and gas price” data provided in our router and marked with this icon <img src="@img/est-icon-fuel.svg" width="16" height="16" style="position: relative; bottom: -3px">). 
+                    Unfortunately, there is no way to get rid of gas fees which are volatile and depend on the commissions of the networks involved in each transaction.</p>
+                </div>
+                <div class="faq__item">
+                  <div class="faq__item-header">
+                    <button class="faq__item-close"></button>
+                    <h2 class="faq__item-title">Is there any way to contact you in case I have questions or feedback?</h2>
+                  </div>                  
+                  <p class="faq__item-content">Sure, please click <a class="text-link" href="https://t.me/debridges_chat" target="_blank">here</a> to contact our Support team. We will be happy to help or hear comments and suggestions about our products.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>          
+        </div>        
+      </section>    
+    </main>    
+    
+    <!-- @@include('html/alert.html', {})    -->
+    @@include('html/footer.html', {})   
+  </div>  
+
+  <script src="./js/app.min.js"></script>
+</body>
+
+</html>

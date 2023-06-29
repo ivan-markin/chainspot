@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {})
+
+<body>      
+  @@include('html/mobile-menu.html', {})
+  
+  <div class="container">
+    <div class="ad-block">
+      <div class="ad-block__content">
+        <img src="@img/ad-block-icon.svg" alt="">
+        <a class="ad-block__link" href="">Chainspot Router is finally here! Try it now</a>
+        <img src="@img/ad-block-arrow.svg" alt="">
+      </div>
+      <button class="ad-block__close"></button>
+    </div>
+
+    @@include('html/header.html', {
+      'className': ''
+    })
+
+    <main class="main">
+
+      <section class="hero-section">
+        <h1 class="primary-title">
+          Find your bridge with the<br>
+          <span>largest blockchain bridges aggregator</span>
+        </h1>
+        <p class="hero-section__subtitle">
+          Truthful reviews from the community and on-chain analytics
+        </p>
+        <div class="hero-section__params">
+          <div class="hero-section__params-item">
+            <span class="hero-section__params-item-title">113</span>
+            <span class="hero-section__params-item-caption">Bridges</span>
+          </div>
+          <div class="hero-section__params-item">
+            <span class="hero-section__params-item-title">42</span>
+            <span class="hero-section__params-item-caption">Bridges with<br>tracked TVL</span>
+          </div>
+          <div class="hero-section__params-item">
+            <span class="hero-section__params-item-title">130</span>
+            <span class="hero-section__params-item-caption">Networks</span>
+          </div>          
+        </div>
+      </section>
+
+      <section class="rankings">
+        <div class="wrap">
+          <div class="rankings__cnt">
+            <div class="rankings__header">
+              <h2 class="block-title">Filter bridges</h2>
+              <span class="block-subtitle">by networks they support</span>
+            </div>
+            <form class="rankings__content" action="">
+              <label class="rankings__tag">
+                <input type="checkbox" class="net_label_lh" name="curr_label_id" value="">
+                <div class="rankings__tag-container">
+                  <img src="@img/avalanche-icon.png" class="icon_net__" alt="">
+                  <span>Avalanche</span>
+                </div>
+              </label>
+              <label class="rankings__tag">
+                <input type="checkbox" class="net_label_lh" name="curr_label_id" value="">
+                <div class="rankings__tag-container">
+                  <img src="@img/avalanche-icon.png" class="icon_net__" alt="">
+                  <span>Avalanche</span>
+                </div>
+              </label>
+              <label class="rankings__tag">
+                <input type="checkbox" class="net_label_lh" name="curr_label_id" value="">
+                <div class="rankings__tag-container">
+                  <img src="@img/avalanche-icon.png" class="icon_net__" alt="">
+                  <span>Avalanche</span>
+                </div>
+              </label>
+              <label class="rankings__tag">
+                <input type="checkbox" class="net_label_lh" name="curr_label_id" value="">
+                <div class="rankings__tag-container">
+                  <img src="@img/avalanche-icon.png" class="icon_net__" alt="">
+                  <span>Avalanche</span>
+                </div>
+              </label>
+              <label class="rankings__tag">
+                <input type="checkbox" class="net_label_lh" name="curr_label_id" value="">
+                <div class="rankings__tag-container">
+                  <img src="@img/avalanche-icon.png" class="icon_net__" alt="">
+                  <span>Avalanche</span>
+                </div>
+              </label>
+              <label class="rankings__tag">
+                <input type="checkbox" class="net_label_lh" name="curr_label_id" value="">
+                <div class="rankings__tag-container">
+                  <img src="@img/avalanche-icon.png" class="icon_net__" alt="">
+                  <span>Avalanche</span>
+                </div>
+              </label>
+              <label class="rankings__tag">
+                <input type="checkbox" class="net_label_lh" name="curr_label_id" value="">
+                <div class="rankings__tag-container">
+                  <img src="@img/avalanche-icon.png" class="icon_net__" alt="">
+                  <span>Avalanche</span>
+                </div>
+              </label>     
+            </form>
+
+            <button class="see-all-btn">Click to see all<br><span>Networks</span></button>
+          </div>
+        </div>        
+      </section>
+
+      <section class="sort-panel">
+        <div class="wrap">
+          <div class="sort-panel__cnt">
+            <div class="search-input">
+              <input type="text" placeholder="Search by bridge">
+              <button class="search-input__btn"></button>
+            </div>            
+            <div class="select" id="sortSelectBtn">
+              <span class="select__title">Sort by:</span>
+              <button class="select__btn">By TVL</button>
+              <ul class="select__dropdown">
+                <li class="select__item active">By TVL</li>
+                <li class="select__item">By the rate</li>
+              </ul>
+            </div>
+            <div class="sort-panel__pagination pagination">
+              <span>Page</span>
+              <input type="text" value="1">
+              <span>of 20</span>
+              <div class="pagination__controls">
+                <button class="pagination__btn pagination__btn_prev" disabled></button>
+                <button class="pagination__btn pagination__btn_next"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bridge-cards">
+        <div class="bridge-cards__wrap wrap">
+          <div class="bridge-cards__cnt bridges__cards">
+            <div class="bridge-card gold">
+              <div class="bridge-card__content">
+                <div class="bridge-card__top">
+                  <img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt="">
+                  <div class="bridge-card__reviews-block">
+                      <span class="bridge-card__reviews">3 reviews</span>
+                      <span class="bridge-card__rate excellent" style="border-color: #d1bf1b;">3.3</span>
+                  </div>
+                </div>
+    
+                <h3 class="bridge-card__title">
+                  <a href="/bridge/polygon-bridge" onclick="ym(85443877,'reachGoal','click_bridge_name_btn')">
+                    <span class="bridge-card__title-counter">1</span>
+                    Polygon Bridge
+                  </a>
+                </h3>
+    
+                <p class="bridge-card__description">
+                  Polygon (previously Matic) brings you a trustless two-way transaction channel between Polygon and...</p>              
+                <div class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">TVL:</span>
+                  <span class="bridge-card__tvl-value">$3 171 603 275</span>
+                </div>
+                <div class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Volume (24h):</span>
+                  <span class="bridge-card__tvl-value">$57 679</span>
+                </div>
+                <div class="bridge-card__parameters">
+                  <div class="bridge-card__parameters-item">
+                    <span class="bridge-card__parameters-name">Category:</span>
+                    <span class="bridge-card__parameters-value">Cross Chain Bridges</span>
+                  </div>
+                  <div class="bridge-card__parameters-item">
+                    <span class="bridge-card__parameters-name">Audit:</span>
+                    <span class="bridge-card__parameters-value"><a><span>No</span></a></span>
+                  </div>
+                </div>
+                <div class="bridge-card__tags-block">
+                  <span class="bridge-card__tags-block-title">Supported networks:</span>
+                  <div class="card-tags">
+                    <a class="card-tag">Polygon</a><a class="card-tag">Ethereum</a>
+                    <div class="card-tags__show-more-btn card-tag">
+                      +13
+                      
+                      <span class="card-tags__show-more">
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <button class="card-tags__show-more-close" onclick="$('.card-tags__show-more').fadeOut()"></button>
+                      </span>
+                    </div>
+                    <!-- <div class="card-tags__show-more card-tags__show-more_13">
+                      <button class="card-tags__show-more-close" onclick="$('.card-tags__show-more').fadeOut()"></button>
+                    </div>                       -->
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn_primary" href="/bridge/polygon-bridge" onclick="ym(85443877,'reachGoal','click_overview_btn')">Overview</a>
+            </div>
+
+            <div class="bridge-card silver">
+              <div class="bridge-card__content">
+                <div class="bridge-card__top">
+                  <img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt="">
+                  <div class="bridge-card__reviews-block">
+                      <span class="bridge-card__reviews">3 reviews</span>
+                      <span class="bridge-card__rate excellent" style="border-color: #d1bf1b;">3.3</span>
+                  </div>
+                </div>
+    
+                <h3 class="bridge-card__title">
+                  <a href="/bridge/polygon-bridge" onclick="ym(85443877,'reachGoal','click_bridge_name_btn')">
+                    <span class="bridge-card__title-counter">1</span>
+                    Polygon Bridge
+                  </a>
+                </h3>
+    
+                <p class="bridge-card__description">
+                  Polygon (previously Matic) brings you a trustless two-way transaction channel between Polygon and...</p>              
+                <div class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">TVL:</span>
+                  <span class="bridge-card__tvl-value">$3 171 603 275</span>
+                </div>
+                <div class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Volume (24h):</span>
+                  <span class="bridge-card__tvl-value">$57 679</span>
+                </div>
+                <div class="bridge-card__parameters">
+                  <div class="bridge-card__parameters-item">
+                    <span class="bridge-card__parameters-name">Category:</span>
+                    <span class="bridge-card__parameters-value">Cross Chain Bridges</span>
+                  </div>
+                  <div class="bridge-card__parameters-item">
+                    <span class="bridge-card__parameters-name">Audit:</span>
+                    <span class="bridge-card__parameters-value"><a><span>No</span></a></span>
+                  </div>
+                </div>
+                <div class="bridge-card__tags-block">
+                  <span class="bridge-card__tags-block-title">Supported networks:</span>
+                  <div class="card-tags">
+                    <a class="card-tag">Polygon</a><a class="card-tag">Ethereum</a>
+                    <div class="card-tags__show-more-btn card-tag">
+                      +13
+                      
+                      <span class="card-tags__show-more">
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <button class="card-tags__show-more-close" onclick="$('.card-tags__show-more').fadeOut()"></button>
+                      </span>
+                    </div>
+                    <!-- <div class="card-tags__show-more card-tags__show-more_13">
+                      <button class="card-tags__show-more-close" onclick="$('.card-tags__show-more').fadeOut()"></button>
+                    </div>                       -->
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn_primary" href="/bridge/polygon-bridge" onclick="ym(85443877,'reachGoal','click_overview_btn')">Overview</a>
+            </div>
+
+            <div class="bridge-card bronze">
+              <div class="bridge-card__content">
+                <div class="bridge-card__top">
+                  <img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt="">
+                  <div class="bridge-card__reviews-block">
+                      <span class="bridge-card__reviews">3 reviews</span>
+                      <span class="bridge-card__rate excellent" style="border-color: #d1bf1b;">3.3</span>
+                  </div>
+                </div>
+    
+                <h3 class="bridge-card__title">
+                  <a href="/bridge/polygon-bridge" onclick="ym(85443877,'reachGoal','click_bridge_name_btn')">
+                    <span class="bridge-card__title-counter">1</span>
+                    Polygon Bridge
+                  </a>
+                </h3>
+    
+                <p class="bridge-card__description">
+                  Polygon (previously Matic) brings you a trustless two-way transaction channel between Polygon and...</p>              
+                <div class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">TVL:</span>
+                  <span class="bridge-card__tvl-value">$3 171 603 275</span>
+                </div>
+                <div class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Volume (24h):</span>
+                  <span class="bridge-card__tvl-value">$57 679</span>
+                </div>
+                <div class="bridge-card__parameters">
+                  <div class="bridge-card__parameters-item">
+                    <span class="bridge-card__parameters-name">Category:</span>
+                    <span class="bridge-card__parameters-value">Cross Chain Bridges</span>
+                  </div>
+                  <div class="bridge-card__parameters-item">
+                    <span class="bridge-card__parameters-name">Audit:</span>
+                    <span class="bridge-card__parameters-value"><a><span>No</span></a></span>
+                  </div>
+                </div>
+                <div class="bridge-card__tags-block">
+                  <span class="bridge-card__tags-block-title">Supported networks:</span>
+                  <div class="card-tags">
+                    <a class="card-tag">Polygon</a><a class="card-tag">Ethereum</a>
+                    <div class="card-tags__show-more-btn card-tag">
+                      +13
+                      
+                      <span class="card-tags__show-more">
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <button class="card-tags__show-more-close" onclick="$('.card-tags__show-more').fadeOut()"></button>
+                      </span>
+                    </div>
+                    <!-- <div class="card-tags__show-more card-tags__show-more_13">
+                      <button class="card-tags__show-more-close" onclick="$('.card-tags__show-more').fadeOut()"></button>
+                    </div>                       -->
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn_primary" href="/bridge/polygon-bridge" onclick="ym(85443877,'reachGoal','click_overview_btn')">Overview</a>
+            </div>
+
+            <div class="news">
+              <div class="news__block"></div>    
+              <div class="wrap">
+                <div class="news__cnt">
+                  <div class="news__card">
+                    <h3 class="news__card-title">Resuming Horizon</h3>
+                    <p class="news__card-description">
+                      Harmony’s Horizon bridge was one of the first cross-chain bridges that launched back in October 2020, which has since accrued a peak. Harmony’s Horizon bridge was one of the first cross-chain bridges that launched back in October 2020, which has since accrued a peak.
+                    </p>
+                    <div class="news__card-footer">
+                      <span class="news__card-date">19.11.2022</span>
+                      <!-- <a href=""><img src="@img/chainspot-blog-logo.svg" alt=""></a> -->
+                    </div>
+                  </div>
+                  <div class="news__card">
+                    <h3 class="news__card-title">Resuming Horizon with LayerZero Labs</h3>
+                    <p class="news__card-description">
+                      Harmony’s Horizon bridge was one of the first cross-chain bridges that launched back in October 2020, which has since accrued a peak...
+                    </p>
+                    <div class="news__card-footer">
+                      <span class="news__card-date">19.11.2022</span>
+                      <!-- <a href=""><img src="@img/chainspot-blog-logo.svg" alt=""></a> -->
+                    </div>
+                  </div>
+                  <div class="news__card">
+                    <h3 class="news__card-title">Resuming Horizon with LayerZero Labs</h3>
+                    <p class="news__card-description">
+                      Harmony’s Horizon bridge was one of the first cross-chain bridges that launched back in October 2020, which has since accrued a peak...
+                    </p>
+                    <div class="news__card-footer">
+                      <span class="news__card-date">19.11.2022</span>
+                      <!-- <a href=""><img src="@img/chainspot-blog-logo.svg" alt=""></a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </div>
+
+            <div class="bridge-card">
+              <div class="bridge-card__content">
+                <div class="bridge-card__top">
+                  <img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt="">
+                  <div class="bridge-card__reviews-block">
+                      <span class="bridge-card__reviews">3 reviews</span>
+                      <span class="bridge-card__rate excellent" style="border-color: #d1bf1b;">3.3</span>
+                  </div>
+                </div>
+    
+                <h3 class="bridge-card__title">
+                  <a href="/bridge/polygon-bridge" onclick="ym(85443877,'reachGoal','click_bridge_name_btn')">
+                    <span class="bridge-card__title-counter">1</span>
+                    Polygon Bridge
+                  </a>
+                </h3>
+    
+                <p class="bridge-card__description">
+                  Polygon (previously Matic) brings you a trustless two-way transaction channel between Polygon and...</p>              
+                <div class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">TVL:</span>
+                  <span class="bridge-card__tvl-value">$3 171 603 275</span>
+                </div>
+                <div class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Volume (24h):</span>
+                  <span class="bridge-card__tvl-value">$57 679</span>
+                </div>
+                <div class="bridge-card__parameters">
+                  <div class="bridge-card__parameters-item">
+                    <span class="bridge-card__parameters-name">Category:</span>
+                    <span class="bridge-card__parameters-value">Cross Chain Bridges</span>
+                  </div>
+                  <div class="bridge-card__parameters-item">
+                    <span class="bridge-card__parameters-name">Audit:</span>
+                    <span class="bridge-card__parameters-value"><a><span>No</span></a></span>
+                  </div>
+                </div>
+                <div class="bridge-card__tags-block">
+                  <span class="bridge-card__tags-block-title">Supported networks:</span>
+                  <div class="card-tags">
+                    <a class="card-tag">Polygon</a><a class="card-tag">Ethereum</a>
+                    <div class="card-tags__show-more-btn card-tag">
+                      +13
+                      
+                      <span class="card-tags__show-more">
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <button class="card-tags__show-more-close" onclick="$('.card-tags__show-more').fadeOut()"></button>
+                      </span>
+                    </div>
+                    <!-- <div class="card-tags__show-more card-tags__show-more_13">
+                      <button class="card-tags__show-more-close" onclick="$('.card-tags__show-more').fadeOut()"></button>
+                    </div>                       -->
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn_primary" href="/bridge/polygon-bridge" onclick="ym(85443877,'reachGoal','click_overview_btn')">Overview</a>
+            </div>
+
+            <div class="bridge-card">
+              <div class="bridge-card__content">
+                <div class="bridge-card__top">
+                  <img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt="">
+                  <div class="bridge-card__reviews-block">
+                      <span class="bridge-card__reviews">3 reviews</span>
+                      <span class="bridge-card__rate excellent" style="border-color: #d1bf1b;">3.3</span>
+                  </div>
+                </div>
+    
+                <h3 class="bridge-card__title">
+                  <a href="/bridge/polygon-bridge" onclick="ym(85443877,'reachGoal','click_bridge_name_btn')">
+                    <span class="bridge-card__title-counter">1</span>
+                    Polygon Bridge
+                  </a>
+                </h3>
+    
+                <p class="bridge-card__description">
+                  Polygon (previously Matic) brings you a trustless two-way transaction channel between Polygon and...</p>              
+                <div class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">TVL:</span>
+                  <span class="bridge-card__tvl-value">$3 171 603 275</span>
+                </div>
+                <div class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Volume (24h):</span>
+                  <span class="bridge-card__tvl-value">$57 679</span>
+                </div>
+                <div class="bridge-card__parameters">
+                  <div class="bridge-card__parameters-item">
+                    <span class="bridge-card__parameters-name">Category:</span>
+                    <span class="bridge-card__parameters-value">Cross Chain Bridges</span>
+                  </div>
+                  <div class="bridge-card__parameters-item">
+                    <span class="bridge-card__parameters-name">Audit:</span>
+                    <span class="bridge-card__parameters-value"><a><span>No</span></a></span>
+                  </div>
+                </div>
+                <div class="bridge-card__tags-block">
+                  <span class="bridge-card__tags-block-title">Supported networks:</span>
+                  <div class="card-tags">
+                    <a class="card-tag">Polygon</a><a class="card-tag">Ethereum</a>
+                    <div class="card-tags__show-more-btn card-tag">
+                      +13
+                      
+                      <span class="card-tags__show-more">
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <button class="card-tags__show-more-close" onclick="$('.card-tags__show-more').fadeOut()"></button>
+                      </span>
+                    </div>
+                    <!-- <div class="card-tags__show-more card-tags__show-more_13">
+                      <button class="card-tags__show-more-close" onclick="$('.card-tags__show-more').fadeOut()"></button>
+                    </div>                       -->
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn_primary" href="/bridge/polygon-bridge" onclick="ym(85443877,'reachGoal','click_overview_btn')">Overview</a>
+            </div>
+
+            <div class="bridge-card">
+              <div class="bridge-card__content">
+                <div class="bridge-card__top">
+                  <img class="bridge-card__logo" src="https://cdn.debridges.com/method/get.file/?file_id=38a00ede-d393-4959-af4a-0710c9a0b870&amp;quality=40&amp;size=40" alt="">
+                  <div class="bridge-card__reviews-block">
+                      <span class="bridge-card__reviews">3 reviews</span>
+                      <span class="bridge-card__rate excellent" style="border-color: #d1bf1b;">3.3</span>
+                  </div>
+                </div>
+    
+                <h3 class="bridge-card__title">
+                  <a href="/bridge/polygon-bridge" onclick="ym(85443877,'reachGoal','click_bridge_name_btn')">
+                    <span class="bridge-card__title-counter">1</span>
+                    Polygon Bridge
+                  </a>
+                </h3>
+    
+                <p class="bridge-card__description">
+                  Polygon (previously Matic) brings you a trustless two-way transaction channel between Polygon and...</p>              
+                <div class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">TVL:</span>
+                  <span class="bridge-card__tvl-value">$3 171 603 275</span>
+                </div>
+                <div class="bridge-card__tvl">
+                  <span class="bridge-card__tvl-title">Volume (24h):</span>
+                  <span class="bridge-card__tvl-value">$57 679</span>
+                </div>
+                <div class="bridge-card__parameters">
+                  <div class="bridge-card__parameters-item">
+                    <span class="bridge-card__parameters-name">Category:</span>
+                    <span class="bridge-card__parameters-value">Cross Chain Bridges</span>
+                  </div>
+                  <div class="bridge-card__parameters-item">
+                    <span class="bridge-card__parameters-name">Audit:</span>
+                    <span class="bridge-card__parameters-value"><a><span>No</span></a></span>
+                  </div>
+                </div>
+                <div class="bridge-card__tags-block">
+                  <span class="bridge-card__tags-block-title">Supported networks:</span>
+                  <div class="card-tags">
+                    <a class="card-tag">Polygon</a><a class="card-tag">Ethereum</a>
+                    <div class="card-tags__show-more-btn card-tag">
+                      +13
+                      
+                      <span class="card-tags__show-more">
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <a class="card-tag">Binance Chain</a>
+                        <button class="card-tags__show-more-close" onclick="$('.card-tags__show-more').fadeOut()"></button>
+                      </span>
+                    </div>
+                    <!-- <div class="card-tags__show-more card-tags__show-more_13">
+                      <button class="card-tags__show-more-close" onclick="$('.card-tags__show-more').fadeOut()"></button>
+                    </div>                       -->
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn_primary" href="/bridge/polygon-bridge" onclick="ym(85443877,'reachGoal','click_overview_btn')">Overview</a>
+            </div>
+          </div>
+
+          <div class="bridge-cards__pagination">
+            <span class="bridge-cards__pagination-shown">
+              Shown 
+              <span>6</span> 
+              out of 
+              <span>113</span>
+            </span>
+            <div class="pagination">
+              <span>Page</span>
+              <input type="text" value="1">
+              <span>of 20</span>
+              <div class="pagination__controls">
+                <button class="pagination__btn pagination__btn_prev" disabled></button>
+                <button class="pagination__btn pagination__btn_next"></button>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </section>
+    </main>
+
+    @@include('html/footer.html', {})
+  </div>  
+
+  <script src="./js/app.min.js"></script>
+</body>
+
+</html>

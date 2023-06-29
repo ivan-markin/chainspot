@@ -1,0 +1,53 @@
+.card-tags {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 6px;	
+	margin-bottom: 48px;
+
+	&__show-more-btn {
+		position: relative;
+		cursor: pointer;
+	}
+
+	&__show-more {
+		display: none;
+		flex-direction: column;				
+		gap: 6px;
+		max-width: 350px;
+		max-height: 240px;
+		overflow-y: scroll;
+		position: absolute;
+		top: -50%;
+		right: 0;
+		transform: translateY(-50%);
+		background: rgba(26,25,34,.9);
+		border-radius: 12px;
+		padding: 20px 24px;
+
+		.card-tag {
+			display: flex;
+			border-radius: 15px;
+			background-color: #f4f6fb;
+			font-size: 14px;
+			line-height: 1.2;
+			text-decoration: none;			
+			cursor: pointer;
+			width: max-content;
+			padding: 6px 12px;
+		}
+
+		&-close {
+			display: block;
+			width: 10px;
+			height: 10px;
+			background: url("data:image/svg+xml,%3Csvg width=%2712%27 height=%2712%27 viewBox=%270 0 12 12%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27M11.0801 1.74573L10.2552 0.920898L6.00098 5.17513L1.74671 0.920898L0.921875 1.74573L5.17614 5.99996L0.921875 10.2542L1.74671 11.079L6.00098 6.8248L10.2552 11.079L11.0801 10.2542L6.82581 5.99996L11.0801 1.74573Z%27 fill=%27%23F4F6FB%27/%3E%3C/svg%3E%0A") no-repeat;
+			background-size: contain;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			top: 8px;
+			right: 8px;
+		}
+	}
+}

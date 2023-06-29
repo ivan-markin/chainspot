@@ -1,0 +1,13 @@
+.main {	
+	background: url('../img/main-bg.png') no-repeat top center;
+	background-size: 100%;
+
+	// &_dark {
+  //   background: #000212 url('../img/cnt-bg-dark.png') no-repeat center top;
+  //   background-size: contain;
+  // }
+
+	&_nobg {
+		background: white;
+	}
+}

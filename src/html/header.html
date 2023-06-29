@@ -1,0 +1,110 @@
+<header class="header @@className">		
+
+	@@if (className === 'header_dark') {
+		@@include('logo.html', {
+			'theme': '_dark'
+		})
+	}	
+	
+	@@if (className === '') {
+		@@include('logo.html', {
+			'theme': ''
+		})
+	}		
+
+	@@include('main-menu.html', {
+		'className': 'main-menu_header'
+	})
+
+	<div class="header__actions">
+		<div class="header__socials">
+			<a href="">
+				<img src="@img/telegram-icon.svg" alt="">
+			</a>
+			<a href="">
+				<img src="@img/twitter-icon.svg" alt="">
+			</a>
+			<a href="">
+				<img src="@img/discord-icon.svg" alt="">
+			</a>
+		</div>
+		<div class="header__cta">
+			<!-- <a class="header__cta-link" href="">Blog</a> -->
+			<!-- <a class="btn" href="">Launch App</a> -->
+			<div class="btn-select">
+				<!-- NO WALLETS CONNECTED -->
+				<!-- <button class="btn-select__btn btn btn_dark">Connect wallets</button> -->
+				<!-- NO WALLETS CONNECTED -->
+				
+				<!-- ONE WALLET CONNECTED -->
+				@@if (className === 'header_dark') {
+					@@include('wallet-info-button.html', {
+						'className': 'dark'	
+					})
+				}	
+				
+				@@if (className === '') {
+					@@include('wallet-info-button.html', {
+						'className': ''
+					})
+				}	
+				<!-- ONE WALLET CONNECTED -->
+				
+				<!-- MULTIPLE WALLETS CONNECTED -->
+				<!-- <button class="wallet-info-button wallet-info-button_multiple dark select-button">
+					<div class="wallet-info-button__logo">
+						<img class="wallet-info-button__main-logo" src="@img/metamask-logo.png" alt="">
+						<img class="wallet-info-button__network-logo" src="@img/tokens-logos/network.png" alt="">
+					</div>
+					<div class="wallet-info-button__logo">
+						<img class="wallet-info-button__main-logo" src="@img/metamask-logo.png" alt="">
+						<img class="wallet-info-button__network-logo" src="@img/tokens-logos/network.png" alt="">
+					</div>
+					<div class="wallet-info-button__logo">
+						<img class="wallet-info-button__main-logo" src="@img/metamask-logo.png" alt="">
+						<img class="wallet-info-button__network-logo" src="@img/tokens-logos/network.png" alt="">
+					</div>
+				</button> -->
+				<!-- MULTIPLE WALLETS CONNECTED -->
+				
+				<div class="btn-select__popup connect-wallets-popup connect-wallets-popup_dark">
+					<div class="connect-wallets-popup__content">
+						<h3 class="connect-wallets-popup__title">Select a wallet</h3>
+						<p class="connect-wallets-popup__description">
+							By connecting your wallet, you agree to our <a class="white-link" href="">Terms of services</a> and <a class="white-link" href="">Privacy Policy</a>
+						</p>
+						<div class="connect-wallets-popup__wallets">
+							<div class="connect-wallets-popup__wallet">
+								<div class="connect-wallets-popup__wallet-connected">
+									<div class="connect-wallets-popup__wallet-icons">
+										<img class="connect-wallets-popup__wallet-icon" src="@img/metamask-wallet-icon.png" alt="">		
+										<img class="connect-wallets-popup__wallet-network-icon" src="@img/tokens-logos/network.png" alt="">		
+									</div>
+									<div class="connect-wallets-popup__wallet-title">
+										<span class="connect-wallets-popup__wallet-name">0x07A0...B57F</span>
+										<span class="connect-wallets-popup__wallet-network">0 MATIC</span>
+									</div>
+								</div>
+								<button class="connect-wallets-popup__disconnect-btn">Disconnect</button>
+							</div>
+							
+							<div class="connect-wallets-popup__wallet">
+								<img class="connect-wallets-popup__wallet-icon" src="@img/ever-wallet-icon.png" alt="">
+								<span class="connect-wallets-popup__wallet-name">EverWallet</span>
+								<button class="connect-wallets-popup__wallet-btn">Connect wallet</button>
+							</div>
+							
+							<div class="connect-wallets-popup__wallet">
+								<img class="connect-wallets-popup__wallet-icon" src="@img/tron-wallet-icon.png" alt="">
+								<span class="connect-wallets-popup__wallet-name">TronWallet</span>
+								<button class="connect-wallets-popup__wallet-btn">Connect wallet</button>								
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>						
+		</div>
+	</div>
+
+	<button class="mobile-menu-btn"></button>
+</header>

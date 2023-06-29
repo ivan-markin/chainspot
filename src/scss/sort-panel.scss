@@ -1,0 +1,21 @@
+.sort-panel {
+	margin-bottom: 55px;	
+
+	&__cnt {
+		display: flex;
+		align-items: center;
+		gap: 32px;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+		}
+	}
+
+	&__pagination {
+		margin-left: auto;
+		
+		@media (max-width: 768px) {
+			margin-left: 0;
+		}
+	}
+}

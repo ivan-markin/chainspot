@@ -1,0 +1,20 @@
+.check-label {
+	display: flex;
+	align-items: center;
+	height: 17px;
+	border-radius: 4px;
+	border: white 1px solid;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 0 4px;
+
+	&_pending {
+		border-color: #FFC530;
+		color: #FFC530;
+	}
+
+	&_completed {
+		border-color: #3CD65E;
+		color: #3CD65E;
+	}
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  @@include('html/head.html', {
+    "title": "Transfers"
+  })
+
+<body>
+  
+  @@include('html/mobile-menu.html', {})
+  @@include('html/filters-panel.html', {})
+  @@include('html/date-picker-popup.html', {})  
+  @@include('html/choose-token-popup.html', {})  
+  @@include('html/choose-wallet-popup.html', {})
+  @@include('html/search-popup.html', {})  
+  @@include('html/wallet-actions-popup.html', {})  
+  @@include('html/routes-popup.html', {})  
+  @@include('html/is-submited-popup.html', {})   
+  
+  <!-- П Р О Ц Е С С И Н Г О В Ы Е  П О П А П Ы -->
+
+  @@include('html/transfer-approve-popup.html', {})
+  @@include('html/allowance-popup.html', {})
+  @@include('html/refused-popup.html', {})
+  @@include('html/rejected-popup.html', {})
+  @@include('html/transfer-submitted-popup.html', {})
+  @@include('html/transfer-popup.html', {})
+
+  <!-- --- -->
+  
+  <div class="container">
+    
+    @@include('html/header.html', {
+      'className': 'header_inner'
+    })
+
+    <main class="main">       
+      <section class="page-container">
+        <div class="wrapper">
+          <div class="transfers-wrapper">
+            
+            @@include('html/transfers-warning.html', {})                         
+
+          </div>          
+        </div>        
+      </section>    
+    </main>    
+    
+    <!-- @@include('html/alert.html', {})    -->
+    @@include('html/footer.html', {})   
+  </div>  
+
+  <script src="./js/app.min.js"></script>
+</body>
+
+</html>

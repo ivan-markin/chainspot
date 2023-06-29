@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  @@include('html/head.html', {
+    "title": "Gas station"
+  })
+
+<body>
+  
+  @@include('html/mobile-menu.html', {})    
+  
+  @@include('html/top-up-popup.html', {
+    'className': 'dark'
+  })
+  
+  @@include('html/wrong-network-popup.html', {
+    'className': 'dark'
+  })
+
+  @@include('html/connect-to-a-wallet-popup.html', {
+    'className': 'dark'
+  })
+
+  <!-- @@include('html/choose-wallet-popup.html', {}) -->
+  <!-- @@include('html/agreement-popup.html', {}) -->
+  <!-- @@include('html/search-popup.html', {})   -->
+  <!-- @@include('html/wallet-actions-popup.html', {})   -->
+  <!-- @@include('html/routes-popup.html', {})   -->
+  <!-- @@include('html/is-submited-popup.html', {})    -->
+  
+  <div class="container container_dark container_bnb">
+    
+    @@include('html/header.html', {
+      'className': 'header_dark'
+    })
+
+    <main class="main" style="background: none;">                   
+        <div class="gas-station-wrapper">
+
+          <!-- @@include('html/alert.html', {})    -->
+          <!-- @@include('html/alert-success.html', {})    -->
+          
+          @@include('html/gas-station.html', {})                          
+
+        </div>                        
+    </main>    
+        
+    @@include('html/footer.html', {
+      'className': 'footer_dark'
+    })   
+  </div>  
+
+  <script src="./js/app.min.js"></script>
+</body>
+
+</html>

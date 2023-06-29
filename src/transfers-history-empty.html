@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  @@include('html/head.html', {
+    "title": "Transfers"
+  })
+
+<body>   
+  
+  <div class="container">
+    
+    @@include('html/header.html', {
+      'className': 'header_inner'
+    })
+
+    <main class="main">       
+      <section class="page-container">
+        <div class="wrapper">
+          <div class="transfers-wrapper">
+            
+            <div class="history">
+
+              @@include('html/transfers-tabs.html', {
+                'transfers': '', 
+                'history': 'active', 
+                'faq': '', 
+              })
+
+              <div class="history__header" style="justify-content: center;">
+                <h1 class="history__title">Swap history</h1>
+              </div>
+              <div class="history__container">
+                
+                <div class="history__empty-cnt">
+                  <img src="@img/empty-history-icon.svg" alt="">
+                  <h2 class="history__empty-title">No transactions yet</h2>
+                  <p class="history__empty-description">The swap history will be displayed here. Make your swap now.</p>
+                  <button class="btn btn_popup btn_popup-primary">Swap</button>
+                </div>
+
+              </div>
+            </div>
+
+            <span class="transfers-container__subscription">Open beta: please use at your own risk.</span>
+          </div>          
+        </div>        
+      </section>    
+    </main>    
+    
+    <!-- @@include('html/alert.html', {})    -->
+    @@include('html/footer.html', {})   
+  </div>  
+
+  <script src="./js/app.min.js"></script>
+</body>
+
+</html>

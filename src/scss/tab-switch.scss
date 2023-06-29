@@ -1,0 +1,38 @@
+.tab-switch {
+	display: flex;	
+
+	&__input {
+		opacity: 0;
+		z-index: -1;
+		visibility: hidden;
+		position: absolute;
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		height: 33px;
+		border: 1px solid #E2E2EA;
+		font-weight: 500;
+		font-size: 14px;
+		white-space: nowrap;
+		cursor: pointer;		
+		padding: 0 17px;		
+	}
+
+	&__item:first-child &__btn {
+		border-radius: 4px 0 0 4px;
+		border-right: none;
+	}
+
+	&__item:last-child &__btn {
+		border-radius: 0 4px 4px 0;
+	}
+
+	&__input:checked + &__btn {
+		background: #9A9AAF;
+		border-color: #9A9AAF;
+		color: white;
+		cursor: default;
+	}
+}

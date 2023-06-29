@@ -1,0 +1,132 @@
+.main-menu {	
+	background: none !important;
+
+	&__items {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+		padding: 0;
+		margin: 0;
+
+		@media (max-width: 768px) {
+			flex-direction: column;			
+		}		
+	}
+
+	&.mobile &__items {
+		align-items: flex-start;
+		gap: 0;		
+	}
+
+	&__item {		
+		list-style: none;		
+		position: relative;
+		font-size: 16px;		
+
+		&.soon,
+		&.new {
+			&::after {				
+				display: flex;
+				align-items: center;
+				height: 16px;
+				border-radius: 3px;
+				font-family: 'Mulish', sans-serif;
+				font-weight: 700;
+				font-size: 9px;
+				color: white;
+				position: absolute;
+				right: 0;
+				top: 0;
+				transform: translateY(-100%);
+				padding: 0 3px;
+			}
+		}
+
+		&.soon::after {
+			content: 'Coming soon';
+			background-color: #003980;
+		}
+
+		&.new::after {
+			content: 'New';
+			background-color: #193EFF;
+		}
+	}
+
+	&.mobile &__item {
+		display: flex;
+		align-items: center;
+		height: 66px;
+		width: 100%;		
+		border-bottom: 1px solid #E0E7F2;;
+		padding: 0 20px;
+
+		&::after {
+			position: static;
+			transform: none;
+			margin-left: 5px;
+		}
+	}
+
+	&_header {
+		@media (max-width: 1024px) {
+			display: none;
+		}
+	}
+
+	&.footer &__item {
+		font-size: 14px;
+
+		&.soon::after,
+		&.new::after {
+			display: none;
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		gap: 4px;
+		color: var(--font-dark);
+		text-decoration: none;
+		transition: all .1s;
+		font-size: 16px;
+
+		&:hover {
+			color: #0071FF !important;
+
+			svg {
+				fill: #0071FF !important;
+			}
+		}
+
+		svg {
+			transition: all .1s;
+		}
+	}
+
+	.header_dark &__link {
+		color: white;
+
+		svg {
+			fill: white;
+		}
+	}
+
+	&__item.disabled &__link {		
+		color: #BECCDF;
+		cursor: auto;
+
+		svg {
+			fill: #BECCDF;
+		}
+	}
+
+	&.footer &__link {
+		color: white;
+
+		svg {
+			fill: white;
+		}
+	}
+}

@@ -1,0 +1,53 @@
+.token-cnt {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+
+	&__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: none;
+		position: relative;
+		border-radius: 10px;		
+		overflow: hidden;		
+		width: 40px;
+		height: 40px;
+
+		&-bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-repeat: no-repeat;
+			background-size: 200%;
+			background-position: center;
+			filter: blur(20px);
+			opacity: .7;
+			z-index: 1;
+		}
+	}
+
+	&__image {
+		position: relative;
+		z-index: 2;
+	}
+
+	&__title {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+	}
+
+	&__name {
+		font-weight: 500;
+		font-size: 15px;
+	}
+
+	&__value {
+		font-weight: 500;
+		font-size: 12px;
+		color: #949CB2;
+	}
+}

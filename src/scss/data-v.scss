@@ -1,0 +1,188 @@
+.data-v {	
+	background: rgba(225, 230, 254, 0.35);
+	border-radius: 0 0 40px 40px;
+	padding: 18px 0 30px;
+
+	@media (max-width: 768px) {
+		display: none;
+	}
+
+	&__header {
+		display: flex;
+		align-items: center;
+		gap: 60px;
+	}
+
+	&__title-block {
+		display: flex;
+		align-items: baseline;
+		gap: 10px;
+		position: relative;
+	}
+
+	&__timeline {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		z-index: 2;
+	}
+
+	&__timeline-title {
+		font-weight: 700;
+		font-size: 12px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		margin-bottom: 5px;
+	}
+
+	&__chainspot-badge {	
+		position: absolute;
+		left: 0;
+		bottom: -5px;
+		transform: translateY(100%);		
+	}
+
+	&__diagram {
+		display: flex;
+		justify-content: center;
+		position: relative;
+	}
+
+	&__scale-control {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	&__info {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		margin-top: -105px;
+	}
+
+	&__info-top {
+		display: flex;
+		flex-direction: column;
+
+		&_gainer {
+			align-items: flex-start;
+		}
+
+		&_loser {
+			align-items: flex-end;
+		}
+	}
+
+	&__info-top-title {
+		margin: 0 0 8px;
+	}
+
+	&__info-top-icon {
+		margin-bottom: 10px;
+	}
+
+	&__info-top-network {
+		font-weight: 500;
+		font-size: 15px;
+		margin-bottom: 5px;
+	}
+
+	&__info-top-value {
+		display: flex;
+		align-items: baseline;
+		gap: 7px;
+		font-weight: 500;
+		font-size: 34px;
+		line-height: 1;
+		margin-bottom: 5px;
+	}
+
+	&__info-top-grow {
+		display: flex;
+		align-items: baseline;
+		gap: 1px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1;
+
+		&::before {
+			content: '';
+			width: 12px;
+			height: 8px;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+
+		&.up {
+			color: #00C628;
+			
+			&::before {
+				background-image: url('../img/grow-up-icon.svg');
+			}
+		}
+
+		&.down {
+			color: #FB3B3D;
+			
+			&::before {
+				background-image: url('../img/grow-down-icon.svg');
+			}
+		}
+	}
+
+	&__info-top-subscr {
+		font-size: 12px;
+		line-height: 1.33;
+		letter-spacing: 0.4px;
+		color: #949CB2;
+	}
+	
+	&__icon-cnt {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #FFFFFF;
+		box-shadow: 0px 36px 39px rgba(0, 0, 135, 0.05), 0px 23.3333px 22.8403px rgba(0, 0, 135, 0.037963), 0px 13.8667px 12.4222px rgba(0, 0, 135, 0.0303704), 0px 7.2px 6.3375px rgba(0, 0, 135, 0.025), 0px 2.93333px 3.17778px rgba(0, 0, 135, 0.0196296), 0px 0.666667px 1.53472px rgba(0, 0, 135, 0.012037);
+		border-radius: 8px;
+		width: 64px;
+		height: 64px;
+	}
+
+	&__info-title {
+		font-weight: 700;
+		font-size: 12px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+	}
+
+	&__info-general {
+		display: flex;
+		align-items: flex-start;
+		gap: 70px;
+		margin-top: 20px;
+	}
+
+	&__info-general-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__info-general-icon {
+		margin-bottom: 12px;
+	}
+
+	&__info-general-title {
+		margin-bottom: 10px;
+	}
+
+	&__info-value {
+		font-weight: 300;
+		font-size: 48px;
+		line-height: 1;
+	}
+}

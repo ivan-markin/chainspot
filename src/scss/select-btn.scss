@@ -1,0 +1,27 @@
+.select-btn {
+	position: relative;
+
+	&__button {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		height: 40px;
+		background: #FFFFFF;
+		box-shadow: 0px 12px 53px rgba(0, 0, 135, 0.05), 0px 6.075px 23.1047px rgba(0, 0, 135, 0.03375), 0px 2.4px 8.6125px rgba(0, 0, 135, 0.025), 0px 0.525px 3.06406px rgba(0, 0, 135, 0.01625);
+		border-radius: 16px;
+		border: none;
+		font-size: 14px;
+		font-weight: 500;
+		white-space: nowrap;
+		cursor: pointer;
+		padding: 0 14px;
+
+		&::after {
+			content: '';
+			width: 14px;
+			height: 8px;
+			background: url('../img/select-btn-arrow.svg') no-repeat center;
+			background-size: contain;
+		}
+	}
+}

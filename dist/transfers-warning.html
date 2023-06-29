@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
+  <!-- <link rel="stylesheet" href="./css/styles-old.css"> -->
+  <link rel="stylesheet" href="./css/style.min.css">
+  <title>Chainspot</title>
+</head>
+
+<body>
+  
+  <div class="mobile-menu">
+	<div class="mobile-menu__header">
+		<a class="logo-link" href="/">
+			<img class="logo" src="img/chainspot-logo.png" alt="">
+		</a>
+		<button class="mobile-menu__close"></button>
+	</div>
+	
+	<nav class="main-menu mobile">
+	<ul class="main-menu__items">
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="">Cross-chain swap</a>
+		</li>
+		<li class="main-menu__item new">
+			<a class="main-menu__link" href="gas-station.html">
+				<svg width="24" height="25" viewBox="0 0 24 25" fill="#142438" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M18.92 11.2C18.561 11.2 18.2452 11.3392 18.0174 11.5732L18.0039 11.5867C17.7379 11.8464 17.5893 12.2162 17.6267 12.6089L17.6275 12.6177L17.6274 12.6177C17.6804 13.2527 18.2909 13.8 19.04 13.8H20.9828C21.1444 13.7896 21.25 13.6632 21.25 13.53V11.47C21.25 11.3368 21.1444 11.2104 20.9828 11.2H18.92ZM16.9493 10.52C17.4609 9.99815 18.1624 9.70001 18.92 9.70001H21C21.009 9.70001 21.0179 9.70017 21.0268 9.70049C21.9798 9.73453 22.75 10.5057 22.75 11.47V13.53C22.75 14.4943 21.9798 15.2655 21.0268 15.2995C21.0179 15.2998 21.009 15.3 21 15.3H19.04C17.6305 15.3 16.2624 14.2693 16.133 12.7467C16.0523 11.8845 16.3805 11.0791 16.9493 10.52Z" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M7 4.75C6.75575 4.75 6.52398 4.76744 6.30405 4.80128L6.28339 4.80416C5.17606 4.94312 4.30559 5.41721 3.70955 6.11651C3.11197 6.81761 2.75 7.79287 2.75 9V11C2.75 11.4142 2.41421 11.75 2 11.75C1.58579 11.75 1.25 11.4142 1.25 11V9C1.25 7.48713 1.70803 6.15239 2.56796 5.14349C3.42737 4.13519 4.64812 3.4999 6.08633 3.31713C6.38313 3.27204 6.68789 3.25 7 3.25H16C16.2697 3.25 16.5608 3.25975 16.8545 3.30711C18.305 3.47974 19.5395 4.1109 20.4103 5.12C21.2833 6.13163 21.75 7.4753 21.75 9V10.45C21.75 10.8642 21.4142 11.2 21 11.2H18.92C18.5609 11.2 18.2451 11.3392 18.0173 11.5732L18.0039 11.5867C17.7378 11.8464 17.5892 12.2162 17.6266 12.6089L17.6275 12.6177L17.6274 12.6177C17.6803 13.2527 18.2909 13.8 19.04 13.8H21C21.4142 13.8 21.75 14.1358 21.75 14.55V16C21.75 17.6704 21.1899 19.1207 20.1553 20.1553C19.1207 21.1899 17.6704 21.75 16 21.75H13.5C13.0858 21.75 12.75 21.4142 12.75 21C12.75 20.5858 13.0858 20.25 13.5 20.25H16C17.3296 20.25 18.3793 19.8101 19.0947 19.0947C19.8101 18.3793 20.25 17.3296 20.25 16V15.3H19.04C17.6304 15.3 16.2623 14.2693 16.133 12.7467C16.0522 11.8845 16.3805 11.079 16.9493 10.52C17.4609 9.99815 18.1623 9.70001 18.92 9.70001H20.25V9C20.25 7.7847 19.8817 6.80336 19.2747 6.09999C18.6691 5.39822 17.7851 4.92541 16.6634 4.79497C16.6511 4.79354 16.6389 4.79181 16.6267 4.78978C16.4468 4.7598 16.2446 4.75 16 4.75H7Z"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M9.14876 10.0713C9.51655 10.2094 9.73379 10.5052 9.8497 10.7857C9.96411 11.0625 10.0063 11.3791 10.0063 11.7V15.45H11.1875C11.7172 15.45 12.4051 15.6114 12.6913 16.2452C12.9777 16.8793 12.6433 17.501 12.2934 17.8964C12.2932 17.8967 12.2929 17.897 12.2927 17.8973L7.56297 23.2705C7.35101 23.5112 7.11016 23.721 6.84181 23.8533C6.57027 23.9872 6.21237 24.0666 5.84499 23.9287C5.4772 23.7906 5.25996 23.4949 5.14405 23.2144C5.02965 22.9375 4.9875 22.6209 4.9875 22.3V18.55H3.80625C3.28025 18.55 2.5942 18.3906 2.30751 17.7581C2.02159 17.1272 2.35117 16.5058 2.69609 16.1084L2.69952 16.1044L7.43078 10.7295C7.64274 10.4889 7.88359 10.2791 8.15194 10.1467C8.42348 10.0128 8.78138 9.93337 9.14876 10.0713ZM8.50625 11.7779L3.86556 17.05H5.7375C6.15171 17.05 6.4875 17.3858 6.4875 17.8V22.2221L11.1282 16.95H9.25625C8.84204 16.95 8.50625 16.6142 8.50625 16.2V11.7779Z" />
+				</svg>
+				Gas refill
+			</a>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="">Reports</a>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="analytics.html">Analytics</a>
+		</li>
+	</ul>
+</nav>
+
+	<div class="mobile-menu__cta">            
+		<a class="mobile-menu__cta-link" href="">Blog</a>
+		<a class="btn" href="">Launch App</a>      
+		<div class="mobile-menu__socials">
+			<a href="">
+				<img src="img/telegram-icon.svg" alt="">
+			</a>
+			<a href="">
+				<img src="img/twitter-icon.svg" alt="">
+			</a>
+		</div>
+	</div>	     
+</div>
+  <div class="filters-mobile-panel">
+	<div class="filters-mobile-panel__header">
+		<button class="filters-mobile-panel__back-btn back-btn">Back</button>
+		<h1 class="filters-mobile-panel__title page-title">Filters</h1>
+		<button class="filters-mobile-panel__reset-btn">Reset</button>
+	</div>
+	<div class="filters-mobile-panel__content">
+		<div class="select select_outlined active">
+			<div class="select__button">
+				Select a network
+			</div>
+			<div class="select__dropdown">
+				<a class="select__item select__item_active" href="">
+					<span class="select__item-logo">
+						<img src="img/currencies-logos/eth.svg" alt="">
+					</span>
+					<span class="select__item-name">Etherium</span>
+				</a>
+				<a class="select__item" href="">
+					<span class="select__item-logo">
+						<img src="img/currencies-logos/bnb.svg" alt="">
+					</span>
+					<span class="select__item-name">Binance Smart Chain</span>
+				</a>
+				<a class="select__item" href="">
+					<span class="select__item-logo">
+						<img src="img/currencies-logos/polygon.svg" alt="">
+					</span>
+					<span class="select__item-name">Polygon</span>
+				</a>
+			</div>
+		</div>
+		<div class="filters-mobile-panel__input-block">
+			<span class="input-label">Type of the bridge</span>
+			<div class="filter-switch filter-switch_blue">
+				<label class="filter-switch__item">
+					<input class="filter-switch__input" type="radio" name="filterMobile" checked>
+					<span class="filter-switch__button">All</span>
+				</label>
+				<label class="filter-switch__item">
+					<input class="filter-switch__input" type="radio" name="filterMobile">
+					<span class="filter-switch__button">DEX Bridges</span>
+				</label>
+				<label class="filter-switch__item">
+					<input class="filter-switch__input" type="radio" name="filterMobile">
+					<span class="filter-switch__button">Wrapped</span>
+				</label>
+				<label class="filter-switch__item">
+					<input class="filter-switch__input" type="radio" name="filterMobile">
+					<span class="filter-switch__button">NFT</span>
+				</label>
+			</div>
+		</div>
+		<div class="filters-mobile-panel__input-block">
+			<span class="input-label">Bridges</span>
+			<div class="select select_outlined">
+				<div class="select__button">
+					All
+				</div>
+				<div class="select__dropdown">
+					<a class="select__item select__item_active" href="">
+						<span class="select__item-logo">
+							<img src="img/currencies-logos/eth.svg" alt="">
+						</span>
+						<span class="select__item-name">Etherium</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="img/currencies-logos/bnb.svg" alt="">
+						</span>
+						<span class="select__item-name">Binance Smart Chain</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="img/currencies-logos/polygon.svg" alt="">
+						</span>
+						<span class="select__item-name">Polygon</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="filters-mobile-panel__input-block">
+			<span class="input-label">Time</span>
+			<div class="select select_outlined">
+				<div class="select__button select-date">
+					Last 7 days
+				</div>          
+			</div>
+		</div>
+	</div>    
+</div>
+  <div class="date-picker-popup popup-bottom">
+	<div class="popup-bottom__cnt">
+		<div class="date-picker-popup__header">
+			<button class="date-picker-popup__back-btn popup-bottom__back-btn back-btn back-btn_short"></button>
+			<h1 class="date-picker-popup__title page-title">Select a range</h1>
+			<button class="date-picker-popup__reset-btn">Reset</button>
+		</div>
+		<div class="date-picker-popup__content">
+			<p class="date-picker-popup__subtitle">Choose a range within 3 months</p>
+			<div class="date-picker-popup__inputs">
+				<div class="date-picker-popup__input-cnt">
+					<span class="input-label">Start date</span>
+					<input class="date-input" type="date" value="2022-06-01">
+				</div>
+				<span class="date-picker-popup__middle-text">to the</span>
+				<div class="date-picker-popup__input-cnt">
+					<span class="input-label">End date</span>
+					<input class="date-input" type="date" value="2022-06-01">
+				</div>
+			</div>
+			<button class="btn btn_blue">Continue</button>
+		</div>
+	</div> 
+	<div class="popup-bottom__bg"></div>   
+</div>  
+  <div class="choose-token-popup popup" id="chooseTokenPopup">
+	<div class="popup__container">
+		<a class="popup__close" href="#"></a>
+		
+		<div class="choose-token-popup__header">
+			<h1 class="choose-token-popup__title popup__title">Swap from</h1>			
+			<input class="choose-token-popup__search search-input search-input_outlined" type="text" placeholder="Enter token name or contract address">           
+		</div>						
+		
+		<div class="choose-token-popup__tokens-cnt">			
+			<div class="choose-token-popup__source-tokens">
+				<a class="choose-token-popup__source-tokens-item active">
+					<img src="img/tokens-list-logos/ethereum.svg" alt="">
+					Ethereum
+				</a>
+				<a class="choose-token-popup__source-tokens-item">
+					<img src="img/tokens-list-logos/ethereum.svg" alt="">
+					Ethereum
+				</a>
+				<a class="choose-token-popup__source-tokens-item">
+					<img src="img/tokens-list-logos/ethereum.svg" alt="">
+					Ethereum
+				</a>
+				<a class="choose-token-popup__source-tokens-item">
+					<img src="img/tokens-list-logos/ethereum.svg" alt="">
+					Ethereum
+				</a>
+				<a class="choose-token-popup__source-tokens-item">
+					<img src="img/tokens-list-logos/ethereum.svg" alt="">
+					Ethereum
+				</a>
+				<a class="choose-token-popup__source-tokens-item">
+					<img src="img/tokens-list-logos/ethereum.svg" alt="">
+					Ethereum
+				</a>
+				<a class="choose-token-popup__source-tokens-item">
+					<img src="img/tokens-list-logos/ethereum.svg" alt="">
+					Ethereum
+				</a>
+				<a class="choose-token-popup__source-tokens-item">
+					<img src="img/tokens-list-logos/ethereum.svg" alt="">
+					Ethereum
+				</a>
+				<a class="choose-token-popup__source-tokens-item">
+					<img src="img/tokens-list-logos/ethereum.svg" alt="">
+					Ethereum
+				</a>
+				<a class="choose-token-popup__source-tokens-item">
+					<img src="img/tokens-list-logos/ethereum.svg" alt="">
+					Ethereum
+				</a>
+				<a class="choose-token-popup__source-tokens-item">
+					<img src="img/tokens-list-logos/ethereum.svg" alt="">
+					Ethereum
+				</a>
+				<a class="choose-token-popup__source-tokens-item">
+					<img src="img/tokens-list-logos/ethereum.svg" alt="">
+					Ethereum
+				</a>
+				<!-- <a class="choose-token-popup__source-tokens-item choose-token-popup__source-tokens-item_more" id="moreTokensBtn">					
+					+10 more
+				</a>				 -->
+			</div>
+			
+			<div class="choose-token-popup__tokens-list">						
+			
+				<div class="choose-token-popup__tokens-list-empty">
+					<img src="img/empty-list-icon.svg" alt="">
+					<span>Token not found</span>
+					<span>Try again with a different wording,<br>or change the network</span>
+				</div>  
+	
+				<!-- <div class="choose-token-popup__all-tokens">					
+					<div class="tokens-list-item">
+						<div class="tokens-list-item__left">
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
+							<p class="tokens-list-item__title">
+								<span class="tokens-list-item__name">OMG</span>
+								<span class="tokens-list-item__network">									
+									on Ethereum Network
+								</span>
+							</p>
+						</div>
+						<div class="tokens-list-item__right">
+							<span class="tokens-list-item__value">50</span>
+							<span class="tokens-list-item__currency">$1.25</span>
+						</div>
+					</div>
+					<div class="tokens-list-item">
+						<div class="tokens-list-item__left">
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
+							<p class="tokens-list-item__title">
+								<span class="tokens-list-item__name">OMG</span>
+								<span class="tokens-list-item__network">									
+									on Ethereum Network
+								</span>
+							</p>
+						</div>
+						<div class="tokens-list-item__right">
+							<span class="tokens-list-item__value">50</span>
+							<span class="tokens-list-item__currency">$1.25</span>
+						</div>
+					</div>
+					<div class="tokens-list-item">
+						<div class="tokens-list-item__left">
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
+							<p class="tokens-list-item__title">
+								<span class="tokens-list-item__name">OMG</span>
+								<span class="tokens-list-item__network">									
+									on Ethereum Network
+								</span>
+							</p>
+						</div>
+						<div class="tokens-list-item__right">
+							<span class="tokens-list-item__value">50</span>
+							<span class="tokens-list-item__currency">$1.25</span>
+						</div>
+					</div>
+					<div class="tokens-list-item">
+						<div class="tokens-list-item__left">
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
+							<p class="tokens-list-item__title">
+								<span class="tokens-list-item__name">OMG</span>
+								<span class="tokens-list-item__network">									
+									on Ethereum Network
+								</span>
+							</p>
+						</div>
+						<div class="tokens-list-item__right">
+							<span class="tokens-list-item__value">50</span>
+							<span class="tokens-list-item__currency">$1.25</span>
+						</div>
+					</div>
+					<div class="tokens-list-item">
+						<div class="tokens-list-item__left">
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
+							<p class="tokens-list-item__title">
+								<span class="tokens-list-item__name">OMG</span>
+								<span class="tokens-list-item__network">									
+									on Ethereum Network
+								</span>
+							</p>
+						</div>
+						<div class="tokens-list-item__right">
+							<span class="tokens-list-item__value">50</span>
+							<span class="tokens-list-item__currency">$1.25</span>
+						</div>
+					</div>
+					<div class="tokens-list-item">
+						<div class="tokens-list-item__left">
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
+							<p class="tokens-list-item__title">
+								<span class="tokens-list-item__name">OMG</span>
+								<span class="tokens-list-item__network">									
+									on Ethereum Network
+								</span>
+							</p>
+						</div>
+						<div class="tokens-list-item__right">
+							<span class="tokens-list-item__value">50</span>
+							<span class="tokens-list-item__currency">$1.25</span>
+						</div>
+					</div>
+					<div class="tokens-list-item">
+						<div class="tokens-list-item__left">
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
+							<p class="tokens-list-item__title">
+								<span class="tokens-list-item__name">OMG</span>
+								<span class="tokens-list-item__network">									
+									on Ethereum Network
+								</span>
+							</p>
+						</div>
+						<div class="tokens-list-item__right">
+							<span class="tokens-list-item__value">50</span>
+							<span class="tokens-list-item__currency">$1.25</span>
+						</div>
+					</div>
+					<div class="tokens-list-item">
+						<div class="tokens-list-item__left">
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
+							<p class="tokens-list-item__title">
+								<span class="tokens-list-item__name">OMG</span>
+								<span class="tokens-list-item__network">									
+									on Ethereum Network
+								</span>
+							</p>
+						</div>
+						<div class="tokens-list-item__right">
+							<span class="tokens-list-item__value">50</span>
+							<span class="tokens-list-item__currency">$1.25</span>
+						</div>
+					</div>
+					<div class="tokens-list-item">
+						<div class="tokens-list-item__left">
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
+							<p class="tokens-list-item__title">
+								<span class="tokens-list-item__name">OMG</span>
+								<span class="tokens-list-item__network">									
+									on Ethereum Network
+								</span>
+							</p>
+						</div>
+						<div class="tokens-list-item__right">
+							<span class="tokens-list-item__value">50</span>
+							<span class="tokens-list-item__currency">$1.25</span>
+						</div>
+					</div>
+					<div class="tokens-list-item">
+						<div class="tokens-list-item__left">
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
+							<p class="tokens-list-item__title">
+								<span class="tokens-list-item__name">OMG</span>
+								<span class="tokens-list-item__network">									
+									on Ethereum Network
+								</span>
+							</p>
+						</div>
+						<div class="tokens-list-item__right">
+							<span class="tokens-list-item__value">50</span>
+							<span class="tokens-list-item__currency">$1.25</span>
+						</div>
+					</div>
+					<div class="tokens-list-item">
+						<div class="tokens-list-item__left">
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
+							<p class="tokens-list-item__title">
+								<span class="tokens-list-item__name">OMG</span>
+								<span class="tokens-list-item__network">									
+									on Ethereum Network
+								</span>
+							</p>
+						</div>
+						<div class="tokens-list-item__right">
+							<span class="tokens-list-item__value">50</span>
+							<span class="tokens-list-item__currency">$1.25</span>
+						</div>
+					</div>
+					<div class="tokens-list-item">
+						<div class="tokens-list-item__left">
+							<img class="tokens-list-item__logo" src="img/tokens-list-logos/omg.png" alt="">							
+							<p class="tokens-list-item__title">
+								<span class="tokens-list-item__name">OMG</span>
+								<span class="tokens-list-item__network">									
+									on Ethereum Network
+								</span>
+							</p>
+						</div>
+						<div class="tokens-list-item__right">
+							<span class="tokens-list-item__value">50</span>
+							<span class="tokens-list-item__currency">$1.25</span>
+						</div>
+					</div>
+				</div>										  -->
+			</div>
+		</div>				
+	</div>
+
+	<div class="switch-network-popup inner-popup">
+	<div class="switch-network-popup__header">
+		<button class="switch-network-popup__back popup-back-btn inner-popup-close">Back</button>
+		<h2 class="switch-network-popup__title popup__title">Switch network</h2>
+		<button class="switch-network-popup__close inner-popup-close"></button>
+	</div>
+	<div class="switch-network-popup__networks-list">
+		<a class="select__item select__item_active" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/eth.svg" alt="">
+			</span>
+			<span class="select__item-name">Etherium</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/bnb.svg" alt="">
+			</span>
+			<span class="select__item-name">BSC</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/polygon.svg" alt="">
+			</span>
+			<span class="select__item-name">Polygon</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/avalanche.svg" alt="">
+			</span>
+			<span class="select__item-name">Avalanche</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/fantom.svg" alt="">
+			</span>
+			<span class="select__item-name">Fantom</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/harmony.png" alt="">
+			</span>
+			<span class="select__item-name">Harmony</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/arbitrum.png" alt="">
+			</span>
+			<span class="select__item-name">Arbitrum</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/optimism.png" alt="">
+			</span>
+			<span class="select__item-name">Optimism</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/fuse.png" alt="">
+			</span>
+			<span class="select__item-name">Fuse</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/moon-river.png" alt="">
+			</span>
+			<span class="select__item-name">MoonRiver</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/cronos.png" alt="">
+			</span>
+			<span class="select__item-name">Cronos</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/gnosis.png" alt="">
+			</span>
+			<span class="select__item-name">Gnosis</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/moon-beam.png" alt="">
+			</span>
+			<span class="select__item-name">MoonBeam</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/boba.png" alt="">
+			</span>
+			<span class="select__item-name">Boba</span>
+		</a>
+	</div>				
+</div>
+</div>  
+  <div class="choose-wallet-popup popup" id="chooseWalletPopup">
+	<div class="popup__container">
+		<div class="choose-wallet-popup__header">
+			<a class="popup__close" href="#"></a>
+			<h1 class="choose-wallet-popup__title popup__title">Connect wallet</h1>	
+		</div>			
+		
+		<!-- Loader -->
+		
+		<!-- <div class="choose-wallet-popup__loading">
+			<span class="loader-large"></span>
+			<span>Loading...</span>
+		</div> -->
+
+		<!--  -->
+
+		<ol class="choose-wallet-popup__steps-list steps-list">
+			<li>
+				<p>
+					Please read and accept our <a class="text-link" href="">Terms of&nbsp;Service</a> and <a class="text-link" href="">Privacy Policy</a>
+				</p>
+				<label class="checkbox">
+					<input class="checkbox__input" type="checkbox">
+					<span class="checkbox__btn"></span>
+					<span>
+						I read and accept
+					</span>
+				</label>								
+			</li>
+			<li>Choose wallet</li>
+		</ol>
+		
+		<div class="choose-wallet-popup__wallet-list disabled">
+			<button class="choose-wallet-popup__wallet-item">
+				<span>Metamask</span>			
+				<img src="img/metamask-logo.png" alt="">				
+			</button>
+			<button class="choose-wallet-popup__wallet-item">				
+				<span>Ever Wallet</span>	
+				<img src="img/ever-wallet-icon.png" alt="">
+			</button>		
+		</div>		
+	</div>
+</div>
+  <div class="search-popup popup" id="searchPopup">
+	<div class="popup__container">
+		<a class="popup__close"></a>
+		<div class="search-popup__input-block">
+			<input class="search-popup__input" type="text" placeholder="Search for bridges">
+			<button class="search-popup__button">Search</button>
+		</div>
+		
+		<!-- No results -->
+		
+		<!-- <div class="search-popup__no-results">
+			<h2>No results for 'wasd'</h2>
+			<span>We couldn't find anything matching your search.<br>Try again with a different term.</span>
+		</div> -->
+
+		<!--  -->
+
+		<div class="search-popup__results">
+			<h2 class="search-popup__results-title">Bridges</h2>
+			<ul class="search-popup__results-list">
+				<li class="search-popup__results-item">
+					<img src="img/tokens-logos/token.png" alt="">
+					<span>Transitswap</span>
+				</li>
+				<li class="search-popup__results-item">
+					<img src="img/tokens-logos/token.png" alt="">
+					<span>Transitswap</span>
+				</li>
+				<li class="search-popup__results-item">
+					<img src="img/tokens-logos/token.png" alt="">
+					<span>Transitswap</span>
+				</li>
+				<li class="search-popup__results-item">
+					<img src="img/tokens-logos/token.png" alt="">
+					<span>Transitswap</span>
+				</li>
+				<li class="search-popup__results-item">
+					<img src="img/tokens-logos/token.png" alt="">
+					<span>Transitswap</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>  
+  <div class="wallet-actions-popup popup" id="walletActionsPopup">
+	<div class="popup__container">
+		<a class="popup__close" href="#"></a>
+		<div class="wallet-actions-popup__logo">
+			<img class="wallet-actions-popup__logo-wallet" src="img/metamask-logo-large.png" alt="">
+			<img class="wallet-actions-popup__logo-network" src="img/tokens-logos/network.png" alt="">
+		</div>
+		
+		<h1 class="wallet-actions-popup__title popup__title">Metamask</h1>
+		<div class="wallet-actions-popup__wallet-info">
+			<div class="wallet-actions-popup__copy-field">
+				<span>0x07A0...B57F</span>
+				<button class="copy-button"></button>
+			</div>
+			<div class="wallet-actions-popup__balance">
+				<span>8.531 МАTIC</span>
+				<img src="img/wallet-icon_blue.svg" alt="">
+			</div>
+		</div>		
+		<!-- <span class="wallet-actions-popup__copied">
+			Copied
+			<img src="img/copied.svg" alt="">
+		</span> -->
+		<div class="wallet-actions-popup__actions">
+			<div class="wallet-actions-popup__select select select_outlined">
+				<div class="choose-token-popup__button select__button">
+					All networks
+				</div>
+				<div class="select__dropdown">
+					<a class="select__item select__item_active" href="">
+						<span class="select__item-logo">
+							<img src="img/currencies-logos/eth.svg" alt="">
+						</span>
+						<span class="select__item-name">Etherium</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="img/currencies-logos/bnb.svg" alt="">
+						</span>
+						<span class="select__item-name">BSC</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="img/currencies-logos/polygon.svg" alt="">
+						</span>
+						<span class="select__item-name">Polygon</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="img/currencies-logos/avalanche.svg" alt="">
+						</span>
+						<span class="select__item-name">Avalanche</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="img/currencies-logos/fantom.svg" alt="">
+						</span>
+						<span class="select__item-name">Fantom</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="img/currencies-logos/harmony.png" alt="">
+						</span>
+						<span class="select__item-name">Harmony</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="img/currencies-logos/arbitrum.png" alt="">
+						</span>
+						<span class="select__item-name">Arbitrum</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="img/currencies-logos/optimism.png" alt="">
+						</span>
+						<span class="select__item-name">Optimism</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="img/currencies-logos/fuse.png" alt="">
+						</span>
+						<span class="select__item-name">Fuse</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="img/currencies-logos/moon-river.png" alt="">
+						</span>
+						<span class="select__item-name">MoonRiver</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="img/currencies-logos/cronos.png" alt="">
+						</span>
+						<span class="select__item-name">Cronos</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="img/currencies-logos/gnosis.png" alt="">
+						</span>
+						<span class="select__item-name">Gnosis</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="img/currencies-logos/moon-beam.png" alt="">
+						</span>
+						<span class="select__item-name">MoonBeam</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="img/currencies-logos/boba.png" alt="">
+						</span>
+						<span class="select__item-name">Boba</span>
+					</a>
+				</div>
+			</div>
+			<button class="wallet-actions-popup__switch-network">
+				<img src="img/exchange-arrows.svg" alt="">
+				Switch network
+			</button>
+
+			<div class="switch-network-popup inner-popup">
+	<div class="switch-network-popup__header">
+		<button class="switch-network-popup__back popup-back-btn inner-popup-close">Back</button>
+		<h2 class="switch-network-popup__title popup__title">Switch network</h2>
+		<button class="switch-network-popup__close inner-popup-close"></button>
+	</div>
+	<div class="switch-network-popup__networks-list">
+		<a class="select__item select__item_active" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/eth.svg" alt="">
+			</span>
+			<span class="select__item-name">Etherium</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/bnb.svg" alt="">
+			</span>
+			<span class="select__item-name">BSC</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/polygon.svg" alt="">
+			</span>
+			<span class="select__item-name">Polygon</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/avalanche.svg" alt="">
+			</span>
+			<span class="select__item-name">Avalanche</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/fantom.svg" alt="">
+			</span>
+			<span class="select__item-name">Fantom</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/harmony.png" alt="">
+			</span>
+			<span class="select__item-name">Harmony</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/arbitrum.png" alt="">
+			</span>
+			<span class="select__item-name">Arbitrum</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/optimism.png" alt="">
+			</span>
+			<span class="select__item-name">Optimism</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/fuse.png" alt="">
+			</span>
+			<span class="select__item-name">Fuse</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/moon-river.png" alt="">
+			</span>
+			<span class="select__item-name">MoonRiver</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/cronos.png" alt="">
+			</span>
+			<span class="select__item-name">Cronos</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/gnosis.png" alt="">
+			</span>
+			<span class="select__item-name">Gnosis</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/moon-beam.png" alt="">
+			</span>
+			<span class="select__item-name">MoonBeam</span>
+		</a>
+		<a class="select__item" href="">
+			<span class="select__item-logo">
+				<img src="img/currencies-logos/boba.png" alt="">
+			</span>
+			<span class="select__item-name">Boba</span>
+		</a>
+	</div>				
+</div>
+
+			<button class="wallet-actions-popup__disconnect btn btn_middle btn_outlined-red">
+				<img src="img/close-circle.svg" alt="">
+				Disconnect
+			</button>
+		</div>
+	</div>
+</div>  
+  <div class="routes-popup popup side-popup" id="routesPopup">
+	<div class="popup__container">
+		<a class="popup__close" href="#"></a>
+		<div class="routes-popup__head">
+			<h1 class="routes-popup__title popup__title">Routes</h1>
+			<span class="routes-popup__counter">5</span>
+			<!-- <div class="select select_outlined select_smallest">
+				<div class="select__button">
+					All routes
+				</div>
+				<div class="select__dropdown">
+					<a class="select__item select__item_active" href="">
+						<span class="select__item-logo">
+							<img src="img/currencies-logos/eth.svg" alt="">
+						</span>
+						<span class="select__item-name">Etherium</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="img/currencies-logos/bnb.svg" alt="">
+						</span>
+						<span class="select__item-name">Binance Smart Chain</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="img/currencies-logos/polygon.svg" alt="">
+						</span>
+						<span class="select__item-name">Polygon</span>
+					</a>
+				</div>
+			</div>         -->
+		</div>  
+		<div class="routes-popup__wrap">
+			<div class="routes-popup__content">
+				<div class="estimated-token estimated-token_popup">
+					<div class="estimated-token__container">
+						<span class="estimated-token__badge cheapest">Cheapest</span>
+						<label class="estimated-token__checkbox round-checkbox">
+							<input class="round-checkbox__input" type="checkbox">
+							<span class="round-checkbox__button"></span>
+						</label>
+						<span class="estimated-token__via">via</span>
+						<div class="estimated-token__route-logos route-logos">
+							<img class="estimated-token__route-logo route-logo" src="img/route-item-logo.png" alt="">
+							<img class="estimated-token__route-logo route-logo" src="img/route-item-logo2.png" alt="">
+							<img class="estimated-token__route-logo route-logo" src="img/route-item-logo.png" alt="">
+						</div>
+						<div class="estimated-token__parameters">
+							<span class="estimated-token__parameter">
+								<img src="img/est-icon-time.svg" alt="">
+								01:53
+							</span>
+							<span class="estimated-token__parameter">
+								<img src="img/est-icon-fuel.svg" alt="">
+								$20.93
+							</span>
+							<span class="estimated-token__parameter">
+								<img src="img/est-icon-change.svg" alt="">
+								2
+							</span>
+						</div>
+						<span class="estimated-token__title">
+							<span class="estimated-token__title-block">
+								5 USDT
+								<span class="estimated-token__subtitle">$4.9</span>
+							</span>                
+						</span>
+					</div>            
+				</div>
+				<div class="estimated-token estimated-token_popup active">
+					<div class="estimated-token__container">
+						<span class="estimated-token__badge fastest">Fastest</span>
+						<label class="estimated-token__checkbox round-checkbox">
+							<input class="round-checkbox__input" type="checkbox">
+							<span class="round-checkbox__button"></span>
+						</label>
+						<span class="estimated-token__via">via</span>
+						<div class="estimated-token__route-logos route-logos">
+							<img class="estimated-token__route-logo route-logo" src="img/route-item-logo.png" alt="">
+							<img class="estimated-token__route-logo route-logo" src="img/route-item-logo2.png" alt="">                
+						</div>
+						<div class="estimated-token__parameters">
+							<span class="estimated-token__parameter">
+								<img src="img/est-icon-time.svg" alt="">
+								01:53
+							</span>
+							<span class="estimated-token__parameter">
+								<img src="img/est-icon-fuel.svg" alt="">
+								$20.93
+							</span>
+							<span class="estimated-token__parameter">
+								<img src="img/est-icon-change.svg" alt="">
+								2
+							</span>
+						</div>
+						<span class="estimated-token__title">
+							<span class="estimated-token__title-block">
+								5 USDT
+								<span class="estimated-token__subtitle">$4.9</span>
+							</span>
+						</span>
+					</div>
+					<div class="estimated-token__content">
+						<div class="estimated-token__point">
+							<div class="estimated-token__point-head">
+								<img class="estimated-token__point-logo" src="img/currencies-logos/example-logo.png" alt="">
+								<div class="estimated-token__point-description">
+									<h3 class="estimated-token__point-title">1Inch</h3>
+									<div class="estimated-token__point-parameters">
+										<span class="estimated-token__point-parameter">
+											<img src="img/time-icon_gray.svg" alt="">
+											10 min
+										</span>
+										<span class="estimated-token__point-parameter">
+											<img src="img/fuel-icon_gray.svg" alt="">
+											0.00735 MATIC
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="estimated-token__point-content">
+								<div class="estimated-token__point-content-start">
+									<div class="estimated-token__point-content-logo">
+										<img class="estimated-token__point-content-token" src="img/tokens-logos/token.png" alt="">
+										<img class="estimated-token__point-content-network" src="img/tokens-logos/network.png" alt="">
+									</div>
+									<div class="estimated-token__point-content-title">
+										<h4 class="estimated-token__point-content-value">5 USDT</h4>
+										<span class="estimated-token__point-content-token-name">Polygon</span>
+									</div>
+								</div>
+								<span class="estimated-token__point-content-middle">
+									<img src="img/swap-icon.svg" alt="">
+									Swap to 0.004599 Ethereum
+								</span>
+								<div class="estimated-token__point-content-end">
+									<div class="estimated-token__point-content-logo">
+										<img class="estimated-token__point-content-token" src="img/tokens-logos/token.png" alt="">
+										<img class="estimated-token__point-content-network" src="img/tokens-logos/network.png" alt="">
+									</div>
+									<div class="estimated-token__point-content-title">
+										<h4 class="estimated-token__point-content-value">5 USDT</h4>
+										<span class="estimated-token__point-content-token-name">Polygon</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="estimated-token__point">
+							<div class="estimated-token__point-head">
+								<img class="estimated-token__point-logo" src="img/currencies-logos/example-logo.png" alt="">
+								<div class="estimated-token__point-description">
+									<h3 class="estimated-token__point-title">1Inch</h3>
+									<div class="estimated-token__point-parameters">
+										<span class="estimated-token__point-parameter">
+											<img src="img/time-icon_gray.svg" alt="">
+											10 min
+										</span>                      
+									</div>
+								</div>
+							</div>
+							<div class="estimated-token__point-content">
+								<div class="estimated-token__point-content-start">
+									<div class="estimated-token__point-content-logo">
+										<img class="estimated-token__point-content-token" src="img/tokens-logos/token.png" alt="">
+										<img class="estimated-token__point-content-network" src="img/tokens-logos/network.png" alt="">
+									</div>
+									<div class="estimated-token__point-content-title">
+										<h4 class="estimated-token__point-content-value">5 USDT</h4>
+										<span class="estimated-token__point-content-token-name">Polygon</span>
+									</div>
+								</div>
+								<span class="estimated-token__point-content-middle">
+									<img src="img/transfer-icon.svg" alt="">
+									Transfer to 0.004599 Wrapped Ethereum
+								</span>
+								<div class="estimated-token__point-content-end">
+									<div class="estimated-token__point-content-logo">
+										<img class="estimated-token__point-content-token" src="img/tokens-logos/token.png" alt="">
+										<img class="estimated-token__point-content-network" src="img/tokens-logos/network.png" alt="">
+									</div>
+									<div class="estimated-token__point-content-title">
+										<h4 class="estimated-token__point-content-value">5 USDT</h4>
+										<span class="estimated-token__point-content-token-name">Polygon</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="estimated-token__point">
+							<div class="estimated-token__point-head">
+								<img class="estimated-token__point-logo" src="img/currencies-logos/example-logo.png" alt="">
+								<div class="estimated-token__point-description">
+									<h3 class="estimated-token__point-title">1Inch</h3>
+									<div class="estimated-token__point-parameters">
+										<span class="estimated-token__point-parameter">
+											<img src="img/time-icon_gray.svg" alt="">
+											10 min
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="estimated-token__point-content">
+								<div class="estimated-token__point-content-start">
+									<div class="estimated-token__point-content-logo">
+										<img class="estimated-token__point-content-token" src="img/tokens-logos/token.png" alt="">
+										<img class="estimated-token__point-content-network" src="img/tokens-logos/network.png" alt="">
+									</div>
+									<div class="estimated-token__point-content-title">
+										<h4 class="estimated-token__point-content-value">5 USDT</h4>
+										<span class="estimated-token__point-content-token-name">Polygon</span>
+									</div>
+								</div>
+								<span class="estimated-token__point-content-middle">
+									<img src="img/transfer-icon.svg" alt="">
+									Transfer to 0.004599 Wrapped Ethereum
+								</span>
+								<div class="estimated-token__point-content-end">
+									<div class="estimated-token__point-content-logo">
+										<img class="estimated-token__point-content-token" src="img/tokens-logos/token.png" alt="">
+										<img class="estimated-token__point-content-network" src="img/tokens-logos/network.png" alt="">
+									</div>
+									<div class="estimated-token__point-content-title">
+										<h4 class="estimated-token__point-content-value">5 USDT</h4>
+										<span class="estimated-token__point-content-token-name">Polygon</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="estimated-token__point">
+							<div class="estimated-token__point-head">
+								<img class="estimated-token__point-logo" src="img/currencies-logos/example-logo.png" alt="">
+								<div class="estimated-token__point-description">
+									<h3 class="estimated-token__point-title">1Inch</h3>
+									<div class="estimated-token__point-parameters">
+										<span class="estimated-token__point-parameter">
+											<img src="img/time-icon_gray.svg" alt="">
+											10 min
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="estimated-token__point-content">
+								<div class="estimated-token__point-content-start">
+									<div class="estimated-token__point-content-logo">
+										<img class="estimated-token__point-content-token" src="img/tokens-logos/token.png" alt="">
+										<img class="estimated-token__point-content-network" src="img/tokens-logos/network.png" alt="">
+									</div>
+									<div class="estimated-token__point-content-title">
+										<h4 class="estimated-token__point-content-value">5 USDT</h4>
+										<span class="estimated-token__point-content-token-name">Polygon</span>
+									</div>
+								</div>
+								<span class="estimated-token__point-content-middle">
+									<img src="img/transfer-icon.svg" alt="">
+									Transfer to 0.004599 Wrapped Ethereum
+								</span>
+								<div class="estimated-token__point-content-end">
+									<div class="estimated-token__point-content-logo">
+										<img class="estimated-token__point-content-token" src="img/tokens-logos/token.png" alt="">
+										<img class="estimated-token__point-content-network" src="img/tokens-logos/network.png" alt="">
+									</div>
+									<div class="estimated-token__point-content-title">
+										<h4 class="estimated-token__point-content-value">5 USDT</h4>
+										<span class="estimated-token__point-content-token-name">Polygon</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="estimated-token__under-dev">
+					<img src="img/code-icon.svg" alt="">
+					<span>Other routes under development</span>
+				</div>
+			</div>        
+		</div>    
+	</div>
+</div>  
+  <div class="is-submited-popup popup" id="isSubmitedPopup">
+	<div class="popup__container">
+		<a class="popup__close" href="#"></a>
+		<img class="is-submited-popup__success-icon" src="img/success-icon.svg" alt="">
+		<h2 class="popup__title">
+			Transaction is submited
+		</h2>
+		<span class="is-submited-popup__subtitle">Transaction 1 of 2</span>
+		<div class="is-submited-popup__transaction-path transaction-path">
+			<div class="transaction-path__item transaction-path__item_left">
+				<div class="transaction-path__item-container">
+					<div class="transaction-path__item-logo">
+						<img class="transaction-path__item-logo-main" src="img/tokens-logos/token.png" alt="">
+						<img class="transaction-path__item-logo-network" src="img/tokens-logos/network.png" alt="">
+					</div>
+					<h3 class="transaction-path__item-title">8.53153 MATIC</h3>
+					<span class="transaction-path__item-subtitle">Polygon</span>
+				</div>          
+			</div>
+			<div class="transaction-path__item transaction-path__item_right">
+				<div class="transaction-path__item-container">
+					<div class="transaction-path__item-logo">
+						<img class="transaction-path__item-logo-main" src="img/tokens-logos/token.png" alt="">
+						<img class="transaction-path__item-logo-network" src="img/tokens-logos/network.png" alt="">
+					</div>
+					<h3 class="transaction-path__item-title">8.53153 MATIC</h3>
+					<span class="transaction-path__item-subtitle">Polygon</span>
+				</div>          
+			</div>
+		</div>
+	</div>
+</div>    
+  
+  <!-- П Р О Ц Е С С И Н Г О В Ы Е  П О П А П Ы -->
+
+  <div class="transfer-approve-popup popup">
+	<div class="popup__container">
+		<a class="popup__close" href="#"></a>      
+		<h2 class="popup__title">Transfer Approve</h2>
+		<div class="transfer-approve-popup__token">
+			<img class="transfer-approve-popup__token-logo" src="img/tokens-logos/token.png" alt="">
+			<h3 class="transfer-approve-popup__token-title">USDT</h3>  
+		</div>  
+		<p class="popup__text">
+			Please approve USDT before you continue the cross-chain transfer.
+		</p>    
+	</div>
+</div>
+  <div class="allowance-popup popup popup_centered">
+	<div class="popup__container">
+		<a class="popup__close" href="#"></a>
+		<h2 class="popup__title">Allowance</h2>
+		<div class="popup__image">
+			<img src="img/processing-popups/allowed.svg" alt="">
+		</div>
+		<p class="popup__text">
+			Token USDT was successfully approved.<br>
+			Now you can proceed to transfer.
+		</p>
+		<button class="popup__cta">Got it</button>
+	</div>
+</div>
+  <div class="refused-popup popup popup_centered">
+	<div class="popup__container">
+		<a class="popup__close" href="#"></a>
+		<h2 class="popup__title">Refused</h2>
+		<div class="popup__image">
+			<img src="img/processing-popups/rejected.svg" alt="">
+		</div>
+		<p class="popup__text">
+			You have rejected the token approve.<br>
+			Please try again and give permission to spend<br>
+			your token to proceed the transfer.
+		</p>
+		<button class="popup__cta">Got it</button>
+	</div>
+</div>
+  <div class="rejected-popup popup popup_centered">
+	<div class="popup__container">
+		<a class="popup__close" href="#"></a>
+		<h2 class="popup__title">Rejected</h2>
+		<div class="popup__image">
+			<img src="img/processing-popups/rejected.svg" alt="">
+		</div>
+		<p class="popup__text">
+			Something went wrong. Try again.
+		</p>
+		<button class="popup__cta">Got it</button>
+	</div>
+</div>
+  <div class="transfer-submitted-popup popup popup_centered">
+	<div class="popup__container">
+		<a class="popup__close" href="#"></a>
+		<div class="popup__image">
+			<img src="img/processing-popups/rejected.svg" alt="">
+		</div>
+		<h2 class="popup__title">Transfer Submitted</h2>
+		<p class="popup__text">
+			Please allow 5-20 minutes for the funds to arrive<br>
+			at your wallet
+		</p>
+		<a class="external-link" href="">View on Etherscan</a>
+		<button class="popup__cta">Done</button>
+	</div>
+</div>
+  <div class="transfer-popup popup popup_centered" id="transferPopup">
+	<div class="popup__container">
+		<a class="popup__close" href="#"></a>      
+		<h2 class="popup__title">
+			Transfer
+		</h2>      
+		<div class="transfer-popup__transaction-path transaction-path">
+			<div class="transaction-path__item transaction-path__item_left">
+				<div class="transaction-path__item-container">
+					<div class="transaction-path__item-logo">
+						<img class="transaction-path__item-logo-main" src="img/tokens-logos/token.png" alt="">              
+					</div>
+					<h3 class="transaction-path__item-title">-5.000000 USDT</h3>
+					<span class="transfer-popup__item-subtitle transaction-path__item-subtitle">
+						<img src="img/tokens-logos/network.png" alt="">
+						Ethereum Network
+					</span>
+				</div>
+			</div>
+			<div class="transaction-path__item transaction-path__item_right">
+				<div class="transaction-path__item-container">
+					<div class="transaction-path__item-logo">
+						<img class="transaction-path__item-logo-main" src="img/tokens-logos/token.png" alt="">              
+					</div>
+					<h3 class="transaction-path__item-title">+0.257202 AVAX</h3>
+					<span class="transfer-popup__item-subtitle transaction-path__item-subtitle">
+						<img src="img/tokens-logos/network.png" alt="">
+						Avalanche Network
+					</span>
+				</div>
+			</div>        
+		</div>
+		<div class="transfer-popup__params">
+			<div class="transfer-popup__params-item">
+				<span class="transfer-popup__params-name">Bridge Rate</span>
+				<div  class="transfer-popup__rate-value">
+					<span>1 USDT on</span>
+					<img src="img/tokens-logos/network.png" alt="">
+					<span>≈ 0.051493 AVAX on</span>
+					<span>AVAX on</span>
+					<img src="img/tokens-logos/network.png" alt="">
+					<button class="transfer-popup__refresh-button refresh-button"></button>
+				</div>
+			</div>
+			<div class="transfer-popup__params-item">
+				<span class="transfer-popup__params-name">Fee</span>
+				<span class="transfer-popup__params-value">0.048561 AVAX</span>
+			</div>
+			<div class="transfer-popup__params-item">
+				<span class="transfer-popup__params-name">Slippage Tolerance</span>
+				<span class="transfer-popup__params-value">0.30%</span>
+			</div>
+			<div class="transfer-popup__params-item">
+				<span class="transfer-popup__params-name">Estimated Time of Transfer</span>
+				<span class="transfer-popup__params-value">5-20 minutes</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+  <!-- --- -->
+  
+  <div class="container">
+    
+    <header class="header header_inner">		
+
+		
+	
+			
+
+	<nav class="main-menu main-menu_header">
+	<ul class="main-menu__items">
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="">Cross-chain swap</a>
+		</li>
+		<li class="main-menu__item new">
+			<a class="main-menu__link" href="gas-station.html">
+				<svg width="24" height="25" viewBox="0 0 24 25" fill="#142438" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M18.92 11.2C18.561 11.2 18.2452 11.3392 18.0174 11.5732L18.0039 11.5867C17.7379 11.8464 17.5893 12.2162 17.6267 12.6089L17.6275 12.6177L17.6274 12.6177C17.6804 13.2527 18.2909 13.8 19.04 13.8H20.9828C21.1444 13.7896 21.25 13.6632 21.25 13.53V11.47C21.25 11.3368 21.1444 11.2104 20.9828 11.2H18.92ZM16.9493 10.52C17.4609 9.99815 18.1624 9.70001 18.92 9.70001H21C21.009 9.70001 21.0179 9.70017 21.0268 9.70049C21.9798 9.73453 22.75 10.5057 22.75 11.47V13.53C22.75 14.4943 21.9798 15.2655 21.0268 15.2995C21.0179 15.2998 21.009 15.3 21 15.3H19.04C17.6305 15.3 16.2624 14.2693 16.133 12.7467C16.0523 11.8845 16.3805 11.0791 16.9493 10.52Z" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M7 4.75C6.75575 4.75 6.52398 4.76744 6.30405 4.80128L6.28339 4.80416C5.17606 4.94312 4.30559 5.41721 3.70955 6.11651C3.11197 6.81761 2.75 7.79287 2.75 9V11C2.75 11.4142 2.41421 11.75 2 11.75C1.58579 11.75 1.25 11.4142 1.25 11V9C1.25 7.48713 1.70803 6.15239 2.56796 5.14349C3.42737 4.13519 4.64812 3.4999 6.08633 3.31713C6.38313 3.27204 6.68789 3.25 7 3.25H16C16.2697 3.25 16.5608 3.25975 16.8545 3.30711C18.305 3.47974 19.5395 4.1109 20.4103 5.12C21.2833 6.13163 21.75 7.4753 21.75 9V10.45C21.75 10.8642 21.4142 11.2 21 11.2H18.92C18.5609 11.2 18.2451 11.3392 18.0173 11.5732L18.0039 11.5867C17.7378 11.8464 17.5892 12.2162 17.6266 12.6089L17.6275 12.6177L17.6274 12.6177C17.6803 13.2527 18.2909 13.8 19.04 13.8H21C21.4142 13.8 21.75 14.1358 21.75 14.55V16C21.75 17.6704 21.1899 19.1207 20.1553 20.1553C19.1207 21.1899 17.6704 21.75 16 21.75H13.5C13.0858 21.75 12.75 21.4142 12.75 21C12.75 20.5858 13.0858 20.25 13.5 20.25H16C17.3296 20.25 18.3793 19.8101 19.0947 19.0947C19.8101 18.3793 20.25 17.3296 20.25 16V15.3H19.04C17.6304 15.3 16.2623 14.2693 16.133 12.7467C16.0522 11.8845 16.3805 11.079 16.9493 10.52C17.4609 9.99815 18.1623 9.70001 18.92 9.70001H20.25V9C20.25 7.7847 19.8817 6.80336 19.2747 6.09999C18.6691 5.39822 17.7851 4.92541 16.6634 4.79497C16.6511 4.79354 16.6389 4.79181 16.6267 4.78978C16.4468 4.7598 16.2446 4.75 16 4.75H7Z"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M9.14876 10.0713C9.51655 10.2094 9.73379 10.5052 9.8497 10.7857C9.96411 11.0625 10.0063 11.3791 10.0063 11.7V15.45H11.1875C11.7172 15.45 12.4051 15.6114 12.6913 16.2452C12.9777 16.8793 12.6433 17.501 12.2934 17.8964C12.2932 17.8967 12.2929 17.897 12.2927 17.8973L7.56297 23.2705C7.35101 23.5112 7.11016 23.721 6.84181 23.8533C6.57027 23.9872 6.21237 24.0666 5.84499 23.9287C5.4772 23.7906 5.25996 23.4949 5.14405 23.2144C5.02965 22.9375 4.9875 22.6209 4.9875 22.3V18.55H3.80625C3.28025 18.55 2.5942 18.3906 2.30751 17.7581C2.02159 17.1272 2.35117 16.5058 2.69609 16.1084L2.69952 16.1044L7.43078 10.7295C7.64274 10.4889 7.88359 10.2791 8.15194 10.1467C8.42348 10.0128 8.78138 9.93337 9.14876 10.0713ZM8.50625 11.7779L3.86556 17.05H5.7375C6.15171 17.05 6.4875 17.3858 6.4875 17.8V22.2221L11.1282 16.95H9.25625C8.84204 16.95 8.50625 16.6142 8.50625 16.2V11.7779Z" />
+				</svg>
+				Gas refill
+			</a>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="">Reports</a>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="analytics.html">Analytics</a>
+		</li>
+	</ul>
+</nav>
+
+	<div class="header__actions">
+		<div class="header__socials">
+			<a href="">
+				<img src="img/telegram-icon.svg" alt="">
+			</a>
+			<a href="">
+				<img src="img/twitter-icon.svg" alt="">
+			</a>
+			<a href="">
+				<img src="img/discord-icon.svg" alt="">
+			</a>
+		</div>
+		<div class="header__cta">
+			<!-- <a class="header__cta-link" href="">Blog</a> -->
+			<!-- <a class="btn" href="">Launch App</a> -->
+			<div class="btn-select">
+				<!-- NO WALLETS CONNECTED -->
+				<!-- <button class="btn-select__btn btn btn_dark">Connect wallets</button> -->
+				<!-- NO WALLETS CONNECTED -->
+				
+				<!-- ONE WALLET CONNECTED -->
+					
+				
+					
+				<!-- ONE WALLET CONNECTED -->
+				
+				<!-- MULTIPLE WALLETS CONNECTED -->
+				<!-- <button class="wallet-info-button wallet-info-button_multiple dark select-button">
+					<div class="wallet-info-button__logo">
+						<img class="wallet-info-button__main-logo" src="img/metamask-logo.png" alt="">
+						<img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt="">
+					</div>
+					<div class="wallet-info-button__logo">
+						<img class="wallet-info-button__main-logo" src="img/metamask-logo.png" alt="">
+						<img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt="">
+					</div>
+					<div class="wallet-info-button__logo">
+						<img class="wallet-info-button__main-logo" src="img/metamask-logo.png" alt="">
+						<img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt="">
+					</div>
+				</button> -->
+				<!-- MULTIPLE WALLETS CONNECTED -->
+				
+				<div class="btn-select__popup connect-wallets-popup connect-wallets-popup_dark">
+					<div class="connect-wallets-popup__content">
+						<h3 class="connect-wallets-popup__title">Select a wallet</h3>
+						<p class="connect-wallets-popup__description">
+							By connecting your wallet, you agree to our <a class="white-link" href="">Terms of services</a> and <a class="white-link" href="">Privacy Policy</a>
+						</p>
+						<div class="connect-wallets-popup__wallets">
+							<div class="connect-wallets-popup__wallet">
+								<div class="connect-wallets-popup__wallet-connected">
+									<div class="connect-wallets-popup__wallet-icons">
+										<img class="connect-wallets-popup__wallet-icon" src="img/metamask-wallet-icon.png" alt="">		
+										<img class="connect-wallets-popup__wallet-network-icon" src="img/tokens-logos/network.png" alt="">		
+									</div>
+									<div class="connect-wallets-popup__wallet-title">
+										<span class="connect-wallets-popup__wallet-name">0x07A0...B57F</span>
+										<span class="connect-wallets-popup__wallet-network">0 MATIC</span>
+									</div>
+								</div>
+								<button class="connect-wallets-popup__disconnect-btn">Disconnect</button>
+							</div>
+							
+							<div class="connect-wallets-popup__wallet">
+								<img class="connect-wallets-popup__wallet-icon" src="img/ever-wallet-icon.png" alt="">
+								<span class="connect-wallets-popup__wallet-name">EverWallet</span>
+								<button class="connect-wallets-popup__wallet-btn">Connect wallet</button>
+							</div>
+							
+							<div class="connect-wallets-popup__wallet">
+								<img class="connect-wallets-popup__wallet-icon" src="img/tron-wallet-icon.png" alt="">
+								<span class="connect-wallets-popup__wallet-name">TronWallet</span>
+								<button class="connect-wallets-popup__wallet-btn">Connect wallet</button>								
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>						
+		</div>
+	</div>
+
+	<button class="mobile-menu-btn"></button>
+</header>
+
+    <main class="main">       
+      <section class="page-container">
+        <div class="wrapper">
+          <div class="transfers-wrapper">
+            
+            <div class="transfers-container">			
+	
+	<div class="transfers__tabs">
+	<a href="../transfers-form.html" class="transfers__tab active">
+		<span>
+			<svg width="20" height="20" viewBox="0 0 20 20" fill="#292D32" xmlns="http://www.w3.org/2000/svg">
+				<path d="M12.9167 13.1263C12.7667 13.1263 12.6 13.118 12.4417 13.1096C12.1333 13.093 11.8833 12.843 11.8583 12.5346C11.675 10.2096 9.78333 8.32629 7.46666 8.14296C7.15833 8.11796 6.90832 7.86798 6.89166 7.55964C6.88332 7.40131 6.875 7.24297 6.875 7.08464C6.875 3.7513 9.58333 1.04297 12.9167 1.04297C16.25 1.04297 18.9583 3.7513 18.9583 7.08464C18.9583 10.418 16.25 13.1263 12.9167 13.1263ZM8.125 6.96796C10.6083 7.40129 12.6 9.39297 13.0333 11.8763C15.625 11.8096 17.7083 9.69297 17.7083 7.08464C17.7083 4.44297 15.5583 2.29297 12.9167 2.29297C10.3167 2.29297 8.19167 4.37629 8.125 6.96796Z"/>
+				<path d="M7.08268 18.9583C3.74935 18.9583 1.04102 16.25 1.04102 12.9167C1.04102 9.58333 3.74935 6.875 7.08268 6.875C7.23268 6.875 7.39936 6.88332 7.55769 6.89166C10.4994 7.12499 12.8827 9.50834 13.1077 12.4333C13.116 12.6 13.1243 12.7583 13.1243 12.9167C13.1243 16.25 10.416 18.9583 7.08268 18.9583ZM7.08268 8.125C4.44102 8.125 2.29102 10.275 2.29102 12.9167C2.29102 15.5583 4.44102 17.7083 7.08268 17.7083C9.72435 17.7083 11.8743 15.5583 11.8743 12.9167C11.8743 12.7833 11.866 12.65 11.8577 12.525C11.6744 10.2167 9.79101 8.32499 7.46601 8.14166C7.34934 8.13332 7.21602 8.125 7.08268 8.125Z"/>
+				<path d="M2.49935 6.11797C2.30768 6.11797 2.12434 6.08463 1.941 6.00963C1.391 5.78463 1.04102 5.2513 1.04102 4.65963V2.5013C1.04102 1.7013 1.69935 1.04297 2.49935 1.04297H4.65768C5.24935 1.04297 5.77434 1.39296 6.00768 1.94296C6.23268 2.49296 6.10767 3.11796 5.691 3.53463L3.53267 5.69296C3.24934 5.96796 2.88268 6.11797 2.49935 6.11797ZM2.49935 2.29297C2.38268 2.29297 2.29102 2.38464 2.29102 2.5013V4.65963C2.29102 4.78463 2.37434 4.83464 2.41601 4.85131C2.46601 4.86797 2.55769 4.89296 2.64103 4.80963L4.79936 2.6513C4.88269 2.56796 4.86601 2.47631 4.84101 2.42631C4.81601 2.37631 4.766 2.30131 4.64934 2.30131H2.49935V2.29297Z"/>
+				<path d="M17.4997 18.96H15.3414C14.7497 18.96 14.2247 18.61 13.9914 18.06C13.7664 17.51 13.8914 16.885 14.308 16.4683L16.4664 14.31C16.883 13.8933 17.508 13.7683 18.058 13.9933C18.608 14.2183 18.958 14.7516 18.958 15.3433V17.5016C18.958 18.3016 18.2997 18.96 17.4997 18.96ZM17.4913 15.135C17.4497 15.135 17.3997 15.1516 17.3497 15.2016L15.1914 17.36C15.108 17.4433 15.1247 17.535 15.1497 17.585C15.1747 17.635 15.2247 17.71 15.3414 17.71H17.4997C17.6164 17.71 17.708 17.6183 17.708 17.5016V15.3433C17.708 15.2183 17.6247 15.1683 17.583 15.1516C17.558 15.1433 17.5247 15.135 17.4913 15.135Z"/>
+			</svg>
+			Transfer
+		</span>
+	</a>
+	<a href="../transfers-history.html" class="transfers__tab ">
+		<span>
+			<svg width="20" height="20" viewBox="0 0 20 20" fill="#292D32" xmlns="http://www.w3.org/2000/svg">
+				<path d="M9.99935 18.9596C5.05768 18.9596 1.04102 14.943 1.04102 10.0013C1.04102 5.05964 5.05768 1.04297 9.99935 1.04297C14.941 1.04297 18.9577 5.05964 18.9577 10.0013C18.9577 14.943 14.941 18.9596 9.99935 18.9596ZM9.99935 2.29297C5.74935 2.29297 2.29102 5.7513 2.29102 10.0013C2.29102 14.2513 5.74935 17.7096 9.99935 17.7096C14.2494 17.7096 17.7077 14.2513 17.7077 10.0013C17.7077 5.7513 14.2494 2.29297 9.99935 2.29297Z"/>
+				<path d="M13.0909 13.2745C12.9826 13.2745 12.8742 13.2495 12.7742 13.1828L10.1909 11.6411C9.54922 11.2578 9.07422 10.4161 9.07422 9.67448V6.25781C9.07422 5.91615 9.35755 5.63281 9.69922 5.63281C10.0409 5.63281 10.3242 5.91615 10.3242 6.25781V9.67448C10.3242 9.97448 10.5742 10.4161 10.8326 10.5661L13.4159 12.1078C13.7159 12.2828 13.8076 12.6661 13.6326 12.9661C13.5076 13.1661 13.2992 13.2745 13.0909 13.2745Z"/>
+			</svg>					
+			History
+		</span>
+	</a>
+	<a href="../transfers-faq.html" class="transfers__tab ">
+		<span>
+			<svg width="20" height="20" viewBox="0 0 20 20" fill="#292D32" xmlns="http://www.w3.org/2000/svg">
+				<path d="M12.9167 13.1263C12.7667 13.1263 12.6 13.118 12.4417 13.1096C12.1333 13.093 11.8833 12.843 11.8583 12.5346C11.675 10.2096 9.78333 8.32629 7.46666 8.14296C7.15833 8.11796 6.90832 7.86798 6.89166 7.55964C6.88332 7.40131 6.875 7.24297 6.875 7.08464C6.875 3.7513 9.58333 1.04297 12.9167 1.04297C16.25 1.04297 18.9583 3.7513 18.9583 7.08464C18.9583 10.418 16.25 13.1263 12.9167 13.1263ZM8.125 6.96796C10.6083 7.40129 12.6 9.39297 13.0333 11.8763C15.625 11.8096 17.7083 9.69297 17.7083 7.08464C17.7083 4.44297 15.5583 2.29297 12.9167 2.29297C10.3167 2.29297 8.19167 4.37629 8.125 6.96796Z"/>
+				<path d="M7.08268 18.9583C3.74935 18.9583 1.04102 16.25 1.04102 12.9167C1.04102 9.58333 3.74935 6.875 7.08268 6.875C7.23268 6.875 7.39936 6.88332 7.55769 6.89166C10.4994 7.12499 12.8827 9.50834 13.1077 12.4333C13.116 12.6 13.1243 12.7583 13.1243 12.9167C13.1243 16.25 10.416 18.9583 7.08268 18.9583ZM7.08268 8.125C4.44102 8.125 2.29102 10.275 2.29102 12.9167C2.29102 15.5583 4.44102 17.7083 7.08268 17.7083C9.72435 17.7083 11.8743 15.5583 11.8743 12.9167C11.8743 12.7833 11.866 12.65 11.8577 12.525C11.6744 10.2167 9.79101 8.32499 7.46601 8.14166C7.34934 8.13332 7.21602 8.125 7.08268 8.125Z"/>
+				<path d="M2.49935 6.11797C2.30768 6.11797 2.12434 6.08463 1.941 6.00963C1.391 5.78463 1.04102 5.2513 1.04102 4.65963V2.5013C1.04102 1.7013 1.69935 1.04297 2.49935 1.04297H4.65768C5.24935 1.04297 5.77434 1.39296 6.00768 1.94296C6.23268 2.49296 6.10767 3.11796 5.691 3.53463L3.53267 5.69296C3.24934 5.96796 2.88268 6.11797 2.49935 6.11797ZM2.49935 2.29297C2.38268 2.29297 2.29102 2.38464 2.29102 2.5013V4.65963C2.29102 4.78463 2.37434 4.83464 2.41601 4.85131C2.46601 4.86797 2.55769 4.89296 2.64103 4.80963L4.79936 2.6513C4.88269 2.56796 4.86601 2.47631 4.84101 2.42631C4.81601 2.37631 4.766 2.30131 4.64934 2.30131H2.49935V2.29297Z"/>
+				<path d="M17.4997 18.96H15.3414C14.7497 18.96 14.2247 18.61 13.9914 18.06C13.7664 17.51 13.8914 16.885 14.308 16.4683L16.4664 14.31C16.883 13.8933 17.508 13.7683 18.058 13.9933C18.608 14.2183 18.958 14.7516 18.958 15.3433V17.5016C18.958 18.3016 18.2997 18.96 17.4997 18.96ZM17.4913 15.135C17.4497 15.135 17.3997 15.1516 17.3497 15.2016L15.1914 17.36C15.108 17.4433 15.1247 17.535 15.1497 17.585C15.1747 17.635 15.2247 17.71 15.3414 17.71H17.4997C17.6164 17.71 17.708 17.6183 17.708 17.5016V15.3433C17.708 15.2183 17.6247 15.1683 17.583 15.1516C17.558 15.1433 17.5247 15.135 17.4913 15.135Z"/>
+			</svg>
+			FAQ
+		</span>
+	</a>
+</div>
+	
+	<div class="transfers transfers_warning">					
+		
+		
+
+		<div class="transfers__content">
+			<div class="transfers__header">
+				<button class="back-btn"></button>
+				<div class="transfers__title-block">
+					<h1 class="transfers__title">Swap process</h1>
+					<div class="transfers__trx-id">
+						<span>ID:</span>
+						<span>1089wf6</span>
+						<button class="copy-btn"></button>
+					</div>
+				</div>
+				<span class="loader-dark"></span>
+			</div>
+			<div class="transfers__swaping-tokens">
+				<div class="token-cnt column">
+	<div class="token-cnt__icon">
+		<img class="token-cnt__icon-token" src="img/tokens-logos/token.png" width="32" height="32" alt="">
+		<img class="token-cnt__icon-network" src="img/tokens-logos/network.png" width="14" height="14" alt="">
+	</div>
+	<div class="token-cnt__info">
+		<span class="token-cnt__value">5.0000 USDT</span>
+		<div class="token-cnt__caption">
+			<span>$5.63</span>
+			<span>on&nbsp;Avalanche</span>
+		</div>
+	</div>
+</div>
+				
+				<div class="transfers__indicator">
+					<div class="transfers__indicator-networks">
+						<img src="img/tokens-logos/network.png" width="14" height="14" alt="">
+						<img src="img/tokens-logos/network-2.svg" width="14" height="14" alt="">
+					</div>
+					<img class="transfers__arrow" src="img/transfer-arrow.svg" width="24" height="16" alt="">
+					<!-- <img class="transfers__success-icon" src="img/proccess-success-icon.svg" width="17" height="17" alt=""> -->
+				</div>
+				
+				<div class="token-cnt column">
+	<div class="token-cnt__icon">
+		<img class="token-cnt__icon-token" src="img/tokens-logos/token.png" width="32" height="32" alt="">
+		<img class="token-cnt__icon-network" src="img/tokens-logos/network.png" width="14" height="14" alt="">
+	</div>
+	<div class="token-cnt__info">
+		<span class="token-cnt__value">5.0000 USDT</span>
+		<div class="token-cnt__caption">
+			<span>$5.63</span>
+			<span>on&nbsp;Avalanche</span>
+		</div>
+	</div>
+</div>
+			</div>
+						
+			<div class="transfers__notification transfers__notification_attention">
+	<a class="link" href="">Сonnect your wallet to the Avalanche network</a>
+</div>			
+			
+		</div>	
+		
+		<a class="transfers__telegram-link" href="">
+			<img src="img/telegram-icon_small.svg" width="14" height="12" alt="">
+			Any questions — contact support
+		</a>
+	</div>
+
+	<span class="transfers-container__subscription">Open beta: please use at your own risk.</span>
+</div>                         
+
+          </div>          
+        </div>        
+      </section>    
+    </main>    
+    
+    
+    <footer class="footer @@className">
+	<div class="wrap">
+		<div class="footer__cnt">
+			<a class="footer__logo" href="/">
+				<img src="img/chainspot-logo_white.svg" alt="">
+			</a>
+
+			<div class="footer__menu-block">
+
+				<nav class="main-menu footer">
+	<ul class="main-menu__items">
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="">Cross-chain swap</a>
+		</li>
+		<li class="main-menu__item new">
+			<a class="main-menu__link" href="gas-station.html">
+				<svg width="24" height="25" viewBox="0 0 24 25" fill="#142438" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M18.92 11.2C18.561 11.2 18.2452 11.3392 18.0174 11.5732L18.0039 11.5867C17.7379 11.8464 17.5893 12.2162 17.6267 12.6089L17.6275 12.6177L17.6274 12.6177C17.6804 13.2527 18.2909 13.8 19.04 13.8H20.9828C21.1444 13.7896 21.25 13.6632 21.25 13.53V11.47C21.25 11.3368 21.1444 11.2104 20.9828 11.2H18.92ZM16.9493 10.52C17.4609 9.99815 18.1624 9.70001 18.92 9.70001H21C21.009 9.70001 21.0179 9.70017 21.0268 9.70049C21.9798 9.73453 22.75 10.5057 22.75 11.47V13.53C22.75 14.4943 21.9798 15.2655 21.0268 15.2995C21.0179 15.2998 21.009 15.3 21 15.3H19.04C17.6305 15.3 16.2624 14.2693 16.133 12.7467C16.0523 11.8845 16.3805 11.0791 16.9493 10.52Z" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M7 4.75C6.75575 4.75 6.52398 4.76744 6.30405 4.80128L6.28339 4.80416C5.17606 4.94312 4.30559 5.41721 3.70955 6.11651C3.11197 6.81761 2.75 7.79287 2.75 9V11C2.75 11.4142 2.41421 11.75 2 11.75C1.58579 11.75 1.25 11.4142 1.25 11V9C1.25 7.48713 1.70803 6.15239 2.56796 5.14349C3.42737 4.13519 4.64812 3.4999 6.08633 3.31713C6.38313 3.27204 6.68789 3.25 7 3.25H16C16.2697 3.25 16.5608 3.25975 16.8545 3.30711C18.305 3.47974 19.5395 4.1109 20.4103 5.12C21.2833 6.13163 21.75 7.4753 21.75 9V10.45C21.75 10.8642 21.4142 11.2 21 11.2H18.92C18.5609 11.2 18.2451 11.3392 18.0173 11.5732L18.0039 11.5867C17.7378 11.8464 17.5892 12.2162 17.6266 12.6089L17.6275 12.6177L17.6274 12.6177C17.6803 13.2527 18.2909 13.8 19.04 13.8H21C21.4142 13.8 21.75 14.1358 21.75 14.55V16C21.75 17.6704 21.1899 19.1207 20.1553 20.1553C19.1207 21.1899 17.6704 21.75 16 21.75H13.5C13.0858 21.75 12.75 21.4142 12.75 21C12.75 20.5858 13.0858 20.25 13.5 20.25H16C17.3296 20.25 18.3793 19.8101 19.0947 19.0947C19.8101 18.3793 20.25 17.3296 20.25 16V15.3H19.04C17.6304 15.3 16.2623 14.2693 16.133 12.7467C16.0522 11.8845 16.3805 11.079 16.9493 10.52C17.4609 9.99815 18.1623 9.70001 18.92 9.70001H20.25V9C20.25 7.7847 19.8817 6.80336 19.2747 6.09999C18.6691 5.39822 17.7851 4.92541 16.6634 4.79497C16.6511 4.79354 16.6389 4.79181 16.6267 4.78978C16.4468 4.7598 16.2446 4.75 16 4.75H7Z"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M9.14876 10.0713C9.51655 10.2094 9.73379 10.5052 9.8497 10.7857C9.96411 11.0625 10.0063 11.3791 10.0063 11.7V15.45H11.1875C11.7172 15.45 12.4051 15.6114 12.6913 16.2452C12.9777 16.8793 12.6433 17.501 12.2934 17.8964C12.2932 17.8967 12.2929 17.897 12.2927 17.8973L7.56297 23.2705C7.35101 23.5112 7.11016 23.721 6.84181 23.8533C6.57027 23.9872 6.21237 24.0666 5.84499 23.9287C5.4772 23.7906 5.25996 23.4949 5.14405 23.2144C5.02965 22.9375 4.9875 22.6209 4.9875 22.3V18.55H3.80625C3.28025 18.55 2.5942 18.3906 2.30751 17.7581C2.02159 17.1272 2.35117 16.5058 2.69609 16.1084L2.69952 16.1044L7.43078 10.7295C7.64274 10.4889 7.88359 10.2791 8.15194 10.1467C8.42348 10.0128 8.78138 9.93337 9.14876 10.0713ZM8.50625 11.7779L3.86556 17.05H5.7375C6.15171 17.05 6.4875 17.3858 6.4875 17.8V22.2221L11.1282 16.95H9.25625C8.84204 16.95 8.50625 16.6142 8.50625 16.2V11.7779Z" />
+				</svg>
+				Gas refill
+			</a>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="">Reports</a>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="analytics.html">Analytics</a>
+		</li>
+	</ul>
+</nav>
+
+				<!-- <div class="footer__contacts">
+					<span>Talk to us <a class="white-link" href="mailto:bridger@mail.io">bridger@mail.io</a></span>
+					<a class="btn btn_white" href="">Contact us</a>
+				</div> -->
+				<div class="footer__socials">
+					Follow us:
+					<a href="">
+						<img src="../img/telegram-icon_white.svg" alt="">
+					</a>
+					<a href="">
+						<img src="../img/twitter-icon_white.svg" alt="">
+					</a>
+				</div>
+			</div>
+
+			<div class="footer__copyrights-block">
+				<span class="footer__copyrights">© 2023 Chainspot. All rights reserved</span>				
+			</div>
+		</div>
+	</div>
+</footer>   
+  </div>  
+
+  <script src="./js/app.min.js"></script>
+</body>
+
+</html>

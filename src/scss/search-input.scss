@@ -1,0 +1,31 @@
+.search-input {
+	width: 100%;
+	max-width: 356px;
+	position: relative;
+
+	input {
+		height: 48px;
+		border: 1px solid #E0E7F2;
+		border-radius: 8px;
+		font-size: 16px;
+		outline: none;
+		width: 100%;
+		padding: 0 50px 0 13px;
+
+		&::placeholder {
+			color: rgba(0, 32, 51, 0.35);
+		}
+	}
+	
+	&__btn {
+		width: 20px;
+		height: 20px;
+		background: url('../img/search-icon.svg') no-repeat center;
+		background-size: contain;
+		cursor: pointer;
+		position: absolute;
+		right: 15px;
+		top: calc(50% - 10px);
+		border: none;
+	}
+}

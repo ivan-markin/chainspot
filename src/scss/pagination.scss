@@ -1,0 +1,56 @@
+.pagination {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	font-size: 16px;
+
+	input {
+		width: 48px;
+		height: 48px;
+		border: 1px solid #E0E7F2;
+		border-radius: 6px;
+		text-align: center;
+		outline: none;
+	}
+
+	&__controls {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 48px;
+		height: 48px;		
+		border: 1px solid #E0E7F2;
+		border-radius: 6px;
+		background: none;
+		cursor: pointer;
+
+		&::after {
+			content: '';
+			width: 24px;
+			height: 8px;
+			background: url('../img/pagination-arrow.svg') no-repeat center;
+			background-size: contain;
+		}
+
+		&_prev::after {
+			transform: rotate(180deg);
+		}
+
+		&:disabled {
+			background: #EDF2F4;
+			border-color: #EDF2F4;
+			cursor: auto;
+
+			&::after {
+				background-image: url('../img/pagination-arrow_disabled.svg');
+			}
+		}
+	}
+
+}

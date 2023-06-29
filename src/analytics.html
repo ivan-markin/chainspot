@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {})
+
+<body>      
+  @@include('html/mobile-menu.html', {})
+  
+  <div class="container">    
+
+    @@include('html/header.html', {
+      'className': ''
+    })
+
+    <main class="main main_nobg">      
+      <div class="data-v">
+        <div class="wrap">
+          <section class="data-v__header">
+            <div class="data-v__title-block">
+              <h1 class="page-title">Data visualization</h1>
+              <a class="arrowed-link" href="">View all metrics</a>
+              <div class="data-v__chainspot-badge chainspot-badge">
+                <img src="@img/chainspot-icon.png" width="19" height="19" alt="">
+                <span>chainspot.io</span>
+              </div>
+            </div>
+            <div class="data-v__timeline">
+              <span class="data-v__timeline-title">Timeline</span>
+              <div class="data-v__timeline-switch multi-switch">
+                <label class="multi-switch__item">
+                  <input type="radio" name="timeline" id="" checked>
+                  <span>1D</span>
+                </label>
+                <label class="multi-switch__item">
+                  <input type="radio" name="timeline" id="">
+                  <span>1W</span>
+                </label>
+                <label class="multi-switch__item">
+                  <input type="radio" name="timeline" id="">
+                  <span>1M</span>
+                </label>
+                <label class="multi-switch__item">
+                  <input type="radio" name="timeline" id="">
+                  <span>1Y</span>
+                </label>
+              </div>
+            </div>                        
+          </section>
+  
+          <section class="data-v__diagram">
+            <img src="@img/diagram-image.png" width="971" height="898" alt="">
+  
+            <div class="data-v__scale-control scale-control">
+              <button class="scale-control__btn scale-control__btn_up"></button>
+              <button class="scale-control__btn scale-control__btn_down"></button>
+            </div>
+          </section>
+  
+          <section class="data-v__info">
+            <div class="data-v__info-top data-v__info-top_gainer">
+              <span class="data-v__info-top-title data-v__info-title">Top gainer</span>
+              <div class="data-v__info-top-icon data-v__icon-cnt">
+                <img src="@img/ethereum-icon.svg" alt="">
+              </div>
+              <span class="data-v__info-top-network">Ethereum network</span>
+              <div class="data-v__info-top-value">
+                <span>$12,875</span>
+                <span class="data-v__info-top-grow up">10%</span>
+              </div>
+              <span class="data-v__info-top-subscr">Compared to $21,490 last week</span>
+            </div>
+            
+            <div class="data-v__info-general">
+              <div class="data-v__info-general-item">
+                <div class="data-v__info-general-icon data-v__icon-cnt">
+                  <img src="@img/token-of-bridges-icon.svg" alt="">
+                </div>
+                <span class="data-v__info-general-title data-v__info-title">Token of bridges</span>
+                <span class="data-v__info-value">50</span>
+              </div>
+              <div class="data-v__info-general-item">
+                <div class="data-v__info-general-icon data-v__icon-cnt">
+                  <img src="@img/active-users-icon.svg" alt="">
+                </div>
+                <span class="data-v__info-general-title data-v__info-title">Active users</span>
+                <span class="data-v__info-value">65,540</span>
+              </div>
+              <div class="data-v__info-general-item">
+                <div class="data-v__info-general-icon data-v__icon-cnt">
+                  <img src="./img/transfer-amounts-icon.svg" alt="">
+                </div>
+                <span class="data-v__info-general-title data-v__info-title">Transfer amounts</span>
+                <span class="data-v__info-value">18,240</span>
+              </div>
+            </div>
+            
+            <div class="data-v__info-top data-v__info-top_loser">
+              <span class="data-v__info-top-title data-v__info-title">Top loser</span>
+              <div class="data-v__info-top-icon data-v__icon-cnt">
+                <img src="@img/optimism-icon.svg" alt="">
+              </div>
+              <span class="data-v__info-top-network">Avalanche network</span>
+              <div class="data-v__info-top-value">
+                <span>$12,875</span>
+                <span class="data-v__info-top-grow down">10%</span>
+              </div>
+              <span class="data-v__info-top-subscr">Compared to $21,490 last week</span>
+            </div>
+          </section>
+        </div>        
+      </div>  
+      
+      <div class="analytics">
+        <div class="wrap">
+          <div class="analytics__header">
+            <h2 class="analytics__title page-title">Analytics</h2>
+            <div class="analytics__period">
+              <span class="analytics__period-title">Period</span>
+              <div class="analytics__period-switch multi-switch">
+                <label class="multi-switch__item">
+                  <input type="radio" name="period" id="" checked>
+                  <span>1D</span>
+                </label>
+                <label class="multi-switch__item">
+                  <input type="radio" name="period" id="">
+                  <span>1W</span>
+                </label>
+                <label class="multi-switch__item">
+                  <input type="radio" name="period" id="">
+                  <span>1M</span>
+                </label>
+                <label class="multi-switch__item">
+                  <input type="radio" name="period" id="">
+                  <span>1Y</span>
+                </label>
+              </div>
+            </div> 
+          </div>
+
+          <div class="analytics__grid">
+            
+            <div class="analytics__winner analytics__grid-item">
+              <div class="analytics__winner-header analytics__grid-item-header">
+                <div class="analytics__grid-item-title-cnt">
+                  <h3 class="analytics__grid-item-title">
+                    Network winner in a week
+                    <div class="chainspot-badge">
+                      <img src="@img/chainspot-icon.png" width="19" height="19" alt="">
+                      <span>chainspot.io</span>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+              <div class="analytics__winner-content">
+                <div class="analytics__winner-token ethereum">
+                  <img src="@img/ethereum-icon-big.png" width="49" height="71" alt="">
+                  <span>Ethereum</span>
+                </div>
+              </div>
+              <div class="analytics__winner-total">
+                <span class="analytics__winner-total-title">Total TVL</span>
+                <div class="analytics__winner-total-value">
+                  <span>$490M</span>
+                  <span class="analytics__winner-total-grow up">4.5%</span>
+                </div>
+                <span class="analytics__winner-total-subscr">Compared to $468M last week</span>
+              </div>
+            </div>
+            
+            <div class="analytics__rebalancing analytics__grid-item">
+              <div class="analytics__rebalancing-header analytics__grid-item-header">
+                <div class="analytics__grid-item-title-cnt">
+                  <h3 class="analytics__grid-item-title">
+                    Rebalncing of liquidity
+                    <div class="chainspot-badge">
+                      <img src="@img/chainspot-icon.png" width="19" height="19" alt="">
+                      <span>chainspot.io</span>
+                    </div>
+                  </h3>
+                </div>
+              </div>  
+              <div class="analytics__rebalancing-table analytics__grid-item-table">
+                <!-- Table header -->
+                <div class="header-col"><span>#</span></div>
+                <div class="header-col"><span>From</span></div>
+                <div class="header-col"><span>To</span></div>
+                <div class="header-col"><span>Operator</span></div>
+                <div class="header-col header-col_right"><span>Sent liquidity</span></div>
+
+                <!-- Table row -->
+                <div class="index-col table-row"><span>1</span></div>
+                <div class="from-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Polygon</span>
+                      <span class="token-cnt__value">$416M</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="to-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="@img/bsc-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">BSC</span>
+                      <span class="token-cnt__value">$816M</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="operator-col table-row">
+                  <img src="@img/operator-logo.png" width="24" height="24" alt="">
+                  <span>1Inch</span>
+                </div>
+                <div class="sent-col table-row">                  
+                  <span>$818 000,63</span>
+                </div>
+
+                <!-- Table row -->
+                <div class="index-col table-row"><span>2</span></div>
+                <div class="from-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="@img/optimism-small-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Optimism</span>
+                      <span class="token-cnt__value">$416M</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="to-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="@img/ethereum-small-icon.png" width="15" height="21" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Ethereum</span>
+                      <span class="token-cnt__value">$816M</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="operator-col table-row">
+                  <img src="@img/operator-logo.png" width="24" height="24" alt="">
+                  <span>1Inch</span>
+                </div>
+                <div class="sent-col table-row">                  
+                  <span>$818 000,63</span>
+                </div>
+
+                <!-- Table row -->
+                <div class="index-col table-row"><span>3</span></div>
+                <div class="from-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="@img/fantom-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Fantom</span>
+                      <span class="token-cnt__value">$416M</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="to-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="@img/aurora-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Aurora</span>
+                      <span class="token-cnt__value">$816M</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="operator-col table-row">
+                  <img src="@img/operator-logo.png" width="24" height="24" alt="">
+                  <span>1Inch</span>
+                </div>
+                <div class="sent-col table-row">                  
+                  <span>$818 000,63</span>
+                </div>
+
+                <!-- Table row -->
+                <div class="index-col table-row"><span>4</span></div>
+                <div class="from-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="@img/arbitrum-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Arbitrum</span>
+                      <span class="token-cnt__value">$416M</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="to-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="@img/cronos-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Cronos</span>
+                      <span class="token-cnt__value">$816M</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="operator-col table-row">
+                  <img src="@img/operator-logo.png" width="24" height="24" alt="">
+                  <span>1Inch</span>
+                </div>
+                <div class="sent-col table-row">                  
+                  <span>$818 000,63</span>
+                </div>
+
+                <!-- Table row -->
+                <div class="index-col table-row"><span>5</span></div>
+                <div class="from-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="@img/harmony-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Harmony</span>
+                      <span class="token-cnt__value">$416M</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="to-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Gnosis</span>
+                      <span class="token-cnt__value">$816M</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="operator-col table-row">
+                  <img src="@img/operator-logo.png" width="24" height="24" alt="">
+                  <span>1Inch</span>
+                </div>
+                <div class="sent-col table-row">                  
+                  <span>$818 000,63</span>
+                </div>
+              </div>            
+            </div>
+
+            <div class="analytics__most-popular analytics__grid-item">
+              <div class="analytics__grid-item-header">
+                <div class="analytics__grid-item-title-cnt">
+                  <h3 class="analytics__grid-item-title">
+                    The most popular assets
+                    <div class="chainspot-badge">
+                      <img src="@img/chainspot-icon.png" width="19" height="19" alt="">
+                      <span>chainspot.io</span>
+                    </div>
+                  </h3>
+                </div>
+              </div>  
+              <div class="analytics__most-popular-slider most-pop-slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="most-pop-slider__item swiper-slide">
+                    <div class="most-pop-slider__item-icon">
+                      <img src="@img/ethereum-small-icon.png" width="12" height="20" alt="">
+                    </div>
+                    <div class="most-pop-slider__item-title">
+                      <span class="most-pop-slider__item-token">Ethereum</span>
+                      <span class="most-pop-slider__item-value">$2 049 221,25</span>
+                      <span class="most-pop-slider__item-subscr">1,125.15 ETH</span>
+                    </div>
+                  </div>
+
+                  <div class="most-pop-slider__item swiper-slide">
+                    <div class="most-pop-slider__item-icon">
+                      <img src="@img/bitcoin-icon.svg" width="22" height="22" alt="">
+                    </div>
+                    <div class="most-pop-slider__item-title">
+                      <span class="most-pop-slider__item-token">Bitcoin</span>
+                      <span class="most-pop-slider__item-value">$2 049 221,25</span>
+                      <span class="most-pop-slider__item-subscr">1,125.15 ETH</span>
+                    </div>
+                  </div>
+
+                  <div class="most-pop-slider__item swiper-slide">
+                    <div class="most-pop-slider__item-icon">
+                      <img src="@img/polygon-icon.svg" width="22" height="22" alt="">
+                    </div>
+                    <div class="most-pop-slider__item-title">
+                      <span class="most-pop-slider__item-token">Polygon</span>
+                      <span class="most-pop-slider__item-value">$2 049 221,25</span>
+                      <span class="most-pop-slider__item-subscr">1,125.15 ETH</span>
+                    </div>
+                  </div>
+
+                  <div class="most-pop-slider__item swiper-slide">
+                    <div class="most-pop-slider__item-icon">
+                      <img src="@img/cronos-icon.svg" width="22" height="22" alt="">
+                    </div>
+                    <div class="most-pop-slider__item-title">
+                      <span class="most-pop-slider__item-token">Cronos</span>
+                      <span class="most-pop-slider__item-value">$2 049 221,25</span>
+                      <span class="most-pop-slider__item-subscr">1,125.15 ETH</span>
+                    </div>
+                  </div>
+
+                  <div class="most-pop-slider__item swiper-slide">
+                    <div class="most-pop-slider__item-icon">
+                      <img src="@img/optimism-icon.svg" width="22" height="22" alt="">
+                    </div>
+                    <div class="most-pop-slider__item-title">
+                      <span class="most-pop-slider__item-token">Optimism</span>
+                      <span class="most-pop-slider__item-value">$2 049 221,25</span>
+                      <span class="most-pop-slider__item-subscr">1,125.15 ETH</span>
+                    </div>
+                  </div>
+
+                  <div class="most-pop-slider__item swiper-slide">
+                    <div class="most-pop-slider__item-icon">
+                      <img src="@img/ethereum-small-icon.png" width="12" height="20" alt="">
+                    </div>
+                    <div class="most-pop-slider__item-title">
+                      <span class="most-pop-slider__item-token">Ethereum</span>
+                      <span class="most-pop-slider__item-value">$2 049 221,25</span>
+                      <span class="most-pop-slider__item-subscr">1,125.15 ETH</span>
+                    </div>
+                  </div>
+
+                  <div class="most-pop-slider__item swiper-slide">
+                    <div class="most-pop-slider__item-icon">
+                      <img src="@img/ethereum-small-icon.png" width="12" height="20" alt="">
+                    </div>
+                    <div class="most-pop-slider__item-title">
+                      <span class="most-pop-slider__item-token">Ethereum</span>
+                      <span class="most-pop-slider__item-value">$2 049 221,25</span>
+                      <span class="most-pop-slider__item-subscr">1,125.15 ETH</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="most-pop-slider__nav">
+                  <button class="most-pop-slider__nav-btn swiper-button-prev">
+                    <img src="@img/nav-prev-arrow.svg" width="6" height="12" alt="">
+                  </button>
+                  <button class="most-pop-slider__nav-btn swiper-button-next">
+                    <img src="@img/nav-next-arrow.svg" width="6" height="12" alt="">
+                  </button>
+                </div>                
+              </div>              
+            </div>
+
+            <div class="analytics__largest-amount analytics__grid-item">
+              <div class="analytics__grid-item-header">
+                <div class="analytics__grid-item-title-cnt">
+                  <h3 class="analytics__grid-item-title">
+                    The largest amount of transfers
+                    <div class="chainspot-badge">
+                      <img src="@img/chainspot-icon.png" width="19" height="19" alt="">
+                      <span>chainspot.io</span>
+                    </div>
+                  </h3>
+                </div>
+              </div>  
+
+              <div class="analytics__largest-amount-table analytics__grid-item-table">
+                
+                <!-- Table header -->
+                <div class="header-col"><span>#</span></div>
+                <div class="header-col"><span>From</span></div>
+                <div class="header-col"><span>To</span></div>
+                <div class="header-col"><span>Asset</span></div>
+                <div class="header-col header-col_right"><span>Transfer amount</span></div>
+
+                <!-- Table row -->
+                <div class="index-col table-row"><span>1</span></div>
+                <div class="from-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Polygon</span>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="to-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Gnosis</span>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="asset-col table-row">
+                  <img src="@img/asset-icon.png" width="20" height="20" alt="">
+                  <div class="asset-col__name">
+                    <span class="asset-col__token">ETH</span>
+                    <span class="asset-col__network">Ethereum</span>
+                  </div>                  
+                </div>
+                <div class="amount-col table-row">                  
+                  <span>$1380</span>
+                  <span class="amount-col__gas">813 ETH</span>                  
+                </div>
+
+                <!-- Table row -->
+                <div class="index-col table-row"><span>2</span></div>
+                <div class="from-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Polygon</span>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="to-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Gnosis</span>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="asset-col table-row">
+                  <img src="@img/asset-icon.png" width="20" height="20" alt="">
+                  <div class="asset-col__name">
+                    <span class="asset-col__token">ETH</span>
+                    <span class="asset-col__network">Ethereum</span>
+                  </div>                  
+                </div>
+                <div class="amount-col table-row">                  
+                  <span>$1380</span>
+                  <span class="amount-col__gas">813 ETH</span>                  
+                </div>
+
+                <!-- Table row -->
+                <div class="index-col table-row"><span>3</span></div>
+                <div class="from-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Polygon</span>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="to-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Gnosis</span>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="asset-col table-row">
+                  <img src="@img/asset-icon.png" width="20" height="20" alt="">
+                  <div class="asset-col__name">
+                    <span class="asset-col__token">ETH</span>
+                    <span class="asset-col__network">Ethereum</span>
+                  </div>                  
+                </div>
+                <div class="amount-col table-row">                  
+                  <span>$1380</span>
+                  <span class="amount-col__gas">813 ETH</span>                  
+                </div>
+
+                <!-- Table row -->
+                <div class="index-col table-row"><span>4</span></div>
+                <div class="from-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Polygon</span>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="to-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Gnosis</span>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="asset-col table-row">
+                  <img src="@img/asset-icon.png" width="20" height="20" alt="">
+                  <div class="asset-col__name">
+                    <span class="asset-col__token">ETH</span>
+                    <span class="asset-col__network">Ethereum</span>
+                  </div>                  
+                </div>
+                <div class="amount-col table-row">                  
+                  <span>$1380</span>
+                  <span class="amount-col__gas">813 ETH</span>                  
+                </div>                
+
+                <!-- Table row -->
+                <div class="index-col table-row"><span>5</span></div>
+                <div class="from-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Polygon</span>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="to-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Gnosis</span>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="asset-col table-row">
+                  <img src="@img/asset-icon.png" width="20" height="20" alt="">
+                  <div class="asset-col__name">
+                    <span class="asset-col__token">ETH</span>
+                    <span class="asset-col__network">Ethereum</span>
+                  </div>                  
+                </div>
+                <div class="amount-col table-row">                  
+                  <span>$1380</span>
+                  <span class="amount-col__gas">813 ETH</span>                  
+                </div>
+
+                <!-- Table row -->
+                <div class="index-col table-row"><span>6</span></div>
+                <div class="from-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Polygon</span>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="to-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Gnosis</span>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="asset-col table-row">
+                  <img src="@img/asset-icon.png" width="20" height="20" alt="">
+                  <div class="asset-col__name">
+                    <span class="asset-col__token">ETH</span>
+                    <span class="asset-col__network">Ethereum</span>
+                  </div>                  
+                </div>
+                <div class="amount-col table-row">                  
+                  <span>$1380</span>
+                  <span class="amount-col__gas">813 ETH</span>                  
+                </div>
+
+                <!-- Table row -->
+                <div class="index-col table-row"><span>7</span></div>
+                <div class="from-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Polygon</span>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="to-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Gnosis</span>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="asset-col table-row">
+                  <img src="@img/asset-icon.png" width="20" height="20" alt="">
+                  <div class="asset-col__name">
+                    <span class="asset-col__token">ETH</span>
+                    <span class="asset-col__network">Ethereum</span>
+                  </div>                  
+                </div>
+                <div class="amount-col table-row">                  
+                  <span>$1380</span>
+                  <span class="amount-col__gas">813 ETH</span>                  
+                </div>
+
+                <!-- Table row -->
+                <div class="index-col table-row"><span>8</span></div>
+                <div class="from-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Polygon</span>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="to-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Gnosis</span>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="asset-col table-row">
+                  <img src="@img/asset-icon.png" width="20" height="20" alt="">
+                  <div class="asset-col__name">
+                    <span class="asset-col__token">ETH</span>
+                    <span class="asset-col__network">Ethereum</span>
+                  </div>                  
+                </div>
+                <div class="amount-col table-row">                  
+                  <span>$1380</span>
+                  <span class="amount-col__gas">813 ETH</span>                  
+                </div>
+
+                <!-- Table row -->
+                <div class="index-col table-row"><span>9</span></div>
+                <div class="from-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Polygon</span>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="to-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Gnosis</span>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="asset-col table-row">
+                  <img src="@img/asset-icon.png" width="20" height="20" alt="">
+                  <div class="asset-col__name">
+                    <span class="asset-col__token">ETH</span>
+                    <span class="asset-col__network">Ethereum</span>
+                  </div>                  
+                </div>
+                <div class="amount-col table-row">                  
+                  <span>$1380</span>
+                  <span class="amount-col__gas">813 ETH</span>                  
+                </div>
+
+                <!-- Table row -->
+                <div class="index-col table-row"><span>10</span></div>
+                <div class="from-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Polygon</span>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="to-col table-row">
+                  <div class="token-cnt">
+                    <div class="token-cnt__icon icon-cnt">
+                      <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
+                      <div class="token-cnt__icon-bg"></div>
+                    </div>
+                    <div class="token-cnt__title">
+                      <span class="token-cnt__name">Gnosis</span>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="asset-col table-row">
+                  <img src="@img/asset-icon.png" width="20" height="20" alt="">
+                  <div class="asset-col__name">
+                    <span class="asset-col__token">ETH</span>
+                    <span class="asset-col__network">Ethereum</span>
+                  </div>                  
+                </div>
+                <div class="amount-col table-row">                  
+                  <span>$1380</span>
+                  <span class="amount-col__gas">813 ETH</span>                  
+                </div>
+              </div>
+            </div>
+
+            <div class="analytics__top-addresses analytics__grid-item">
+              <div class="analytics__grid-item-header">
+                <div class="analytics__grid-item-title-cnt">
+                  <h3 class="analytics__grid-item-title">
+                    Top addresses
+                    <div class="chainspot-badge">
+                      <img src="@img/chainspot-icon.png" width="19" height="19" alt="">
+                      <span>chainspot.io</span>
+                    </div>
+                  </h3>
+                </div>
+                <div class="select-btn">
+                  <button class="select-btn__button">
+                    By number of transfers                    
+                  </button>
+                  <div class="select-btn__dropdown"></div>
+                </div>
+              </div> 
+              <div class="analytics__top-addresses-table analytics__grid-item-table">
+                
+                <!-- Table header -->
+                <div class="header-col"><span>#</span></div>
+                <div class="header-col"><span>Contract Address</span></div>
+                <div class="header-col"><span>Number of transfers</span></div>                
+                <div class="header-col header-col_right"><span>Transfer amount</span></div>
+
+                <!-- Table row -->
+                <div class="index-col table-row"><span>1</span></div>
+                <div class="address-col table-row">
+                  <span>0x5c6f90e52284726a727...</span>
+                </div>
+                <div class="trans-num-col table-row">
+                  <span>1880</span>
+                </div>                
+                <div class="amount-col table-row">                  
+                  <span>$1380</span>                  
+                </div>
+
+                 <!-- Table row -->
+                 <div class="index-col table-row"><span>2</span></div>
+                 <div class="address-col table-row">
+                   <span>0x5c6f90e52284726a727...</span>
+                 </div>
+                 <div class="trans-num-col table-row">
+                   <span>1880</span>
+                 </div>                
+                 <div class="amount-col table-row">                  
+                   <span>$1380</span>                  
+                 </div>
+
+                  <!-- Table row -->
+                <div class="index-col table-row"><span>3</span></div>
+                <div class="address-col table-row">
+                  <span>0x5c6f90e52284726a727...</span>
+                </div>
+                <div class="trans-num-col table-row">
+                  <span>1880</span>
+                </div>                
+                <div class="amount-col table-row">                  
+                  <span>$1380</span>                  
+                </div>
+
+                 <!-- Table row -->
+                 <div class="index-col table-row"><span>4</span></div>
+                 <div class="address-col table-row">
+                   <span>0x5c6f90e52284726a727...</span>
+                 </div>
+                 <div class="trans-num-col table-row">
+                   <span>1880</span>
+                 </div>                
+                 <div class="amount-col table-row">                  
+                   <span>$1380</span>                  
+                 </div>
+
+                  <!-- Table row -->
+                <div class="index-col table-row"><span>5</span></div>
+                <div class="address-col table-row">
+                  <span>0x5c6f90e52284726a727...</span>
+                </div>
+                <div class="trans-num-col table-row">
+                  <span>1880</span>
+                </div>                
+                <div class="amount-col table-row">                  
+                  <span>$1380</span>                  
+                </div>
+
+                 <!-- Table row -->
+                 <div class="index-col table-row"><span>6</span></div>
+                 <div class="address-col table-row">
+                   <span>0x5c6f90e52284726a727...</span>
+                 </div>
+                 <div class="trans-num-col table-row">
+                   <span>1880</span>
+                 </div>                
+                 <div class="amount-col table-row">                  
+                   <span>$1380</span>                  
+                 </div>
+
+                  <!-- Table row -->
+                <div class="index-col table-row"><span>7</span></div>
+                <div class="address-col table-row">
+                  <span>0x5c6f90e52284726a727...</span>
+                </div>
+                <div class="trans-num-col table-row">
+                  <span>1880</span>
+                </div>                
+                <div class="amount-col table-row">                  
+                  <span>$1380</span>                  
+                </div>
+
+                 <!-- Table row -->
+                 <div class="index-col table-row"><span>8</span></div>
+                 <div class="address-col table-row">
+                   <span>0x5c6f90e52284726a727...</span>
+                 </div>
+                 <div class="trans-num-col table-row">
+                   <span>1880</span>
+                 </div>                
+                 <div class="amount-col table-row">                  
+                   <span>$1380</span>                  
+                 </div>
+
+                  <!-- Table row -->
+                <div class="index-col table-row"><span>9</span></div>
+                <div class="address-col table-row">
+                  <span>0x5c6f90e52284726a727...</span>
+                </div>
+                <div class="trans-num-col table-row">
+                  <span>1880</span>
+                </div>                
+                <div class="amount-col table-row">                  
+                  <span>$1380</span>                  
+                </div>
+
+                 <!-- Table row -->
+                 <div class="index-col table-row"><span>10</span></div>
+                 <div class="address-col table-row">
+                   <span>0x5c6f90e52284726a727...</span>
+                 </div>
+                 <div class="trans-num-col table-row">
+                   <span>1880</span>
+                 </div>                
+                 <div class="amount-col table-row">                  
+                   <span>$1380</span>                  
+                 </div>
+              </div>              
+            </div>
+
+            <div class="analytics__solutions analytics__grid-item">
+              <div class="analytics__grid-item-header">
+                <div class="analytics__grid-item-title-cnt">
+                  <h3 class="analytics__grid-item-title">
+                    The most active cross-chain solutions
+                    <div class="chainspot-badge">
+                      <img src="@img/chainspot-icon.png" width="19" height="19" alt="">
+                      <span>chainspot.io</span>
+                    </div>
+                  </h3>
+                </div> 
+                <div class="tab-switch">
+                  <label class="tab-switch__item">
+                    <input class="tab-switch__input" name="rating" type="radio" checked>
+                    <span class="tab-switch__btn">Rating based on reviews</span>
+                  </label>
+                  <label class="tab-switch__item">
+                    <input class="tab-switch__input" name="rating" type="radio">
+                    <span class="tab-switch__btn">By number of interactions</span>
+                  </label>
+                </div>              
+              </div> 
+              
+              <div class="analytics__solutions-table-header">
+                <!-- Table header -->
+                <div class="header-col"><span>#</span></div>
+                <div class="header-col"><span>Name</span></div>
+                <div class="header-col">
+                  <span>Rating</span>
+                  <button class="info-btn"></button>
+                </div>     
+                <div class="header-col">
+                  <span>Type</span>
+                  <button class="info-btn"></button>
+                </div>
+                <div class="header-col">
+                  <span>Interactions</span>
+                  <button class="info-btn"></button>
+                </div>   
+                <div class="header-col">
+                  <span>Volume</span>
+                  <button class="info-btn"></button>
+                </div>                
+                <div class="header-col"></div>
+              </div>
+              
+              <div class="analytics__table-cnt">
+                <div class="analytics__solutions-table analytics__grid-item-table">                                
+  
+                  <!-- Table row -->
+                  <div class="index-col table-row"><span>1</span></div>
+                  <div class="name-col table-row">
+                    <img src="@img/avalanche-round-logo.svg" width="26" height="26" alt="">
+                    <span>Avalanche Bridge</span>
+                  </div>
+                  <div class="rating-col table-row">
+                    <img src="@img/rating-icon.svg" width="18" height="17" alt="">
+                    <span>4.8</span>
+                  </div>                
+                  <div class="type-col table-row">                  
+                    <span>Messaging</span>                  
+                  </div>
+                  <div class="interactions-col table-row">                  
+                    <img src="@img/interactions-icon.svg" width="20" height="20" alt="">
+                    <span>1 080 318</span>                  
+                  </div>
+                  <div class="volume-col table-row">                                      
+                    <span>$16 000 000</span>                  
+                  </div>
+                  <div class="cta-col table-row">
+                    <a class="btn-table btn-table_secondary" href="">Overview</a>
+                    <a class="btn-table btn-table_primary" href="">Visit website</a>
+                  </div>
+
+                  <!-- Table row -->
+                  <div class="index-col table-row"><span>2</span></div>
+                  <div class="name-col table-row">
+                    <img src="@img/avalanche-round-logo.svg" width="26" height="26" alt="">
+                    <span>Avalanche Bridge</span>
+                  </div>
+                  <div class="rating-col table-row">
+                    <img src="@img/rating-icon.svg" width="18" height="17" alt="">
+                    <span>4.8</span>
+                  </div>                
+                  <div class="type-col table-row">                  
+                    <span>Messaging</span>                  
+                  </div>
+                  <div class="interactions-col table-row">                  
+                    <img src="@img/interactions-icon.svg" width="20" height="20" alt="">
+                    <span>1 080 318</span>                  
+                  </div>
+                  <div class="volume-col table-row">                                      
+                    <span>$16 000 000</span>                  
+                  </div>
+                  <div class="cta-col table-row">
+                    <a class="btn-table btn-table_secondary" href="">Overview</a>
+                    <a class="btn-table btn-table_primary" href="">Visit website</a>
+                  </div>
+
+                  <!-- Table row -->
+                  <div class="index-col table-row"><span>3</span></div>
+                  <div class="name-col table-row">
+                    <img src="@img/avalanche-round-logo.svg" width="26" height="26" alt="">
+                    <span>Avalanche Bridge</span>
+                  </div>
+                  <div class="rating-col table-row">
+                    <img src="@img/rating-icon.svg" width="18" height="17" alt="">
+                    <span>4.8</span>
+                  </div>                
+                  <div class="type-col table-row">                  
+                    <span>Messaging</span>                  
+                  </div>
+                  <div class="interactions-col table-row">                  
+                    <img src="@img/interactions-icon.svg" width="20" height="20" alt="">
+                    <span>1 080 318</span>                  
+                  </div>
+                  <div class="volume-col table-row">                                      
+                    <span>$16 000 000</span>                  
+                  </div>
+                  <div class="cta-col table-row">
+                    <a class="btn-table btn-table_secondary" href="">Overview</a>
+                    <a class="btn-table btn-table_primary" href="">Visit website</a>
+                  </div>
+
+                  <!-- Table row -->
+                  <div class="index-col table-row"><span>4</span></div>
+                  <div class="name-col table-row">
+                    <img src="@img/avalanche-round-logo.svg" width="26" height="26" alt="">
+                    <span>Avalanche Bridge</span>
+                  </div>
+                  <div class="rating-col table-row">
+                    <img src="@img/rating-icon.svg" width="18" height="17" alt="">
+                    <span>4.8</span>
+                  </div>                
+                  <div class="type-col table-row">                  
+                    <span>Messaging</span>                  
+                  </div>
+                  <div class="interactions-col table-row">                  
+                    <img src="@img/interactions-icon.svg" width="20" height="20" alt="">
+                    <span>1 080 318</span>                  
+                  </div>
+                  <div class="volume-col table-row">                                      
+                    <span>$16 000 000</span>                  
+                  </div>
+                  <div class="cta-col table-row">
+                    <a class="btn-table btn-table_secondary" href="">Overview</a>
+                    <a class="btn-table btn-table_primary" href="">Visit website</a>
+                  </div>
+
+                  <!-- Table row -->
+                  <div class="index-col table-row"><span>5</span></div>
+                  <div class="name-col table-row">
+                    <img src="@img/avalanche-round-logo.svg" width="26" height="26" alt="">
+                    <span>Avalanche Bridge</span>
+                  </div>
+                  <div class="rating-col table-row">
+                    <img src="@img/rating-icon.svg" width="18" height="17" alt="">
+                    <span>4.8</span>
+                  </div>                
+                  <div class="type-col table-row">                  
+                    <span>Messaging</span>                  
+                  </div>
+                  <div class="interactions-col table-row">                  
+                    <img src="@img/interactions-icon.svg" width="20" height="20" alt="">
+                    <span>1 080 318</span>                  
+                  </div>
+                  <div class="volume-col table-row">                                      
+                    <span>$16 000 000</span>                  
+                  </div>
+                  <div class="cta-col table-row">
+                    <a class="btn-table btn-table_secondary" href="">Overview</a>
+                    <a class="btn-table btn-table_primary" href="">Visit website</a>
+                  </div>
+
+                  <!-- Table row -->
+                  <div class="index-col table-row"><span>6</span></div>
+                  <div class="name-col table-row">
+                    <img src="@img/avalanche-round-logo.svg" width="26" height="26" alt="">
+                    <span>Avalanche Bridge</span>
+                  </div>
+                  <div class="rating-col table-row">
+                    <img src="@img/rating-icon.svg" width="18" height="17" alt="">
+                    <span>4.8</span>
+                  </div>                
+                  <div class="type-col table-row">                  
+                    <span>Messaging</span>                  
+                  </div>
+                  <div class="interactions-col table-row">                  
+                    <img src="@img/interactions-icon.svg" width="20" height="20" alt="">
+                    <span>1 080 318</span>                  
+                  </div>
+                  <div class="volume-col table-row">                                      
+                    <span>$16 000 000</span>                  
+                  </div>
+                  <div class="cta-col table-row">
+                    <a class="btn-table btn-table_secondary" href="">Overview</a>
+                    <a class="btn-table btn-table_primary" href="">Visit website</a>
+                  </div>
+
+                  <!-- Table row -->
+                  <div class="index-col table-row"><span>7</span></div>
+                  <div class="name-col table-row">
+                    <img src="@img/avalanche-round-logo.svg" width="26" height="26" alt="">
+                    <span>Avalanche Bridge</span>
+                  </div>
+                  <div class="rating-col table-row">
+                    <img src="@img/rating-icon.svg" width="18" height="17" alt="">
+                    <span>4.8</span>
+                  </div>                
+                  <div class="type-col table-row">                  
+                    <span>Messaging</span>                  
+                  </div>
+                  <div class="interactions-col table-row">                  
+                    <img src="@img/interactions-icon.svg" width="20" height="20" alt="">
+                    <span>1 080 318</span>                  
+                  </div>
+                  <div class="volume-col table-row">                                      
+                    <span>$16 000 000</span>                  
+                  </div>
+                  <div class="cta-col table-row">
+                    <a class="btn-table btn-table_secondary" href="">Overview</a>
+                    <a class="btn-table btn-table_primary" href="">Visit website</a>
+                  </div>
+
+                  <!-- Table row -->
+                  <div class="index-col table-row"><span>8</span></div>
+                  <div class="name-col table-row">
+                    <img src="@img/avalanche-round-logo.svg" width="26" height="26" alt="">
+                    <span>Avalanche Bridge</span>
+                  </div>
+                  <div class="rating-col table-row">
+                    <img src="@img/rating-icon.svg" width="18" height="17" alt="">
+                    <span>4.8</span>
+                  </div>                
+                  <div class="type-col table-row">                  
+                    <span>Messaging</span>                  
+                  </div>
+                  <div class="interactions-col table-row">                  
+                    <img src="@img/interactions-icon.svg" width="20" height="20" alt="">
+                    <span>1 080 318</span>                  
+                  </div>
+                  <div class="volume-col table-row">                                      
+                    <span>$16 000 000</span>                  
+                  </div>
+                  <div class="cta-col table-row">
+                    <a class="btn-table btn-table_secondary" href="">Overview</a>
+                    <a class="btn-table btn-table_primary" href="">Visit website</a>
+                  </div>
+
+                  <!-- Table row -->
+                  <div class="index-col table-row"><span>9</span></div>
+                  <div class="name-col table-row">
+                    <img src="@img/avalanche-round-logo.svg" width="26" height="26" alt="">
+                    <span>Avalanche Bridge</span>
+                  </div>
+                  <div class="rating-col table-row">
+                    <img src="@img/rating-icon.svg" width="18" height="17" alt="">
+                    <span>4.8</span>
+                  </div>                
+                  <div class="type-col table-row">                  
+                    <span>Messaging</span>                  
+                  </div>
+                  <div class="interactions-col table-row">                  
+                    <img src="@img/interactions-icon.svg" width="20" height="20" alt="">
+                    <span>1 080 318</span>                  
+                  </div>
+                  <div class="volume-col table-row">                                      
+                    <span>$16 000 000</span>                  
+                  </div>
+                  <div class="cta-col table-row">
+                    <a class="btn-table btn-table_secondary" href="">Overview</a>
+                    <a class="btn-table btn-table_primary" href="">Visit website</a>
+                  </div>
+
+                  <!-- Table row -->
+                  <div class="index-col table-row"><span>10</span></div>
+                  <div class="name-col table-row">
+                    <img src="@img/avalanche-round-logo.svg" width="26" height="26" alt="">
+                    <span>Avalanche Bridge</span>
+                  </div>
+                  <div class="rating-col table-row">
+                    <img src="@img/rating-icon.svg" width="18" height="17" alt="">
+                    <span>4.8</span>
+                  </div>                
+                  <div class="type-col table-row">                  
+                    <span>Messaging</span>                  
+                  </div>
+                  <div class="interactions-col table-row">                  
+                    <img src="@img/interactions-icon.svg" width="20" height="20" alt="">
+                    <span>1 080 318</span>                  
+                  </div>
+                  <div class="volume-col table-row">                                      
+                    <span>$16 000 000</span>                  
+                  </div>
+                  <div class="cta-col table-row">
+                    <a class="btn-table btn-table_secondary" href="">Overview</a>
+                    <a class="btn-table btn-table_primary" href="">Visit website</a>
+                  </div>
+
+                  <!-- Table row -->
+                  <div class="index-col table-row"><span>11</span></div>
+                  <div class="name-col table-row">
+                    <img src="@img/avalanche-round-logo.svg" width="26" height="26" alt="">
+                    <span>Avalanche Bridge</span>
+                  </div>
+                  <div class="rating-col table-row">
+                    <img src="@img/rating-icon.svg" width="18" height="17" alt="">
+                    <span>4.8</span>
+                  </div>                
+                  <div class="type-col table-row">                  
+                    <span>Messaging</span>                  
+                  </div>
+                  <div class="interactions-col table-row">                  
+                    <img src="@img/interactions-icon.svg" width="20" height="20" alt="">
+                    <span>1 080 318</span>                  
+                  </div>
+                  <div class="volume-col table-row">                                      
+                    <span>$16 000 000</span>                  
+                  </div>
+                  <div class="cta-col table-row">
+                    <a class="btn-table btn-table_secondary" href="">Overview</a>
+                    <a class="btn-table btn-table_primary" href="">Visit website</a>
+                  </div>
+
+                  <!-- Table row -->
+                  <div class="index-col table-row"><span>12</span></div>
+                  <div class="name-col table-row">
+                    <img src="@img/avalanche-round-logo.svg" width="26" height="26" alt="">
+                    <span>Avalanche Bridge</span>
+                  </div>
+                  <div class="rating-col table-row">
+                    <img src="@img/rating-icon.svg" width="18" height="17" alt="">
+                    <span>4.8</span>
+                  </div>                
+                  <div class="type-col table-row">                  
+                    <span>Messaging</span>                  
+                  </div>
+                  <div class="interactions-col table-row">                  
+                    <img src="@img/interactions-icon.svg" width="20" height="20" alt="">
+                    <span>1 080 318</span>                  
+                  </div>
+                  <div class="volume-col table-row">                                      
+                    <span>$16 000 000</span>                  
+                  </div>
+                  <div class="cta-col table-row">
+                    <a class="btn-table btn-table_secondary" href="">Overview</a>
+                    <a class="btn-table btn-table_primary" href="">Visit website</a>
+                  </div>
+
+                  <!-- Table row -->
+                  <div class="index-col table-row"><span>13</span></div>
+                  <div class="name-col table-row">
+                    <img src="@img/avalanche-round-logo.svg" width="26" height="26" alt="">
+                    <span>Avalanche Bridge</span>
+                  </div>
+                  <div class="rating-col table-row">
+                    <img src="@img/rating-icon.svg" width="18" height="17" alt="">
+                    <span>4.8</span>
+                  </div>                
+                  <div class="type-col table-row">                  
+                    <span>Messaging</span>                  
+                  </div>
+                  <div class="interactions-col table-row">                  
+                    <img src="@img/interactions-icon.svg" width="20" height="20" alt="">
+                    <span>1 080 318</span>                  
+                  </div>
+                  <div class="volume-col table-row">                                      
+                    <span>$16 000 000</span>                  
+                  </div>
+                  <div class="cta-col table-row">
+                    <a class="btn-table btn-table_secondary" href="">Overview</a>
+                    <a class="btn-table btn-table_primary" href="">Visit website</a>
+                  </div>
+
+                  <!-- Table row -->
+                  <div class="index-col table-row"><span>14</span></div>
+                  <div class="name-col table-row">
+                    <img src="@img/avalanche-round-logo.svg" width="26" height="26" alt="">
+                    <span>Avalanche Bridge</span>
+                  </div>
+                  <div class="rating-col table-row">
+                    <img src="@img/rating-icon.svg" width="18" height="17" alt="">
+                    <span>4.8</span>
+                  </div>                
+                  <div class="type-col table-row">                  
+                    <span>Messaging</span>                  
+                  </div>
+                  <div class="interactions-col table-row">                  
+                    <img src="@img/interactions-icon.svg" width="20" height="20" alt="">
+                    <span>1 080 318</span>                  
+                  </div>
+                  <div class="volume-col table-row">                                      
+                    <span>$16 000 000</span>                  
+                  </div>
+                  <div class="cta-col table-row">
+                    <a class="btn-table btn-table_secondary" href="">Overview</a>
+                    <a class="btn-table btn-table_primary" href="">Visit website</a>
+                  </div>
+
+                  <!-- Table row -->
+                  <div class="index-col table-row"><span>15</span></div>
+                  <div class="name-col table-row">
+                    <img src="@img/avalanche-round-logo.svg" width="26" height="26" alt="">
+                    <span>Avalanche Bridge</span>
+                  </div>
+                  <div class="rating-col table-row">
+                    <img src="@img/rating-icon.svg" width="18" height="17" alt="">
+                    <span>4.8</span>
+                  </div>                
+                  <div class="type-col table-row">                  
+                    <span>Messaging</span>                  
+                  </div>
+                  <div class="interactions-col table-row">                  
+                    <img src="@img/interactions-icon.svg" width="20" height="20" alt="">
+                    <span>1 080 318</span>                  
+                  </div>
+                  <div class="volume-col table-row">                                      
+                    <span>$16 000 000</span>                  
+                  </div>
+                  <div class="cta-col table-row">
+                    <a class="btn-table btn-table_secondary" href="">Overview</a>
+                    <a class="btn-table btn-table_primary" href="">Visit website</a>
+                  </div>
+
+                  <!-- Table row -->
+                  <div class="index-col table-row"><span>16</span></div>
+                  <div class="name-col table-row">
+                    <img src="@img/avalanche-round-logo.svg" width="26" height="26" alt="">
+                    <span>Avalanche Bridge</span>
+                  </div>
+                  <div class="rating-col table-row">
+                    <img src="@img/rating-icon.svg" width="18" height="17" alt="">
+                    <span>4.8</span>
+                  </div>                
+                  <div class="type-col table-row">                  
+                    <span>Messaging</span>                  
+                  </div>
+                  <div class="interactions-col table-row">                  
+                    <img src="@img/interactions-icon.svg" width="20" height="20" alt="">
+                    <span>1 080 318</span>                  
+                  </div>
+                  <div class="volume-col table-row">                                      
+                    <span>$16 000 000</span>                  
+                  </div>
+                  <div class="cta-col table-row">
+                    <a class="btn-table btn-table_secondary" href="">Overview</a>
+                    <a class="btn-table btn-table_primary" href="">Visit website</a>
+                  </div>
+
+                  <!-- Table row -->
+                  <div class="index-col table-row"><span>17</span></div>
+                  <div class="name-col table-row">
+                    <img src="@img/avalanche-round-logo.svg" width="26" height="26" alt="">
+                    <span>Avalanche Bridge</span>
+                  </div>
+                  <div class="rating-col table-row">
+                    <img src="@img/rating-icon.svg" width="18" height="17" alt="">
+                    <span>4.8</span>
+                  </div>                
+                  <div class="type-col table-row">                  
+                    <span>Messaging</span>                  
+                  </div>
+                  <div class="interactions-col table-row">                  
+                    <img src="@img/interactions-icon.svg" width="20" height="20" alt="">
+                    <span>1 080 318</span>                  
+                  </div>
+                  <div class="volume-col table-row">                                      
+                    <span>$16 000 000</span>                  
+                  </div>
+                  <div class="cta-col table-row">
+                    <a class="btn-table btn-table_secondary" href="">Overview</a>
+                    <a class="btn-table btn-table_primary" href="">Visit website</a>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </div>                
+      </div>
+    </main>
+
+    @@include('html/footer.html', {})
+  </div>  
+
+  <script src="./js/app.min.js"></script>
+</body>
+
+</html>

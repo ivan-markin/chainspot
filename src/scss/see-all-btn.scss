@@ -1,0 +1,19 @@
+.see-all-btn {
+	display: block;
+	background: none;
+	border: none;
+	color: var(--primary-blue);
+	text-decoration-line: underline;	
+	text-decoration-style: dotted;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 3px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.38;
+	cursor: pointer;
+	margin: 0 auto;
+
+	span {
+		font-weight: 700;
+	}
+}

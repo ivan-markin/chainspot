@@ -1,0 +1,40 @@
+.btn-select {
+	position: relative;
+
+	&__btn {
+		gap: 18px;
+
+		&::after {
+			content: '';
+			width: 9px;
+			height: 5px;
+			background: url('../img/select-arrow_white.svg') no-repeat center;
+			background-size: contain;
+			transition: all .2s;
+		}
+	}
+
+	&.active &__btn {
+		&::after {
+			transform: rotate(180deg);
+		}
+	}
+
+	&__popup {
+		position: absolute;
+		right: 0;
+		bottom: -10px;
+		transform: translateY(95%);
+		visibility: hidden;
+		opacity: 0;
+		z-index: -1;
+		transition: all .3s;
+	}
+
+	&.active &__popup {
+		visibility: visible;
+		opacity: 1;
+		z-index: 10;
+		transform: translateY(100%);
+	} 
+}

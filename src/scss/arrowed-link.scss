@@ -1,0 +1,17 @@
+.arrowed-link {
+	display: flex;
+	align-items: center;
+	gap: 11px;
+	font-weight: 500;
+	font-size: 13px;	
+	color: #3861FB;
+	text-decoration: none;
+
+	&::after {
+		content: '';
+		width: 6px;
+		height: 11px;
+		background: url('../img/link-arrow.svg') no-repeat center;
+		background-size: contain;
+	}
+}
