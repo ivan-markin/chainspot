@@ -1,0 +1,81 @@
+.success-popup {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	visibility: hidden;
+	opacity: 0;
+	background: none !important;
+	transition: all .3s;
+
+	&.active {
+		z-index: 999;
+		visibility: visible;
+		opacity: 1;
+	}
+
+	&__cnt {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+		border-radius: 16px;
+		border: 1px solid #E0E7F2;
+		background: #FFF;
+		box-shadow: 0px 30px 80px -30px rgba(76, 86, 115, 0.12);
+		width: 90%;
+		max-width: 492px;
+		position: relative;
+		z-index: 9999;
+		padding: 50px 40px;
+	}
+
+	&__title {
+		font-size: 24px;
+		font-weight: 500;
+		text-align: center;
+		margin: 0;
+	}
+
+	&__subtitle {
+		font-size: 18px;
+		text-align: center;
+		color: #A1A6B3;
+	}
+
+	&__btn {
+		width: 100%;
+		margin-top: 44px;
+	}
+
+	&__close {
+		position: absolute;
+		top: 24px;
+		right: 24px;
+		background: url('../img/close-icon_dark.svg') no-repeat center;
+		background-size: contain;
+		width: 15px;
+		height: 15px;
+		border: none;
+		cursor: pointer;
+	}
+	
+	&__bg {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #14243826;
+		z-index: 9998;
+	}
+}

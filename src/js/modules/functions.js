@@ -51,7 +51,7 @@ export function popupCloseHandler(evt) {
       evt.target.classList.remove('active');    
   }
 
-  if (evt.target.classList.contains('popup__close')) {
+  if (evt.target.classList.contains('popup__close') || evt.target.classList.contains('popup-close')) {
       evt.target.closest('.popup').classList.remove('active');
   }
   
