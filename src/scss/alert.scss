@@ -5,6 +5,7 @@
 	right: 40px;
 	top: 135px;
 	background: #3A27F8 url('../img/alert-icon.svg') no-repeat 15px 13px;
+	z-index: 4;
 	padding: 15px 35px 15px 47px;
 
 	@media (max-width: 768px) {

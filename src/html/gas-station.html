@@ -1,8 +1,8 @@
 <div class="gas-station">
 	<section class="gas-station__title-block">
-		<div class="wrap">
-			<h1 class="gas-station__title">
-				<img src="@img/asterizm-title-icon.svg" width="104" height="103" alt="">
+		<div class="wrap">		
+			<h1 class="gas-station__title">				
+				<img src="@img/asterizm-title-icon.png" alt="">
 				<span>Activate your liquidity in many chains with single transaction</span>
 			</h1>
 		</div>		
@@ -114,21 +114,27 @@
 						</span>						
 					</span> -->
 
-					<span class="gas-station__networks-caption" style="display: block;">
-						<span class="blue-gradient-text">Please join our chat</span> and share your opinion about the product!
-						<a href="" class="blue-social-link">
-							<img src="@img/telegram-icon_blue.svg" alt="">
-						</a>
-						<a href="" class="blue-social-link">
-							<img src="@img/discord-icon_blue.svg" alt="">
-						</a>
+					<span class="gas-station__networks-caption">
+						<span><span class="blue-gradient-text">Please join our chat</span> and share your opinion about the product!</span>
+						<span class="gas-station__networks-caption-socials">
+							<a href="" class="blue-social-link">
+								<img src="@img/telegram-icon_blue.svg" alt="">
+							</a>
+							<a href="" class="blue-social-link">
+								<img src="@img/discord-icon_blue.svg" alt="">
+							</a>
+						</span>						
 					</span>
 
 					<div class="gas-station__networks-table-header">
+						<label class="gas-station__networks-table-header-checkbox">
+							<input class="checkbox__input" type="checkbox" name="" id="">
+							<span class="checkbox__button"></span>
+						</label>
 						<!-- <button class="gas-station__networks-table-header-btn">Reset<br>all</button> -->
 						<span class="gas-station__networks-table-header-item i-asset">Asset</span>
 						<span class="gas-station__networks-table-header-item i-type">
-							<img src="@img/filter-icon.svg" alt="">
+							<!-- <img src="@img/filter-icon.svg" alt=""> -->
 							Type of network
 						</span>
 						<span class="gas-station__networks-table-header-item i-amount">Amount in fiat</span>
@@ -141,9 +147,10 @@
 							@@include('network-table-row.html', {})
 						}
 
-						@@include('network-table-row_warning.html', {})
+						<!-- @@include('network-table-row_warning.html', {}) -->
+						@@include('network-table-row_apply.html', {})
 						@@include('network-table-row_error.html', {})
-
+						
 						@@for (var i = 0; i < 4; i++) {
 							@@include('network-table-row_disabled.html', {})
 						}

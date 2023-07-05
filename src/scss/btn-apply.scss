@@ -1,0 +1,23 @@
+.btn-apply {
+	display: flex;
+	align-items: center;
+	gap: 11px;
+	position: absolute;
+	right: 4px;
+	top: 4px;
+	height: 32px;
+	font-weight: 400;
+	font-size: 14px;
+	border-radius: 4px;
+	padding: 0 16px 0 12px;
+
+	&:disabled {
+		background: #191B2D;
+		border: none;
+		color: #565B78;
+
+		svg {
+			fill: #565B78;
+		}
+	}
+}

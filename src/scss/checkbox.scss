@@ -3,6 +3,10 @@
 	user-select: none;
 	margin: 32px 0 32px;
 
+	@media (max-width: 768px) {
+		margin: 16px 0 48px;
+	}
+
 	&__input {
 		visibility: visible;
 		height: 1px;
