@@ -928,6 +928,58 @@ template {
   fill: #565B78;
 }
 
+.connect-a-wallet-popup .popup__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  max-width: 348px;
+  min-width: auto;
+  min-height: auto;
+  padding: 50px 40px;
+}
+
+.connect-a-wallet-popup .popup__title {
+  font-weight: 500;
+  margin-bottom: 22px;
+}
+
+.connect-a-wallet-popup__description {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.47;
+  color: #565B78;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  margin-bottom: 34px;
+}
+
+.connect-a-wallet-popup .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+
+.connect-a-wallet-popup .popup__close {
+  top: 24px;
+  right: 24px;
+}
+
 .main-menu {
   background: none !important;
 }
