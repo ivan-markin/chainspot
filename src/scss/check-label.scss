@@ -6,7 +6,7 @@
 	border: white 1px solid;
 	font-size: 12px;
 	font-weight: 600;
-	padding: 0 4px;
+	padding: 2px 4px 0 4px;
 
 	&_pending {
 		border-color: #FFC530;
@@ -16,5 +16,10 @@
 	&_completed {
 		border-color: #3CD65E;
 		color: #3CD65E;
+	}
+
+	&_rejected {
+		border-color: #F54B40;
+		color: #F54B40;
 	}
 }

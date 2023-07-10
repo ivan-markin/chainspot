@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <!-- <link rel="stylesheet" href="./css/styles-old.css?_v=20230710124743"> -->
-  <link rel="stylesheet" href="./css/style.min.css?_v=20230710124743">
+  <!-- <link rel="stylesheet" href="./css/styles-old.css?_v=20230710173504"> -->
+  <link rel="stylesheet" href="./css/style.min.css?_v=20230710173504">
   <title>Chainspot</title>
 </head>
 
@@ -444,22 +444,7 @@
 	</div>	
 </div>
 
-  <div class="connect-a-wallet-popup active popup dark">
-	<div class="popup__container">
-		<a class="popup__close" href="#"></a>
-		
-		<h1 class="popup__title">Connect a wallet</h1>
-		
-		<span class="connect-a-wallet-popup__description">
-			It is necessary to connect Venom Wallet to identify the address
-		</span>		
-		
-		<button class="btn btn_primary">
-			<img src="img/venom-icon.svg" alt="">
-			Connect Venom Wallet
-		</button>
-	</div>	
-</div>
+  
 
   
   
@@ -608,13 +593,7 @@
     <main class="main" style="background: none;">                   
         <div class="gas-station-wrapper">
 
-          <div class="alert active">
-	<!-- <h3 class="alert__title">Welcome!</h3> -->
-	<p class="alert__caption">
-		In the block on the right, select the networks that you want to replenish with gas tokens. You will see how many gas tokens you will receive in each of the networks
-	</p>
-	<button class="alert__close"></button>
-</div>   
+          
           
           
           <div class="gas-station">
@@ -868,7 +847,28 @@
 </div>
 						
 
-						
+						<div class="gas-station__networks-table-row gas-station__networks-table-row_rejected">							
+	<img class="gas-station__networks-table-row-icon" src="img/rejected-icon.svg" width="34" height="34" alt="">
+	<div class="gas-station__networks-table-row-item i-asset">
+		<span class="gas-station__network-icon">
+			<picture><source srcset="img/currencies/ethereum.webp" type="image/webp"><img src="img/currencies/ethereum.png" alt=""></picture>
+		</span>
+		<div class="gas-station__networks-table-row-item-title">
+			<span class="gas-station__networks-table-row-item-name">
+				0.00082 ETH
+				<span class="check-label check-label_rejected">Rejected</span>
+			</span>
+			<span class="gas-station__networks-table-row-item-status">
+				on Ethereum
+				<span class="gas-station__networks-table-row-item-percent">10%</span>
+			</span>
+		</div>
+	</div>						
+	<a class="gas-station__networks-table-row-item white-link i-ether-link" href="">
+		<img src="../img/link-icon.svg" alt="">
+		Check on Etherscan
+	</a>
+</div>
 						<div class="gas-station__networks-table-row gas-station__networks-table-row_warning">
 	<div class="gas-station__networks-table-row-content">
 		<img class="gas-station__networks-error" src="../img/error-icon.svg" alt="">
@@ -1163,7 +1163,7 @@
 </footer>   
   </div>  
 
-  <script src="./js/app.min.js?_v=20230710124743"></script>
+  <script src="./js/app.min.js?_v=20230710173504"></script>
 </body>
 
 </html>

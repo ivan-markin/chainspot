@@ -558,7 +558,7 @@
 		&-row {
 			display: flex;
 			align-items: center;
-			height: 52px;
+			min-height: 52px;
 			width: 100%;
 			border: 1px solid #2C2D54;
 			border-radius: 6px;
@@ -582,6 +582,7 @@
 				align-items: flex-start;
 				gap: 16px;
 				height: auto;
+				min-height: auto;
 				padding: 10px 16px 24px;
 			}
 
