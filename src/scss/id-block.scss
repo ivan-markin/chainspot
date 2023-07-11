@@ -1,0 +1,16 @@
+.id-block {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	height: 24px;
+	border-radius: 4px;
+	border: 1px solid #565B78;
+	color: white;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 0 8px;
+
+	span {
+		white-space: nowrap;
+	}
+}

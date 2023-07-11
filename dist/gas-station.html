@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <!-- <link rel="stylesheet" href="./css/styles-old.css?_v=20230710173504"> -->
-  <link rel="stylesheet" href="./css/style.min.css?_v=20230710173504">
+  <!-- <link rel="stylesheet" href="./css/styles-old.css?_v=20230712002412"> -->
+  <link rel="stylesheet" href="./css/style.min.css?_v=20230712002412">
   <title>Chainspot</title>
 </head>
 
@@ -622,11 +622,11 @@
 						</div>					
 					</div>
 					<form class="gas-station__form" action="">
-						<div class="gas-station__input-header">
+						<!-- <div class="gas-station__input-header">
 							<span>Pay</span>
 							<span>Balance: -</span>
-						</div>
-						<div class="gas-station__input-block">
+						</div> -->
+						<!-- <div class="gas-station__input-block">
 							<input type="text" placeholder="Enter amount">
 							<button class="choose-token-button choose-token-button_dark">
 								<div class="choose-token-button__icons">
@@ -640,24 +640,24 @@
 									<span class="choose-token-button__network">on Polygon</span>
 								</div>
 							</button>
-						</div>
+						</div> -->
 						<!-- <span class="error-message">Wallet balance is insufficient</span> -->
 						
-						<div class="gas-station__claim-btn">
+						<!-- <div class="gas-station__claim-btn">
 							<button class="btn">
 								Claim ATT token
 							</button>
 							<span class="gas-station__claim-btn-tooltip">
 								Connect VENOM wallet first
 							</span>
-						</div>						
+						</div>						 -->
 						
-						<div class="gas-station__form-attention">
+						<!-- <div class="gas-station__form-attention">
 							<span>
 								The liquidity you generate as gas is allocatedevenly throughout the networks.
 							</span>
-						</div>
-						<div class="gas-station__form-params">
+						</div> -->
+						<!-- <div class="gas-station__form-params">
 							<div class="gas-station__form-params-line">
 								<span class="gas-station__form-params-name">Min allocations liquidity per network</span>
 								<span class="gas-station__form-params-value">$10</span>
@@ -666,15 +666,20 @@
 								<span class="gas-station__form-params-name">Commission for liquidity allocation</span>
 								<span class="gas-station__form-params-value">5%</span>
 							</div>
-						</div>
+						</div> -->
 						<div class="gas-station__status-block">
-							<!-- <h2 class="gas-station__status-title">Transaction confirmation</h2> -->
+							<h2 class="gas-station__status-title">Transaction confirmation</h2>
 							
 							<!-- WAITING -->
-							<!-- <div class="gas-station__status-label">
+							<div class="gas-station__status-label">
 								<span class="gas-station__status-loader"></span>
 								<span class="gas-station__status-caption">Confirm transaction</span>
-							</div> -->
+								<div class="id-block">
+									<span class="id-block__title">TX ID:</span>
+									<span class="id-block__wallet">0xcc3d023fec309bef14acbb069e1dd792b7960206</span>
+									<button class="copy-btn"></button>
+								</div>
+							</div>
 							
 							<!-- SUCCESS -->
 							<!-- <div class="gas-station__status-label">
@@ -1163,7 +1168,7 @@
 </footer>   
   </div>  
 
-  <script src="./js/app.min.js?_v=20230710173504"></script>
+  <script src="./js/app.min.js?_v=20230712002412"></script>
 </body>
 
 </html>
