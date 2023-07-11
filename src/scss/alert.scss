@@ -16,7 +16,8 @@
 	}
 
 	&_success {
-		background-color: #09B37B;	
+		background-color: rgba(5, 208, 141, 0.60);
+		backdrop-filter: blur(16px);
 	}
 
 	&__title {
@@ -31,6 +32,10 @@
 		line-height: 1.2;
 		color: #FAFAFA;
 		margin: 0;
+
+		&:last-of-type {
+			margin-top: 10px;
+		}
 	}
 
 	&__close {
