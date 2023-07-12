@@ -665,6 +665,14 @@ template {
 }
 
 .alert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
   width: 285px;
   border-radius: 4px;
   position: absolute;
@@ -696,10 +704,6 @@ template {
   line-height: 1.2;
   color: #FAFAFA;
   margin: 0;
-}
-
-.alert__caption:last-of-type {
-  margin-top: 10px;
 }
 
 .alert__close {

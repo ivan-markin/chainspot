@@ -1,4 +1,7 @@
 .alert {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 	width: 285px;	
 	border-radius: 4px;
 	position: absolute;
@@ -31,11 +34,7 @@
 		font-size: 14px;
 		line-height: 1.2;
 		color: #FAFAFA;
-		margin: 0;
-
-		&:last-of-type {
-			margin-top: 10px;
-		}
+		margin: 0;		
 	}
 
 	&__close {
