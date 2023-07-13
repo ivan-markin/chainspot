@@ -106,5 +106,15 @@
 		</div>
 	</div>
 
-	<button class="mobile-menu-btn"></button>
+	@@if (className === 'header_dark') {
+		@@include('mobile-menu-button.html', {
+			'theme': '_dark'
+		})
+	}	
+	
+	@@if (className === '') {
+		@@include('mobile-menu-button.html', {
+			'theme': ''
+		})
+	}			
 </header>

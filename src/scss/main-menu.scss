@@ -1,5 +1,6 @@
 .main-menu {	
 	background: none !important;
+	margin: 0 20px;
 
 	&__items {
 		display: flex;
@@ -7,6 +8,10 @@
 		gap: 40px;
 		padding: 0;
 		margin: 0;
+
+		@media (max-width: 1200px) {
+			gap: 20px;
+		}
 
 		@media (max-width: 768px) {
 			flex-direction: column;			
@@ -21,7 +26,16 @@
 	&__item {		
 		list-style: none;		
 		position: relative;
-		font-size: 16px;		
+		font-size: 16px;
+		white-space: nowrap;
+		
+		@media (max-width: 1200px) {
+			font-size: 14px;
+		}
+
+		@media (max-width: 768px) {
+			font-size: 16px;
+		}
 
 		&.soon,
 		&.new {
@@ -37,7 +51,7 @@
 				position: absolute;
 				right: 0;
 				top: 0;
-				transform: translateY(-100%);
+				transform: translateY(-100%);				
 				padding: 0 3px;
 			}
 		}

@@ -38,6 +38,12 @@
 		padding: 0 25px;
 	}
 
+	&_gray {
+		background: #2C2D54;	
+		color: white;		
+		padding: 0 25px;
+	}
+
 	&:disabled {
 		border: #023898 1px solid;
 		background: none;

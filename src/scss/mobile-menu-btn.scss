@@ -1,13 +1,16 @@
 .mobile-menu-btn {
 	display: none;
 	width: 20px;
-	height: 15px;
-	background: url('../img/burger-icon.svg') no-repeat center;
-	background-size: contain;
+	height: 15px;	
 	border: none;
+	background: none;
 	cursor: pointer;
 
 	@media (max-width: 1024px) {
-		display: block;			
+		display: block		
+	}
+
+	&_dark svg {
+		fill: white;
 	}
 }

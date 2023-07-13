@@ -42,6 +42,10 @@
 		height: 40px;
 		border-right: 1px solid #E0E7F2;
 		padding-right: 24px;
+
+		@media (max-width: 1200px) {
+			gap: 10px;
+		}
 	}
 
 	&_dark &__socials {
