@@ -612,7 +612,8 @@
 
 			@media (max-width: 768px) {				
 				gap: 6px;
-				height: 80px;
+				height: auto;
+				min-height: auto;
 			}
 
 			&-content {
@@ -629,6 +630,36 @@
 				height: auto;
 				min-height: auto;
 				padding: 10px 16px 24px;
+			}
+
+			&_rejected,
+			&_check {								
+				@media (max-width: 768px) {
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 9px;
+					height: auto;
+					min-height: auto;		
+					padding: 10px 16px 12px 54px;			
+				}
+
+				.i-asset {
+					position: static !important;
+				}
+
+				.gas-station__networks-table-row-icon {
+					@media (max-width: 768px) {
+						position: absolute;
+						left: 16px;
+						top: 10px;
+					}
+				}
+
+				.i-ether-link {
+					@media (max-width: 768px) {
+						margin: 0 !important;
+					}
+				}
 			}
 
 			&_blue-border {

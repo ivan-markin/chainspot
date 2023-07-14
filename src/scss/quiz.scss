@@ -4,6 +4,10 @@
 	padding: 13px 32px;
 	margin-bottom: 24px;
 
+	@media (max-width: 768px) {
+		padding: 10px;
+	}
+
 	&__text {
 		color: white;
 		font-weight: 700;

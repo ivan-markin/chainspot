@@ -1092,6 +1092,10 @@ template {
   gap: 0;
 }
 
+.main-menu.footer {
+  margin: 0;
+}
+
 .main-menu__item {
   list-style: none;
   position: relative;
@@ -2241,7 +2245,7 @@ input:checked + .filter__btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 40px;
+  gap: 45px;
   border: none;
   padding: 0;
   margin-bottom: 40px;
@@ -3114,6 +3118,11 @@ input:checked + .filter__btn {
   height: auto;
   min-height: auto;
   padding: 10px 16px 24px;
+}
+
+.gas-station__networks-table-row_rejected .i-asset,
+.gas-station__networks-table-row_check .i-asset {
+  position: static !important;
 }
 
 .gas-station__networks-table-row_blue-border {
@@ -7169,7 +7178,35 @@ fieldset {
 
   .gas-station__networks-table-row {
     gap: 6px;
-    height: 80px;
+    height: auto;
+    min-height: auto;
+  }
+
+  .gas-station__networks-table-row_rejected,
+  .gas-station__networks-table-row_check {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 9px;
+    height: auto;
+    min-height: auto;
+    padding: 10px 16px 12px 54px;
+  }
+
+  .gas-station__networks-table-row_rejected .gas-station__networks-table-row-icon,
+  .gas-station__networks-table-row_check .gas-station__networks-table-row-icon {
+    position: absolute;
+    left: 16px;
+    top: 10px;
+  }
+
+  .gas-station__networks-table-row_rejected .i-ether-link,
+  .gas-station__networks-table-row_check .i-ether-link {
+    margin: 0 !important;
   }
 
   .gas-station__networks-table-row-item:not(.gas-station__networks-table-row-item.i-asset) {
@@ -7507,6 +7544,10 @@ fieldset {
   .chainspot-badge img {
     width: 13px;
     height: 13px;
+  }
+
+  .quiz {
+    padding: 10px;
   }
 
   .chains-count {

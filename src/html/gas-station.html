@@ -106,7 +106,7 @@
 								</span>
 							</div> -->
 						</div>
-						<button class="gas-station__form-submit btn btn_primary btn_dark">Okay</button>
+						<button class="gas-station__form-submit btn btn_primary btn_dark">Ok</button>
 					</form>
 				</section>
 
@@ -137,7 +137,7 @@
 					<!-- QUIZ -->
 					<div class="quiz">
 						<div class="quiz__step-1">
-							<span class="quiz__text">Do you have friends in web3 community?</span>
+							<span class="quiz__text">Do you have friends in&nbsp;web3 community?</span>
 							<div class="quiz__cta">
 								<button class="btn btn_dark">Yes</button>
 								<button class="btn btn_gray">No</button>
@@ -203,6 +203,8 @@
 
 						@@include('network-table-row_rejected.html', {})
 						@@include('network-table-row_apply.html', {})
+						@@include('network-table-row_pending.html', {})
+						@@include('network-table-row_completed.html', {})
 						@@include('network-table-row_error.html', {})
 						
 						@@for (var i = 0; i < 4; i++) {
