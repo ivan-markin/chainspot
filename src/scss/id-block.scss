@@ -8,9 +8,38 @@
 	color: white;
 	font-size: 12px;
 	font-weight: 600;
+	position: relative;
 	padding: 0 8px;
 
 	span {
 		white-space: nowrap;
+	}
+
+	&__success {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		color: white;
+		font-size: 14px;
+		font-weight: 600;
+		height: 30px;
+		border-radius: 15px;
+		background: #171753;
+		white-space: nowrap;
+		position: absolute;
+		left: 50%;
+		bottom: -16px;
+		transform: translateX(-50%) translateY(100%);
+		opacity: 0;
+		visibility: hidden;
+		z-index: -1;
+		transition: all .3s;
+		padding: 0 10px;
+
+		&.active {
+			opacity: 1;
+			visibility: visible;
+			z-index: 2;
+		}
 	}
 }

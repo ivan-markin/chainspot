@@ -943,6 +943,10 @@ template {
   padding: 0 16px 0 12px;
 }
 
+.btn-apply::after {
+  content: "Apply";
+}
+
 .btn-apply:disabled {
   background: #191B2D;
   border: none;
@@ -1061,11 +1065,48 @@ template {
   color: white;
   font-size: 12px;
   font-weight: 600;
+  position: relative;
   padding: 0 8px;
 }
 
 .id-block span {
   white-space: nowrap;
+}
+
+.id-block__success {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  height: 30px;
+  border-radius: 15px;
+  background: #171753;
+  white-space: nowrap;
+  position: absolute;
+  left: 50%;
+  bottom: -16px;
+  -webkit-transform: translateX(-50%) translateY(100%);
+      -ms-transform: translateX(-50%) translateY(100%);
+          transform: translateX(-50%) translateY(100%);
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 0 10px;
+}
+
+.id-block__success.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
 }
 
 .main-menu {
@@ -3365,7 +3406,7 @@ input:checked + .filter__btn {
   border: 1px solid #2C2D54;
   font-size: 14px;
   color: white;
-  padding: 0 110px 0 12px;
+  padding: 0 130px 0 12px;
 }
 
 .gas-station__input::-webkit-input-placeholder {
@@ -5028,6 +5069,12 @@ input:checked + .filter__btn {
   background-size: contain;
   border: none;
   cursor: pointer;
+}
+
+.erase-btn_apply {
+  position: absolute;
+  right: 100px;
+  top: 11px;
 }
 
 .error-message {
@@ -7013,6 +7060,16 @@ fieldset {
     background: rgba(2, 3, 33, 0.65);
   }
 
+  .btn-apply {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+  }
+
+  .btn-apply::after {
+    display: none;
+  }
+
   .main-menu__items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -7255,6 +7312,11 @@ fieldset {
     padding-left: 0;
   }
 
+  .gas-station__input {
+    text-align: right;
+    padding-right: 80px;
+  }
+
   .gas-station__claim-btn-tooltip {
     left: 30%;
   }
@@ -7406,6 +7468,10 @@ fieldset {
 
   .wallet-info-button__num {
     font-size: 12px;
+  }
+
+  .erase-btn_apply {
+    right: 50px;
   }
 
   .blue-social-link {

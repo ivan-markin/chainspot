@@ -906,7 +906,12 @@
 		border: 1px solid #2C2D54;
 		font-size: 14px;
 		color: white;
-		padding: 0 110px 0 12px;		
+		padding: 0 130px 0 12px;	
+		
+		@media (max-width: 768px) {
+			text-align: right;
+			padding-right: 80px;
+		}
 
 		&::placeholder {
 			color: #565B78;

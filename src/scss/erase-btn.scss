@@ -5,4 +5,14 @@
 	background-size: contain;
 	border: none;
 	cursor: pointer;
+
+	&_apply {
+		position: absolute;
+		right: 100px;
+		top: 11px;
+
+		@media (max-width: 768px) {
+			right: 50px;
+		}
+	}
 }

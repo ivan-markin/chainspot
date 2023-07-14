@@ -11,6 +11,20 @@
 	border-radius: 4px;
 	padding: 0 16px 0 12px;
 
+	@media (max-width: 768px) {
+		width: 32px;
+		height: 32px;
+		padding: 0;
+	}
+
+	&::after {
+		content: 'Apply';
+
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+
 	&:disabled {
 		background: #191B2D;
 		border: none;
@@ -19,5 +33,5 @@
 		svg {
 			fill: #565B78;
 		}
-	}
+	}	
 }
