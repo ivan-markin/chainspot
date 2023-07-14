@@ -2924,7 +2924,7 @@ input:checked + .filter__btn {
   padding-bottom: 10px;
 }
 
-.gas-station__title img {
+.gas-station__title-icon {
   position: absolute;
   left: -70px;
   top: -15px;
@@ -6724,6 +6724,46 @@ img:hover + .tooltip {
   visibility: visible;
 }
 
+.chains-count {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: #0E113B;
+  -webkit-box-shadow: 0px -1.3091213703px 4.9092049599px 0px #2F2563 inset;
+          box-shadow: 0px -1.3091213703px 4.9092049599px 0px #2F2563 inset;
+  height: 50px;
+  position: relative;
+  bottom: -2px;
+  padding: 18px 18px 0 18px;
+}
+
+.chains-count span {
+  background: -webkit-gradient(linear, left top, left bottom, from(#8CA5FF), to(#8CF8FF));
+  background: -o-linear-gradient(top, #8CA5FF 0%, #8CF8FF 100%);
+  background: linear-gradient(180deg, #8CA5FF 0%, #8CF8FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.chains-count img {
+  position: relative;
+  bottom: 5px;
+}
+
 *,
 *::before,
 *::after {
@@ -6925,7 +6965,7 @@ fieldset {
     margin: 0 0 32px;
   }
 
-  .gas-station__title img {
+  .gas-station__title-icon {
     top: -35px;
   }
 
@@ -7103,7 +7143,7 @@ fieldset {
     color: white;
   }
 
-  .gas-station__title img {
+  .gas-station__title-icon {
     width: 100px;
     left: -25px;
     top: -20px;
@@ -7469,6 +7509,27 @@ fieldset {
     height: 13px;
   }
 
+  .chains-count {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    height: 20px;
+    border-radius: 20px;
+    background: #0E113B !important;
+    bottom: 0;
+    padding: 0 8px;
+  }
+
+  .chains-count span {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .chains-count img {
+    height: 12px;
+    bottom: -2px;
+  }
+
   .container_bnb,
   .container_polygon,
   .container_avalanche,
@@ -7513,7 +7574,7 @@ fieldset {
 }
 
 @media (max-width: 375px) {
-  .gas-station__title img {
+  .gas-station__title-icon {
     top: -10px;
   }
 }
