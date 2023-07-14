@@ -2912,7 +2912,7 @@ input:checked + .filter__btn {
 .gas-station__title span {
   font-weight: 500;
   font-size: 44px;
-  line-height: 1.11;
+  line-height: 1.2;
   letter-spacing: -0.02em;
   background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#A3A5AC)), #FFFFFF;
   background: -o-linear-gradient(top, #FFFFFF 0%, #A3A5AC 100%), #FFFFFF;
@@ -6737,7 +6737,7 @@ img:hover + .tooltip {
   width: fit-content;
   border-radius: 25px;
   border: 1px solid rgba(255, 255, 255, 0.15);
-  background: #0E113B;
+  background: #0E113B !important;
   -webkit-box-shadow: 0px -1.3091213703px 4.9092049599px 0px #2F2563 inset;
           box-shadow: 0px -1.3091213703px 4.9092049599px 0px #2F2563 inset;
   height: 50px;
