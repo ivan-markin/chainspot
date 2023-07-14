@@ -127,7 +127,10 @@ fieldset {
   &_near,
   &_everscale,
   &_boba,
-  &_celo {
+  &_celo,
+  &_venom,
+  &_venidium,
+  &_zkevm {
     background-position: left top;
     background-size: contain;
     background-repeat: no-repeat;
@@ -196,7 +199,19 @@ fieldset {
 
   &_celo {
     background-image: url('../img/celo-bg.png');      
-  }   
+  }
+  
+  &_venom {
+    background-image: url('../img/venom-bg.png');      
+  } 
+
+  &_venidium {
+    background-image: url('../img/venidium-bg.png');      
+  }
+
+  &_zkevm {
+    background-image: url('../img/zkevm-bg.png');      
+  }
 }
 
 .wrap {

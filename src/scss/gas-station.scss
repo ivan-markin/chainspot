@@ -59,15 +59,28 @@
 		align-items: flex-start;
 		justify-content: center;
 		gap: 20px;
-		height: 187px;		
-		background: url('../../img/asterizm-form-header-bg.png') no-repeat center;
-		background-size: cover;
-		border-radius: 16px 16px 0 0;
-		// border: 1px solid #2C2D54;
+		height: 187px;			
+		border-radius: 16px 16px 0 0;		
+		position: relative;
+		overflow: hidden;
 		padding: 0 36px;
 
 		@media (max-width: 440px) {
 			padding: 0 24px;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: url('../../img/asterizm-form-header-bg.png') no-repeat center;
+			background-size: cover;
+			z-index: 1;
 		}
 	}
 
@@ -135,6 +148,18 @@
 		background-color: #FCFF52;
 	}
 
+	&__form-section.venom &__form-header {
+		background-image: linear-gradient(222deg, rgba(17, 168, 126, 0.65) 0%, rgba(47, 114, 166, 0.65) 100%); 
+	}
+
+	&__form-section.venidium &__form-header {
+		background-image: linear-gradient(222deg, #FAAC25 0%, #FF7A00 100%);
+	}
+
+	&__form-section.zkevm &__form-header {
+		background-color: #8941E7;
+	}
+
 	&__form-header-description {
 		display: flex;
 		align-items: flex-start;
@@ -143,6 +168,8 @@
 		line-height: 1.57;		
 		letter-spacing: -0.02em;
 		color: #FFFFFF;
+		position: relative;
+		z-index: 2;
 
 		@media (max-width: 440px) {
 			flex-direction: column;
@@ -158,6 +185,8 @@
 		font-weight: 600;
 		color: white;
 		border-radius: 18px;
+		position: relative;
+		z-index: 2;
 		padding: 0 20px 0 15px;
 
 		img {
@@ -233,6 +262,21 @@
 	&__form-section.evescale &__form-header-label {
 		background: #4554E5;
 		box-shadow: inset 0px 0px 18px #2939CF;
+	}
+
+	&__form-section.venom &__form-header-label {		
+		background: linear-gradient(180deg, #12A77E 0%, #2C76A3 100%);
+		box-shadow: 0px -3px 16px 0px rgba(0, 99, 73, 0.65) inset;
+	}
+
+	&__form-section.venidium &__form-header-label {				
+		background: linear-gradient(180deg, #FFAF2D 0%, #FF7A00 100%);
+		box-shadow: 0px -3px 16px 0px #D16A00 inset;
+	}
+
+	&__form-section.zkevm &__form-header-label {						
+		background: #8941E7;
+		box-shadow: 0px -4px 16px 0px #6B1BD2 inset;
 	}
 
 	&__form {
