@@ -7131,6 +7131,10 @@ fieldset {
     background: rgba(2, 3, 33, 0.65);
   }
 
+  .btn_twitter {
+    padding: 0 12px;
+  }
+
   .btn-apply {
     width: 32px;
     height: 32px;
@@ -7139,6 +7143,25 @@ fieldset {
 
   .btn-apply::after {
     display: none;
+  }
+
+  .cookies-popup {
+    right: auto;
+    left: 50%;
+    bottom: 10px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 95%;
+    padding: 16px;
+  }
+
+  .cookies-popup__cta {
+    gap: 8px;
+  }
+
+  .id-block {
+    font-size: 10px;
   }
 
   .main-menu__items {
@@ -7242,6 +7265,10 @@ fieldset {
     padding: 32px 0;
   }
 
+  .footer__socials::before {
+    display: none;
+  }
+
   .gas-station-wrapper {
     padding: 28px 0;
   }
@@ -7262,6 +7289,10 @@ fieldset {
 
   .gas-station__form {
     padding: 25px 20px 20px;
+  }
+
+  .gas-station__input-block input {
+    font-size: 14px;
   }
 
   .gas-station__title-block {
@@ -7308,6 +7339,12 @@ fieldset {
     gap: 6px;
     height: auto;
     min-height: auto;
+  }
+
+  .gas-station__networks-table-row-content {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 
   .gas-station__networks-table-row_rejected,
@@ -7379,12 +7416,15 @@ fieldset {
     font-size: 12px;
   }
 
+  .gas-station__networks-error {
+    margin-top: 8px;
+  }
+
   .gas-station__input-cnt {
     padding-left: 0;
   }
 
   .gas-station__input {
-    text-align: right;
     padding-right: 80px;
   }
 
@@ -7546,12 +7586,12 @@ fieldset {
   }
 
   .blue-social-link {
-    width: 38px;
-    height: 38px;
+    width: 32px;
+    height: 32px;
   }
 
   .blue-social-link img {
-    width: 23px;
+    width: 16px;
   }
 
   .page-title {
@@ -7687,6 +7727,27 @@ fieldset {
     padding: 10px;
   }
 
+  .quiz__cta {
+    width: 100%;
+  }
+
+  .quiz__cta button,
+  .quiz__cta a {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+  }
+
+  .quiz__step-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
   .chains-count {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
@@ -7765,7 +7826,7 @@ fieldset {
 
 @media (max-width: 360px) {
   .choose-token-button {
-    min-width: 120px;
+    min-width: 140px;
     padding: 6px 30px 6px 6px;
   }
 

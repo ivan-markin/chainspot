@@ -329,6 +329,10 @@
 			outline: none;
 			padding-right: 15px;
 
+			@media (max-width: 768px) {
+				font-size: 14px;
+			}
+
 			&::placeholder {
 				color: #565B78;
 			}
@@ -496,7 +500,7 @@
 				-webkit-text-fill-color: transparent;
 				background-clip: text;
 				text-fill-color: transparent; 
-			}		
+			}							
 			
 			.blue-social-link {
 				display: inline-flex;
@@ -619,7 +623,11 @@
 			&-content {
 				display: flex;
 				align-items: center;		
-				width: 100%;										
+				width: 100%;		
+				
+				@media (max-width: 768px) {
+					align-items: flex-start;
+				}
 			}
 
 			&_error,
@@ -879,6 +887,10 @@
 	&__networks-error {
 		width: 16px;
 		margin-right: 24px;
+
+		@media (max-width: 768px) {
+			margin-top: 8px;
+		}
 	}
 
 	&__input-cnt {
@@ -908,8 +920,7 @@
 		color: white;
 		padding: 0 130px 0 12px;	
 		
-		@media (max-width: 768px) {
-			text-align: right;
+		@media (max-width: 768px) {			
 			padding-right: 80px;
 		}
 

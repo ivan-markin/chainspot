@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <!-- <link rel="stylesheet" href="./css/styles-old.css?_v=20230715005512"> -->
-  <link rel="stylesheet" href="./css/style.min.css?_v=20230715005512">
+  <!-- <link rel="stylesheet" href="./css/styles-old.css?_v=20230716234031"> -->
+  <link rel="stylesheet" href="./css/style.min.css?_v=20230716234031">
   <title>Chainspot</title>
 </head>
 
@@ -393,44 +393,7 @@
 </div>
 </div>
 
-  <div class="disclaimer-popup active popup dark">
-	<div class="popup__container">
-		<h3 class="popup__title">Disclaimer</h3>
-		<div class="disclaimer-popup__cnt">
-			<div class="disclaimer-popup__content">
-				<p>The protocol is an open-source, blockchain-based software tool made available by the Chainspot Labs that seeks to provide an ability to top up wallets with zero coin balance in many chains.
-				Your use of the Protocol is entirely at your own risk.</p>
-
-				<p>The Protocol is available on an “as is” basis without warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability, title, fitness for a particular purpose and non-infringement.</p>
-
-				<p>You assume all risks associated with using the Protocol, and digital assets and decentralized systems generally, including but not limited to, that:</p>
-
-				<p>(a) digital assets and decentralized systems are highly volatile;</p>
-
-				<p>(b) using digital assets and decentralized systems is inherently risky due to both features of such assets and decentralized systems and the potential unauthorized acts of third parties;</p>
-
-				<p>(c) you may not have ready access to digital assets and decentralized systems; and</p>
-
-				<p>(d) you may lose some or all of your tokens or other digital assets. You agree that you will have no recourse against anyone else, including the Chainspot or any entities related to the Protocol, for any losses due to the use of the Protocol. For example, these losses may arise from or relate to:</p>
-
-				<p>(i) incorrect information;</p>
-
-				<p>(ii) software or network failures;</p>
-
-				<p>(iii) corrupted digital wallet files;</p>
-
-				<p>(iv) unauthorized access;</p>
-
-				<p>(v) errors, mistakes, or inaccuracies;</p>
-
-				<p>(vi) third-party activities; or</p>
-
-				<p>(vii) revocation of your access to the Protocol.</p>
-			</div>
-		</div>
-		<button class="disclaimer-popup__btn btn btn_primary">I agree</button>
-	</div>	
-</div>
+  
   
   <div class="wrong-network-popup popup dark" id="wrongNetworkPopup">
 	<div class="popup__container">
@@ -645,7 +608,13 @@
           
           
 
-          
+          <div class="cookies-popup">
+	<span class="cookies-popup__caption">We use cookies to improve your experience</span>
+	<div class="cookies-popup__cta">
+		<button class="btn btn_dark">Ok</button>
+		<button class="btn btn_gray">Necessary cookies only</button>
+	</div>
+</div>
           
           <div class="gas-station">
 	<section class="gas-station__title-block">
@@ -676,11 +645,11 @@
 						</div>					
 					</div>
 					<form class="gas-station__form" action="">
-						<!-- <div class="gas-station__input-header">
+						<div class="gas-station__input-header">
 							<span>Pay</span>
 							<span>Balance: -</span>
-						</div> -->
-						<!-- <div class="gas-station__input-block">
+						</div>
+						<div class="gas-station__input-block">
 							<input type="text" placeholder="Enter amount">
 							<button class="choose-token-button choose-token-button_dark">
 								<div class="choose-token-button__icons">
@@ -694,24 +663,24 @@
 									<span class="choose-token-button__network">on Polygon</span>
 								</div>
 							</button>
-						</div> -->
-						<!-- <span class="error-message">Wallet balance is insufficient</span> -->
+						</div>
+						<span class="error-message">Wallet balance is insufficient</span>
 						
-						<!-- <div class="gas-station__claim-btn">
+						<div class="gas-station__claim-btn">
 							<button class="btn">
 								Claim ATT token
 							</button>
 							<span class="gas-station__claim-btn-tooltip">
 								Connect VENOM wallet first
 							</span>
-						</div>						 -->
+						</div>						
 						
-						<!-- <div class="gas-station__form-attention">
+						<div class="gas-station__form-attention">
 							<span>
 								The liquidity you generate as gas is allocatedevenly throughout the networks.
 							</span>
-						</div> -->
-						<!-- <div class="gas-station__form-params">
+						</div>
+						<div class="gas-station__form-params">
 							<div class="gas-station__form-params-line">
 								<span class="gas-station__form-params-name">Min allocations liquidity per network</span>
 								<span class="gas-station__form-params-value">$10</span>
@@ -720,12 +689,12 @@
 								<span class="gas-station__form-params-name">Commission for liquidity allocation</span>
 								<span class="gas-station__form-params-value">5%</span>
 							</div>
-						</div> -->
+						</div>
 						<div class="gas-station__status-block">
-							<h2 class="gas-station__status-title">Transaction confirmation</h2>
+							<!-- <h2 class="gas-station__status-title">Transaction confirmation</h2> -->
 							
 							<!-- WAITING -->
-							<div class="gas-station__status-label">
+							<!-- <div class="gas-station__status-label">
 								<span class="gas-station__status-loader"></span>
 								<span class="gas-station__status-caption">Confirm transaction</span>
 								<div class="id-block">
@@ -738,7 +707,7 @@
 										ID was coppied
 									</div>
 								</div>
-							</div>
+							</div> -->
 							
 							<!-- SUCCESS -->
 							<!-- <div class="gas-station__status-label">
@@ -776,7 +745,7 @@
 						</span>						
 					</span> -->
 
-					<!-- <span class="gas-station__networks-caption">
+					<span class="gas-station__networks-caption">
 						<span><span class="blue-gradient-text">Please join our chat</span> and share your opinion about the product!</span>
 						<span class="gas-station__networks-caption-socials">
 							<a href="" class="blue-social-link">
@@ -786,10 +755,10 @@
 								<img src="img/discord-icon_blue.svg" alt="">
 							</a>
 						</span>						
-					</span> -->
+					</span>
 
 					<!-- QUIZ -->
-					<div class="quiz">
+					<!-- <div class="quiz">
 						<div class="quiz__step-1">
 							<span class="quiz__text">Do you have friends in&nbsp;web3 community?</span>
 							<div class="quiz__cta">
@@ -797,7 +766,7 @@
 								<button class="btn btn_gray">No</button>
 							</div>
 						</div>
-						<!-- <div class="quiz__step-2">
+						<div class="quiz__step-2">
 							<span class="quiz__text">
 								Share with your friends the experience of interacting with Gas Charger, probably this tool will also be useful to them:
 							</span>
@@ -813,8 +782,8 @@
 									<img src="img/discord-icon_blue.svg" alt="">
 								</a>
 							</div>
-						</div> -->
-						<!-- <div class="quiz__step-3">
+						</div>
+						<div class="quiz__step-3">
 							<span class="quiz__text">
 								Find like-minded people in our community:
 							</span>
@@ -830,8 +799,8 @@
 									<img src="img/discord-icon_blue.svg" alt="">
 								</a>
 							</div>
-						</div> -->
-					</div>
+						</div>
+					</div> -->
 
 
 					<div class="gas-station__networks-table-header">
@@ -1335,7 +1304,7 @@
 </footer>   
   </div>  
 
-  <script src="./js/app.min.js?_v=20230715005512"></script>
+  <script src="./js/app.min.js?_v=20230716234031"></script>
 </body>
 
 </html>

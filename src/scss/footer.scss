@@ -89,6 +89,10 @@
 			background: #515566;
 			border-radius: 50%;
 			margin-right: 30px;
+
+			@media (max-width: 768px) {
+				display: none;
+			}
 		}
 
 		a {						
