@@ -692,7 +692,7 @@ template {
 }
 
 .alert.active {
-  z-index: 4;
+  z-index: 9;
   opacity: 1;
   visibility: visible;
 }
@@ -7370,6 +7370,10 @@ fieldset {
     width: 157px;
   }
 
+  .logo-link {
+    margin-right: auto;
+  }
+
   .main-menu_header {
     display: none;
   }
@@ -7444,10 +7448,6 @@ fieldset {
 
   .header_dark {
     background: rgba(2, 3, 33, 0.65);
-  }
-
-  .logo-link {
-    margin-right: auto;
   }
 
   .btn_twitter {
