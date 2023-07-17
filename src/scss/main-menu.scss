@@ -32,6 +32,7 @@
 		position: relative;
 		font-size: 16px;
 		white-space: nowrap;
+		transition: all .1s;
 		
 		@media (max-width: 1200px) {
 			font-size: 14px;
@@ -39,6 +40,10 @@
 
 		@media (max-width: 768px) {
 			font-size: 24px;
+		}
+
+		&:hover {
+			opacity: .55;
 		}
 
 		&.soon,
@@ -82,8 +87,8 @@
 			position: static;
 			transform: none;
 			margin-left: 5px;
-		}
-	}
+		}		
+	}	
 
 	&_header {
 		@media (max-width: 1024px) {
@@ -106,23 +111,39 @@
 		gap: 4px;
 		color: var(--font-dark);
 		text-decoration: none;
+		position: relative;
 		transition: all .1s;		
-
-		&:hover {
-			color: #0071FF !important;
-
-			svg {
-				fill: #0071FF !important;
+		
+		&.active {
+			&::after {
+				content: '';
+				display: block;
+				width: 4px;
+				height: 4px;
+				border-radius: 50%;
+				background-color: var(--font-dark);
+				position: absolute;
+				bottom: -8px;
+				left: calc(50% - 2px);
 			}
 		}
+	}
 
-		svg {
-			transition: all .1s;
-		}
+	&.mobile &__link.active {		
+
+		&::after {
+			display: none;
+		}		
 	}
 
 	.dark &__link {
 		color: white;
+
+		&.active {
+			&::after {			
+				background-color: white;	
+			}
+		}
 
 		svg {
 			fill: white;

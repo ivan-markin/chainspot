@@ -112,8 +112,10 @@
 		position: absolute;
 		right: 32px;
 		top: 28px;		
-		cursor: pointer;
+		cursor: pointer;		
+	}
 
+	&:not(&.dark) &__close {
 		@media (max-width: 768px) {			
 			left: 0;
 			top: 0;

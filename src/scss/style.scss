@@ -50,7 +50,7 @@
 @import './tokens-list-item.scss';
 @import './popup-search-input.scss';
 @import './wrong-network-popup.scss';
-@import './connect-to-a-wallet-popup.scss';
+@import './connect-venom-popup.scss';
 @import './loader-white.scss';
 @import './wallet-info-button.scss';
 @import './wallet-info-button-mobile.scss';
@@ -81,6 +81,9 @@
 @import './tooltip.scss';
 @import './chains-count.scss';
 @import './disclaimer-popup.scss';
+@import './filter-btn.scss';
+@import './networks-filters-mobile.scss';
+@import './link-btn.scss';
 
 *,
 *::before,

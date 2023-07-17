@@ -1,14 +1,18 @@
-.connect-a-wallet-popup {
+.connect-venom-popup {
 	
 	.popup__container {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width: 90%;
+		width: 100%;
 		max-width: 348px;
 		min-width: auto;
 		min-height: auto;
 		padding: 50px 40px;
+
+		@media (max-width: 768px) {
+			max-width: none;
+		}
 	}
 
 	.popup__title {

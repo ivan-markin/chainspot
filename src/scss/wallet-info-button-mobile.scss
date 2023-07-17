@@ -12,6 +12,10 @@
 	cursor: pointer;
 	padding: 3px 6px 3px 3px;	
 
+	@media (min-width: 769px) {
+		display: none;
+	}
+
 	span {
 		display: flex;
 		align-items: center;		
