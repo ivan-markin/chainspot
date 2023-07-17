@@ -3,4 +3,8 @@
 	align-items: center;
 	gap: 24px;
 	margin-bottom: 12px;
+
+	@media (min-width: 769px) {
+		display: none;
+	}
 }

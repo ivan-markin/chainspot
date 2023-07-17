@@ -33,11 +33,10 @@
 
 		@media (max-width: 768px) {
 			position: fixed;
-			bottom: auto;
+			bottom: 0;
 			right: auto;
-			top: 60px;
 			left: 0;
-			transform: translateY(-5%);
+			transform: translateY(5%);
 		}
 	}
 

@@ -1,7 +1,7 @@
 .connect-to-a-wallet-popup {
 	
 	.popup__container {
-		width: 95%;
+		width: 100%;
 		max-width: 500px;
 		min-width: auto;
 		min-height: auto;
@@ -42,6 +42,13 @@
 		z-index: 999999;
 		transition: all .1s;
 		padding: 0 16px;
+
+		@media (max-width: 768px) {
+			border-radius: 8px;
+			font-size: 14px;
+			font-weight: 400;
+			padding: 0 12px;
+		}
 	}
 
 	&__waiting {
@@ -51,6 +58,12 @@
 		font-size: 14px;	 	
 		color: #565B78;
 		margin-left: auto;
+
+		&-caption {
+			@media (max-width: 768px) {
+				display: none;
+			}
+		}
 	}
 
 	&__initializing {
