@@ -1,32 +1,33 @@
-.wallet-info-button {
+.wallet-info-button-mobile {
 	display: flex;	
 	align-items: center;
-	gap: 4px;	
+	gap: 6px;	
 	background: none;
-	border-radius: 8px;
+	border-radius: 6px;
+	height: 32px;
 	border: none;
 	text-decoration: none;
 	color: #fff;
 	background: #EBF5FF;
 	cursor: pointer;
-	padding: 4px;
+	padding: 3px 6px 3px 3px;	
 
-	// @media (max-width: 768px) {
-	// 	border-radius: 8px;
-	// 	gap: 3px;
-	// 	padding: 3px;
-	// }
-
-	@media (max-width: 768px) {
-		display: none; 
+	span {
+		display: flex;
+		align-items: center;		
+		border-radius: 5px;	
+		height: 26px;
+		font-size: 14px;
+		color: white;	
+		padding: 0 14px;
 	}
 
 	&.dark {
 		background: none;
 		border: rgba($color: white, $alpha: .15) 1px solid;
-
-		@media (max-width: 768px) {
-			display: none; 
+		
+		span {
+			background: linear-gradient(0deg, rgba(1, 5, 25, 0.65) 0%, rgba(1, 5, 25, 0.65) 100%), rgba(0, 113, 255, 0.25);
 		}
 	}
 

@@ -37,6 +37,13 @@
 				<!-- NO WALLETS CONNECTED -->
 				
 				<!-- ONE WALLET CONNECTED -->
+				
+				@@if (className === 'header_dark') {
+					@@include('wallet-info-button-mobile.html', {
+						'className': 'dark'	
+					})
+				}					
+				
 				@@if (className === 'header_dark') {
 					@@include('wallet-info-button.html', {
 						'className': 'dark'	

@@ -14,13 +14,13 @@
 		}
 
 		@media (max-width: 768px) {
-			flex-direction: column;			
+			flex-direction: column;				
 		}		
 	}
 
 	&.mobile &__items {
-		align-items: flex-start;
-		gap: 0;		
+		align-items: center;
+		gap: 24px;		
 	}
 
 	&.footer {
@@ -38,7 +38,7 @@
 		}
 
 		@media (max-width: 768px) {
-			font-size: 16px;
+			font-size: 24px;
 		}
 
 		&.soon,
@@ -73,10 +73,9 @@
 
 	&.mobile &__item {
 		display: flex;
-		align-items: center;
-		height: 66px;
-		width: 100%;		
-		border-bottom: 1px solid #E0E7F2;;
+		align-items: center;		
+		justify-content: center;
+		width: 100%;				
 		padding: 0 20px;
 
 		&::after {
@@ -107,8 +106,7 @@
 		gap: 4px;
 		color: var(--font-dark);
 		text-decoration: none;
-		transition: all .1s;
-		font-size: 16px;
+		transition: all .1s;		
 
 		&:hover {
 			color: #0071FF !important;
@@ -123,7 +121,7 @@
 		}
 	}
 
-	.header_dark &__link {
+	.dark &__link {
 		color: white;
 
 		svg {

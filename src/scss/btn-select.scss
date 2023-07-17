@@ -1,5 +1,6 @@
 .btn-select {
 	position: relative;
+	z-index: 9999;
 
 	&__btn {
 		gap: 18px;
@@ -28,13 +29,26 @@
 		visibility: hidden;
 		opacity: 0;
 		z-index: -1;
-		transition: all .3s;
+		transition: all .3s;		
+
+		@media (max-width: 768px) {
+			position: fixed;
+			bottom: auto;
+			right: auto;
+			top: 60px;
+			left: 0;
+			transform: translateY(-5%);
+		}
 	}
 
 	&.active &__popup {
 		visibility: visible;
 		opacity: 1;
-		z-index: 10;
+		z-index: 99999999;
 		transform: translateY(100%);
+
+		@media (max-width: 768px) {			
+			transform: translateY(0);
+		}
 	} 
 }
