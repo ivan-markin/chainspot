@@ -3240,6 +3240,12 @@ input:checked + .filter__btn {
   text-align: center;
 }
 
+.gas-station__networks-table-row-item.i-type::after,
+.gas-station__networks-table-row-item.i-amount::after {
+  content: "";
+  display: none;
+}
+
 .gas-station__networks-table-row-item.i-address {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3248,12 +3254,6 @@ input:checked + .filter__btn {
       -ms-flex-align: center;
           align-items: center;
   gap: 8px;
-}
-
-.gas-station__networks-table-row-item.i-address::before,
-.gas-station__networks-table-row-item.i-amount::before {
-  content: "";
-  display: none;
 }
 
 .gas-station__networks-table-row-item-status {
@@ -7387,7 +7387,7 @@ fieldset {
     left: 48px;
   }
 
-  .gas-station__networks-table-row-item.i-address,
+  .gas-station__networks-table-row-item.i-type,
   .gas-station__networks-table-row-item.i-amount {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7398,8 +7398,8 @@ fieldset {
     gap: 6px;
   }
 
-  .gas-station__networks-table-row-item.i-address::before,
-  .gas-station__networks-table-row-item.i-amount::before {
+  .gas-station__networks-table-row-item.i-type::after,
+  .gas-station__networks-table-row-item.i-amount::after {
     display: block;
     width: 3px;
     height: 3px;

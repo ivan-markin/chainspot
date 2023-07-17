@@ -746,24 +746,18 @@
 					text-align: center;
 				}
 
-				&.i-address {
-					display: flex;
-					align-items: center;
-					gap: 8px;
-				}
-
-				&.i-address,
+				&.i-type,
 				&.i-amount {
 					@media (max-width: 768px) {
 						display: flex;
 						align-items: center;
 						gap: 6px;
-					}
-
-					&::before {
+					}									
+					
+					&::after {
 						content: '';
 						display: none;
-
+	
 						@media (max-width: 768px) {
 							display: block;
 							width: 3px;
@@ -771,8 +765,14 @@
 							border-radius: 50%;
 							background-color: #565B78;
 						}
-					}					
-				}
+					}
+				}				
+
+				&.i-address {
+					display: flex;
+					align-items: center;
+					gap: 8px;
+				}				
 
 				&.i-type,
 				&.i-amount {
