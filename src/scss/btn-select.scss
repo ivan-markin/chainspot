@@ -5,14 +5,21 @@
 	&__btn {
 		gap: 18px;
 
+		@media (max-width: 768px) {
+			height: 32px;
+			font-size: 14px;
+			white-space: nowrap;
+			padding: 0 10px;
+		}
+
 		&::after {
-			content: '';
+			content: ''; 
 			width: 9px;
 			height: 5px;
 			background: url('../img/select-arrow_white.svg') no-repeat center;
 			background-size: contain;
 			transition: all .2s;
-		}
+		}		
 	}
 
 	&.active &__btn {

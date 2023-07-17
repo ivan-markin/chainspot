@@ -7450,6 +7450,10 @@ fieldset {
     background: rgba(2, 3, 33, 0.65);
   }
 
+  .logo {
+    width: 130px;
+  }
+
   .btn_twitter {
     padding: 0 12px;
   }
@@ -7775,6 +7779,13 @@ fieldset {
 
   .checkbox {
     margin: 16px 0 48px;
+  }
+
+  .btn-select__btn {
+    height: 32px;
+    font-size: 14px;
+    white-space: nowrap;
+    padding: 0 10px;
   }
 
   .btn-select__popup {
