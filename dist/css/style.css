@@ -680,10 +680,21 @@ template {
   top: 135px;
   background: rgba(30, 41, 59, 0.75) url("../img/alert-icon.svg") no-repeat 15px 13px;
   border: 1px solid rgba(255, 255, 255, 0.25);
-  z-index: 4;
+  z-index: -1;
+  visibility: hidden;
+  opacity: 0;
   -webkit-backdrop-filter: blur(16px);
           backdrop-filter: blur(16px);
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
   padding: 15px 35px 15px 47px;
+}
+
+.alert.active {
+  z-index: 4;
+  opacity: 1;
+  visibility: visible;
 }
 
 .alert_success {
