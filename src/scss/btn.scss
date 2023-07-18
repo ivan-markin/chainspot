@@ -21,7 +21,8 @@
 	}
  
 	&_dark {
-		background: linear-gradient(90deg, #0573E4 2.16%, #02207E 100.13%);
+		background: linear-gradient(90deg, #0573E4 0%, #02207E 51%, #0573E4 100%);
+		background-size: 200% auto;
 	}
 
 	&_primary {

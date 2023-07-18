@@ -21,6 +21,11 @@
 		top: 95px;
 	}
 
+	a {
+		color: white;
+		text-decoration: underline;
+	}
+
 	&.active { 
 		z-index: 9;
 		opacity: 1;
