@@ -74,4 +74,10 @@
 	&_dark &__cta-link {
 		color: white;
 	}
+
+	.main-menu {
+		@media (max-width: 1024px) {
+			display: none;
+		}
+	}
 }

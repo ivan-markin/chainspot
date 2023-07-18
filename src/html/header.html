@@ -1,18 +1,6 @@
 <header class="header @@className">		
 
 	@@if (className === 'header_dark') {
-		@@include('logo.html', {
-			'theme': '_dark'
-		})
-	}	
-	
-	@@if (className === '') {
-		@@include('logo.html', {
-			'theme': ''
-		})
-	}		
-
-	@@if (className === 'header_dark') {
 		@@include('main-menu.html', {
 			'className': 'dark'
 		})
@@ -22,9 +10,19 @@
 		@@include('main-menu.html', {
 			'className': ''
 		})
-	}	
-
+	}
 	
+	@@if (className === 'header_dark') {
+		@@include('logo.html', {
+			'theme': '_dark'
+		})
+	}	
+	
+	@@if (className === '') {
+		@@include('logo.html', {
+			'theme': ''
+		})
+	}			
 
 	<div class="header__actions">
 		<div class="header__socials">
@@ -54,7 +52,7 @@
 					})
 				}					
 				
-				<!-- @@if (className === 'header_dark') {
+				@@if (className === 'header_dark') {
 					@@include('wallet-info-button.html', {
 						'className': 'dark'	
 					})
@@ -64,7 +62,7 @@
 					@@include('wallet-info-button.html', {
 						'className': ''
 					})
-				}	 -->
+				}	
 				<!-- ONE WALLET CONNECTED -->
 				
 				<!-- MULTIPLE WALLETS CONNECTED -->

@@ -7341,6 +7341,17 @@ fieldset {
   }
 }
 
+@media (min-width: 1025px) {
+  .logo-link {
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
 @media (max-width: 1200px) {
   .header {
     padding: 0 40px;
@@ -7379,6 +7390,10 @@ fieldset {
   }
 
   .header__socials {
+    display: none;
+  }
+
+  .header .main-menu {
     display: none;
   }
 
