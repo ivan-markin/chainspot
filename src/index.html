@@ -6,7 +6,7 @@
 <body>      
   @@include('html/mobile-menu.html', {})
 
-  @@include('html/success-popup.html', {})
+  <!-- @@include('html/success-popup.html', {}) -->
   
   <div class="container">
     <div class="ad-block">
@@ -45,6 +45,20 @@
             <span class="hero-section__params-item-title">130</span>
             <span class="hero-section__params-item-caption">Networks</span>
           </div>          
+        </div>
+      </section>
+
+      <section class="banner-section">
+        <div class="wrap">
+          <a href="https://gas.chainspot.io/" target="_blank">
+            <picture>
+              <source srcset="@img/banner-gas.webp, @img/banner-gas-2x.webp 2x" media="(min-width: 769px)" type="image/webp">
+              <source srcset="@img/banner-gas.png, @img/banner-gas-2x.png 2x" media="(min-width: 769px)" type="image/png">  
+              <source srcset="@img/banner-gas-mobile.webp, @img/banner-gas-mobile-2x.webp 2x" media="(max-width: 768px)" type="image/webp">
+              <source srcset="@img/banner-gas-mobile.png, @img/banner-gas-mobile-2x.png 2x" media="(max-width: 768px)" type="image/png">                            
+              <img class="banner-section__banner" src="@img/banner-gas.png" alt="">
+            </picture>
+          </a>
         </div>
       </section>
 
