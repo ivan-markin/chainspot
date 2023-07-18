@@ -1163,6 +1163,7 @@ template {
   position: relative;
   font-size: 16px;
   white-space: nowrap;
+  color: var(--font-dark);
   -webkit-transition: all 0.1s;
   -o-transition: all 0.1s;
   transition: all 0.1s;
@@ -1263,15 +1264,15 @@ template {
   display: none;
 }
 
-.dark .main-menu__link {
+.main-menu.dark .main-menu__link {
   color: white;
 }
 
-.dark .main-menu__link.active::after {
+.main-menu.dark .main-menu__link.active::after {
   background-color: white;
 }
 
-.dark .main-menu__link svg {
+.main-menu.dark .main-menu__link svg {
   fill: white;
 }
 
@@ -2568,6 +2569,11 @@ input:checked + .filter__btn {
           flex: none;
   position: relative;
   top: -187px;
+}
+
+.gas-station__main-logo {
+  position: relative;
+  z-index: 10;
 }
 
 .gas-station__form-header {

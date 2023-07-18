@@ -12,9 +12,19 @@
 		})
 	}		
 
-	@@include('main-menu.html', {
-		'className': 'main-menu_header dark'
-	})
+	@@if (className === 'header_dark') {
+		@@include('main-menu.html', {
+			'className': 'dark'
+		})
+	}	
+	
+	@@if (className === '') {
+		@@include('main-menu.html', {
+			'className': ''
+		})
+	}	
+
+	
 
 	<div class="header__actions">
 		<div class="header__socials">

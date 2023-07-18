@@ -48,6 +48,9 @@
 	}
 	
 	&__main-logo {
+		position: relative;
+		z-index: 10;
+		
 		@media (max-width: 440px) {
 			width: 100%;
 		}

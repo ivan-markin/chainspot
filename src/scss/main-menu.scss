@@ -32,6 +32,7 @@
 		position: relative;
 		font-size: 16px;
 		white-space: nowrap;
+		color: var(--font-dark);
 		transition: all .1s;
 		
 		@media (max-width: 1200px) {
@@ -136,7 +137,7 @@
 		}		
 	}
 
-	.dark &__link {
+	&.dark &__link {
 		color: white;
 
 		&.active {
