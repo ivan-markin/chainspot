@@ -99,10 +99,10 @@
 	&.footer &__item {
 		font-size: 14px;
 
-		&.soon::after,
-		&.new::after {
-			display: none;
-		}
+		// &.soon::after,
+		// &.new::after {
+		// 	display: none;
+		// }
 	}
 
 	&__link {
@@ -165,5 +165,9 @@
 		svg {
 			fill: white;
 		}
+
+		&.active::after {
+			display: none;
+		} 
 	}
 }

@@ -1231,11 +1231,6 @@ template {
   font-size: 14px;
 }
 
-.main-menu.footer .main-menu__item.soon::after,
-.main-menu.footer .main-menu__item.new::after {
-  display: none;
-}
-
 .main-menu__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1295,6 +1290,10 @@ template {
 
 .main-menu.footer .main-menu__link svg {
   fill: white;
+}
+
+.main-menu.footer .main-menu__link.active::after {
+  display: none;
 }
 
 .no-webp .main {
@@ -3281,7 +3280,8 @@ input:checked + .filter__btn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
+  text-align: left;
+  white-space: nowrap;
   gap: 7px;
 }
 

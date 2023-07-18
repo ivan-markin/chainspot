@@ -588,12 +588,12 @@
 
 				&.i-type {
 					width: 19%;
-					margin-right: 25px;
+					margin-right: 25px; 
 				}
 
 				&.i-amount {
 					width: 14%;
-					margin-right: 16px;
+					margin-right: 16px; 
 				}
 
 				&.i-address {
@@ -748,7 +748,8 @@
 					display: flex;
 					align-items: center;
 					justify-content: center;
-					text-align: center;
+					text-align: left;
+					white-space: nowrap;
 					gap: 7px;					
 				}
 
