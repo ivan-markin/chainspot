@@ -308,7 +308,11 @@
 		border: 1px solid #2C2D54;		
 		border-radius: 8px;
 		height: 70px;
-		padding: 0 17px;		
+		padding: 0 17px;	
+		
+		@media (max-width: 768px) {
+			gap: 12px;
+		}
 
 		&.error {
 			border-color: var(--error-color);

@@ -14,7 +14,7 @@
 	padding: 12px 40px 12px 12px;
 
 	@media (max-width: 360px) {
-		min-width: 140px;	
+		min-width: 135px;	
 		padding: 6px 30px 6px 6px;
 	}
 
@@ -23,6 +23,10 @@
 		border: none;
 		gap: 12px;
 		padding: 0;
+
+		@media (max-width: 768px) {
+			gap: 8px;
+		}
 	}
 
 	&::after {
@@ -53,7 +57,12 @@
 
 	&__dark &__icons {
 		width: 32px;
-		height: 32px;		
+		height: 32px;	
+		
+		@media (max-width: 768px) {
+			width: 28px;
+			height: 28px;	
+		}
 	}
 
 	&__icon {
@@ -80,6 +89,11 @@
 	&_dark &__icon_token {
 		width: 32px;
 		height: 32px;
+
+		@media (max-width: 768px) {
+			width: 28px;
+			height: 28px;	
+		}
 	}
 
 	&_dark &__icon_network {
@@ -92,7 +106,11 @@
 	&__value {
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;		
+		align-items: flex-start;	
+		
+		@media (max-width: 768px) {
+			gap: 2px;
+		}
 	}
 
 	&__token {
@@ -104,7 +122,11 @@
 	&_dark &__token {
 		font-size: 16px;
 		font-weight: 600;
-		color: white;		
+		color: white;	
+		
+		@media (max-width: 768px) {
+			font-size: 14px;
+		}
 	}
 
 	&__network {
@@ -115,5 +137,9 @@
 	&_dark &__network {
 		font-size: 14px;
 		color: #565B78;
+
+		@media (max-width: 768px) {
+			font-size: 12px;
+		}
 	}
 }
