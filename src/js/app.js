@@ -20,13 +20,21 @@ smoothscroll.polyfill();
 flsFunctions.newsBlockWidth();
 
 const swiper = new Swiper('.most-pop-slider', {	
-	modules: [Navigation],
+	modules: [Navigation],	
 	spaceBetween: 40,	
 	slidesPerView: 'auto',	
 	navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+	slidesOffsetBefore: 20,
+	slidesOffsetAfter: 20,
+	breakpoints: {
+		769: {
+			slidesOffsetBefore: 0,
+			slidesOffsetAfter: 0,
+		}
+	}
 });
 
 // sortSelectBtn.addEventListener('click', flsFunctions.selectHandler);

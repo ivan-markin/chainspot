@@ -3,7 +3,7 @@
 
 	&_dark {
 		background: #000212;
-		border-top: #131315 1px solid;
+		border-top: #2C2D54 1px solid;
 	}
 
 	&__logo {		
@@ -60,7 +60,7 @@
 		justify-content: center;
 		height: 80px;
 		width: 100%;
-		border-top: rgba($color: #fff, $alpha: .2) 1px solid;
+		border-top: #2C2D54 1px solid;
 
 		@media (max-width: 768px) {
 			flex-direction: column-reverse;

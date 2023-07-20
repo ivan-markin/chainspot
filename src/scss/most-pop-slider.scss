@@ -1,5 +1,15 @@
 .most-pop-slider {
 	position: relative;
+	
+	@media (max-width: 1200px) {
+		width: 100%;		
+		overflow-x: hidden;				
+	}
+	
+	@media (max-width: 768px) {
+		width: calc(100% + 40px);
+		left: -20px;	
+	}
 
 	&__item {
 		display: flex;
@@ -57,18 +67,51 @@
 		width: calc(100% + 20px);
 		z-index: 10;
 
+		@media (max-width: 768px) {
+			width: calc(100% - 20px);
+			left: 10px;			
+		}
+
 		&-btn {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			position: static;
+			position: absolute;
+			top: 50%;
 			width: 44px;
 			height: 44px;
 			border-radius: 50%;
 			border: none;
 			background: #FFFFFF;
 			box-shadow: 0px 7px 29px rgba(0, 0, 0, 0.06), 0px 4.1216px 15.1264px rgba(0, 0, 0, 0.043392), 0px 2.1168px 7.0992px rgba(0, 0, 0, 0.033696), 0px 0.8512px 3.1088px rgba(0, 0, 0, 0.026304), 0px 0.1904px 1.3456px rgba(0, 0, 0, 0.016608);
-			cursor: pointer;
+			cursor: pointer;		
+			transform: translateY(-50%);
+			transition: all .2s;
+			z-index: 10;
+
+			@media (max-width: 1200px) {
+				top: 60%;
+			}
+			
+			&.swiper-button-prev {
+				left: 21vw;
+
+				@media (min-width: 1341px) {
+					left: 270px;
+				}
+				
+				@media (max-width: 1200px) {
+					left: 10px;
+				}
+			}
+
+			&.swiper-button-next {
+				right: 10px;
+
+				@media (max-width: 768px) {
+					right: 10px;
+				}
+			}
 
 			&.swiper-button-disabled {
 				opacity: 0;

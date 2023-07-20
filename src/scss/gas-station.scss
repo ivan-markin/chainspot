@@ -14,7 +14,7 @@
 
 	&__content {
 		display: flex;
-		align-items: flex-start;
+		align-items: flex-start;		
 		gap: 48px;		
 
 		@media (max-width: 1024px) {
@@ -688,24 +688,12 @@
 			}
 
 			&_disabled {
-				border-color: #2C2D54;
-
-				.gas-station__network-icon {
-					opacity: .25;
-				}				
+				border-color: #2C2D54;					
 			}
 
 			.checkbox {
-				margin-right: 10px;
-
-				@media (max-width: 768px) {
-					// margin: 0 10px auto 0;
-				}
-			}
-
-			&_disabled .checkbox {
-				opacity: .25;
-			}
+				margin-right: 23px;			
+			}	
 
 			&-icon {
 				width: 34px;				
@@ -826,12 +814,13 @@
 					flex-direction: column;
 					gap: 3px;
 					color: white;				
+					font-size: 14px;
+					font-weight: 600;
 					white-space: nowrap;		
 					
 					span:last-child {
-						@media (max-width: 768px) {
-							font-size: 12px;
-						}
+						font-size: 12px;
+						font-weight: 400;
 					}
 				}	
 				
@@ -847,25 +836,30 @@
 				&-network {					
 					font-size: 12px;											
 				}
-			}	
-			
-			&_disabled &-item:not(&.i-asset) {
-				opacity: .25;
-			}
+			}				
 
 			&_disabled &-item {
+				color: #4C4D7B;
+				
 				&-title {					
-					color: #424557;
+					position: relative;
+					color: #4C4D7B;
 
 					span:first-child::after {
 						content: 'Soon';
 						display: flex;
 						align-items: center;
 						height: 16px;
+						width: fit-content;
 						background-color: #023898;
 						font-weight: 700;
 						font-size: 9px;
 						color: white;
+						border-radius: 3px;
+						position: absolute;
+						top: 0;
+						right: -2px;
+						transform: translateX(100%);
 						padding: 0 3px;
 					}
 				}

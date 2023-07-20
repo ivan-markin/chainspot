@@ -48,9 +48,12 @@
 		flex-wrap: wrap;
 		gap: 26px;
 
-		@media (max-width: 768px) {
+		@media (max-width: 1200px) {
 			flex-direction: column;
-			position: relative;
+			position: relative;			
+		}
+
+		@media (max-width: 768px) {	
 			left: -20px;
 			width: calc(100% + 40px);
 		}
@@ -89,14 +92,43 @@
 		}
 
 		&-table {
-			display: grid;
-			row-gap: 25px;
+			display: flex;
+			flex-direction: column;
+			row-gap: 25px;			
+
+			&-header {
+				display: flex;
+				align-items: center;
+
+				@media (max-width: 768px) {
+					display: none;
+				}
+			}
+
+			&-row {
+				display: flex;
+				align-items: center;
+
+				@media (max-width: 768px) {
+					flex-direction: column;
+					align-items: stretch;					
+					gap: 18px;
+					width: 100%;					
+				}
+			}
+
+			&-row:not(:last-of-type) {
+				@media (max-width: 768px) {
+					border-bottom: #E2E7F3 1px solid;
+					padding-bottom: 20px;
+				}
+			}
 
 			.header-col {
 				display: flex;
 				font-size: 14px;
 				line-height: 1;				
-				color: #949CB2;				
+				color: #949CB2;								
 
 				&_right {
 					justify-content: flex-end;
@@ -110,21 +142,43 @@
 			.table-row {
 				display: flex;
 				align-items: center;
-				height: 40px;
+				height: 40px;			
+
+				&::before {
+					color: #949CB2;					
+					font-size: 14px;					
+					font-weight: 500;
+
+					@media (min-width: 769px) {
+						display: none;
+					}
+				}
+
+				@media (max-width: 768px) {
+					width: 100% !important;
+					justify-content: space-between !important;
+					text-align: left;
+					height: auto;
+				}
 			}
 
-			.index-col {
+			.index-col.table-row {
 				span {
 					display: flex;
 					align-items: center;
 					justify-content: center;
 					font-weight: 500;
 					font-size: 12px;
+					line-height: 1;
 					border-radius: 50%;
 					width: 27px;
 					height: 27px;
 					border: 1px solid rgba(148, 156, 178, 0.25);
 				}
+			}
+
+			.index-col.header-col {
+				padding-left: 10px;
 			}
 
 			.operator-col {
@@ -149,6 +203,10 @@
 	&__winner {
 		width: calc(46% - 13px);
 		padding-bottom: 44px;
+
+		@media (max-width: 1200px) {
+			width: 100%;
+		}
 
 		@media (max-width: 768px) {
 			padding-bottom: 30px;
@@ -289,19 +347,122 @@
 	&__rebalancing {
 		width: calc(54% - 13px);
 
+		@media (max-width: 1200px) {
+			width: 100%;
+		}
+
 		@media (max-width: 768px) {
-			display: none;
+			order: 5;
 		}
 
 		&-header {
 			margin-bottom: 33px;
 		}
 
-		&-table {			
-			grid-template-columns: 6.6% 32% 24.5% 20.8% 16.1%;
+		&-table {						
 
+			.table-row {
+				@media (max-width: 768px) {
+					height: 28px;
+				}
+			}
+
+			.token-cnt__title {
+				@media (max-width: 768px) {
+					flex-direction: row;
+					align-items: center;
+					gap: 6px;					
+				}
+			}
+
+			.token-cnt__name {
+				@media (max-width: 768px) {
+					font-size: 14px;
+				}
+			}
+
+			.token-cnt__value {
+				@media (max-width: 768px) {
+					display: flex;
+					align-items: center;
+					gap: 6px;
+					font-size: 14px;					
+				}
+
+				&::before {
+					content: '';
+					width: 4px;
+					height: 4px;
+					border-radius: 50%;
+					background-color: rgba(148, 156, 178, 0.35);
+				}
+			}
+			
+			.index-col {
+				width: 6.5%;
+			}
+			
 			.from-col {
-				padding-right: 17.5%;
+				width: 32%;
+			}
+
+			.to-col {
+				width: 24%;
+			}
+
+			.operator-col {
+				width: 20%;
+			}
+
+			.sent-col {
+				width: 17.5%;
+			}
+
+			.from-col.table-row {
+				position: relative;
+
+				&::before {
+					content: 'From';
+				}
+
+				&::after {
+					content: '';
+					flex: none;
+					width: 19px;
+					height: 19px;
+					background: url('../img/table-arrow-right.svg') no-repeat center;
+					background-size: contain;
+					position: absolute;
+					right: 20%;
+					top: 7px;
+
+					@media (max-width: 768px) {
+						display: none;
+					}
+				}
+			}
+
+			.to-col.table-row {
+				&::before {
+					content: 'To';
+				}
+			}
+
+			.operator-col.table-row {
+				@media (max-width: 768px) {
+					justify-content: flex-end;
+				}
+				
+				&::before {
+					content: 'Operator';
+					margin-right: auto;
+				}
+			}
+
+			.sent-col.table-row {
+				&::before {
+					content: 'Sent liquidity';
+				}
 			}
 		}
 	}
@@ -309,10 +470,20 @@
 	&__most-popular {
 		display: flex;
 		width: 100%;
+		position: relative;
 
-		@media (max-width: 768px) {
+		@media (max-width: 1200px) {
 			flex-direction: column;
 			gap: 14px;
+		}
+
+		@media (max-width: 768px) {
+			order: 2;
+		}
+
+		&-slider-wrapper {
+			position: relative;
+			overflow-x: hidden;
 		}
 
 		&-slider {
@@ -322,11 +493,23 @@
 		.analytics__grid-item-header {
 			flex: none;
 			width: 22%;
+
+			@media (max-width: 1200px) {
+				width: 100%;
+			}
 		}
 	}
 
 	&__largest-amount {
 		width: calc(50% - 13px);
+
+		@media (max-width: 1200px) {
+			width: 100%;
+		}
+
+		@media (max-width: 768px) {
+			order: 4;
+		}
 
 		&-table {						
 			grid-template-columns: 7% 28% 22.5% 20.7% 21.8%;
@@ -389,26 +572,68 @@
 	&__top-addresses {
 		width: calc(50% - 13px);
 		padding-right: 28px;
-		padding-left: 28px;
+		padding-left: 28px;	
+
+		@media (max-width: 1200px) {
+			width: 100%;
+		}
+
+		@media (max-width: 768px) {
+			order: 3;
+		}
 
 		&-table {
 			grid-template-columns: 9% 40.5% 29.4% 21.1%;
-			row-gap: 18px;
+			row-gap: 18px;			
 
+			.index-col {
+				width: 8%;
+			}			
+			
 			.address-col {
-				font-size: 14px;
+				width: 41%;				
 			}
 
 			.trans-num-col {
+				width: 25%;	
+				text-align: center;
 				justify-content: center;
-				font-weight: 700;
-				font-size: 14px;
 			}
 
 			.amount-col {
+				width: 26%;			
+			}
+
+			// Table rows
+			.address-col.table-row {				
+				font-size: 14px;	
+
+				@media (max-width: 768px) {
+					color: #3555FF;
+				}
+				
+				&::before {
+					content: 'Contract Address';
+				}
+			}
+
+			.trans-num-col.table-row {								
+				font-weight: 700;
+				font-size: 14px;
+							
+				&::before {
+					content: 'Number of transfers';
+				}
+			}
+
+			.amount-col.table-row {				
 				justify-content: flex-end;
 				font-size: 14px;
 				font-weight: 700;
+				
+				&::before {
+					content: 'Transfer amount';
+				}
 			}
 		}
 
@@ -416,7 +641,25 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			margin-bottom: 24px;
+			margin-bottom: 24px;			
+			
+			@media (max-width: 768px) {
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 16px;
+			}
+
+			.select-btn {
+				@media (max-width: 768px) {
+					display: none;
+				}
+			}
+
+			.tab-switch {
+				@media (min-width: 769px) {
+					display: none;
+				}
+			}
 		}
 
 		.analytics__grid-item-title {
@@ -427,6 +670,10 @@
 	&__solutions {
 		width: 100%;
 		padding-right: 20px;
+
+		@media (max-width: 1200px) {
+			order: 6;
+		}
 
 		&-table,
 		&-table-header {

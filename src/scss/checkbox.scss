@@ -41,4 +41,10 @@
 			background-size: contain;
 		}
 	}
+
+	&__input:disabled + &__button {
+		border: none;
+		background: #2C2D54;
+		cursor: auto;		
+	}
 }
