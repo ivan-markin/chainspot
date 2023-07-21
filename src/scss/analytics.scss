@@ -511,19 +511,80 @@
 			order: 4;
 		}
 
-		&-table {						
-			grid-template-columns: 7% 28% 22.5% 20.7% 21.8%;
+		&-table {									
 			row-gap: 18px;
 
+			.index-col {
+				width: 7%;
+			}
+
 			.from-col {
-				padding-right: 15px;
+				width: 28%;
+			}
+
+			.to-col {
+				width: 22%;
 			}
 
 			.asset-col {
+				width: 22%;
+			}
+
+			.amount-col {
+				width: 21%;
+			}
+
+			.from-col.table-row {
+				position: relative;
+				padding-right: 15px;
+
+				&::before {
+					content: 'From';
+				}
+
+				&::after {
+					content: '';
+					flex: none;
+					width: 19px;
+					height: 19px;
+					background: url('../img/table-arrow-right.svg') no-repeat center;
+					background-size: contain;
+					position: absolute;
+					right: 12%;
+					top: 10px;
+
+					@media (max-width: 1200px) {
+						right: 25%;
+					}
+
+					@media (max-width: 768px) {
+						display: none;
+					}
+				}
+			}
+
+			.to-col.table-row {
+				&::before {
+					content: 'To';
+				}
+			}
+			
+			.asset-col.table-row {
 				display: flex;
-				align-items: center;
+				align-items: center;				
 				gap: 10px;
 
+				@media (max-width: 768px) {
+					justify-content: flex-end;
+				}
+
+				&::before {
+					content: 'Asset';
+					margin-right: auto;
+				}
+			}
+			
+			.asset-col {			
 				&__name {
 					display: flex;
 					flex-direction: column;
@@ -532,16 +593,42 @@
 				}
 
 				&__token {
-					font-weight: 700;
+					font-weight: 500;
+					font-size: 15px;
 				}
 				
 				&__network {
 					color: #949CB2;
 					font-weight: 500;
+
+					@media (max-width: 768px) {
+						font-size: 10px;
+					}
 				}
 			}
 
 			.amount-col {
+				&__name {
+					display: flex;
+					flex-direction: column;
+					gap: 3px;					
+				}
+
+				&__sum {
+					font-weight: 500;
+					font-size: 15px;
+				}							
+
+				&__gas {
+					color: #949CB2;
+					
+					@media (max-width: 768px) {
+						font-size: 10px;
+					}
+				}
+			}
+
+			.amount-col.table-row {
 				display: flex;
 				flex-direction: column;
 				align-items: flex-end;
@@ -549,10 +636,14 @@
 				font-size: 14px;
 				font-weight: 500;
 
-				&__gas {
-					color: #949CB2;
+				@media (max-width: 768px) {
+					flex-direction: row;
 				}
-			}
+
+				&::before {
+					content: 'Transfer amount';
+				}				
+			}			
 
 			.token-cnt__icon {
 				width: 27px;

@@ -488,372 +488,414 @@
               <div class="analytics__largest-amount-table analytics__grid-item-table">
                 
                 <!-- Table header -->
-                <div class="header-col"><span>#</span></div>
-                <div class="header-col"><span>From</span></div>
-                <div class="header-col"><span>To</span></div>
-                <div class="header-col"><span>Asset</span></div>
-                <div class="header-col header-col_right"><span>Transfer amount</span></div>
-
+                <div class="analytics__grid-item-table-header">
+                  <div class="index-col header-col"><span>#</span></div>
+                  <div class="from-col header-col"><span>From</span></div>
+                  <div class="to-col header-col"><span>To</span></div>
+                  <div class="asset-col header-col"><span>Asset</span></div>
+                  <div class="amount-col header-col header-col_right"><span>Transfer amount</span></div>
+                </div>                          
+                          
                 <!-- Table row -->
-                <div class="index-col table-row"><span>1</span></div>
-                <div class="from-col table-row">
-                  <div class="token-cnt">
-                    <div class="token-cnt__icon icon-cnt">
-                      <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
-                      <div class="token-cnt__icon-bg"></div>
-                    </div>
-                    <div class="token-cnt__title">
-                      <span class="token-cnt__name">Polygon</span>                      
-                    </div>
-                  </div>
-                </div>
-                <div class="to-col table-row">
-                  <div class="token-cnt">
-                    <div class="token-cnt__icon icon-cnt">
-                      <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
-                      <div class="token-cnt__icon-bg"></div>
-                    </div>
-                    <div class="token-cnt__title">
-                      <span class="token-cnt__name">Gnosis</span>                      
+                <div class="analytics__grid-item-table-row">
+                  <div class="index-col table-row"><span>1</span></div>
+                  <div class="from-col table-row">
+                    <div class="token-cnt">
+                      <div class="token-cnt__icon icon-cnt">
+                        <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
+                        <div class="token-cnt__icon-bg"></div>
+                      </div>
+                      <div class="token-cnt__title">
+                        <span class="token-cnt__name">Polygon</span>                      
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="asset-col table-row">
-                  <img src="@img/asset-icon.png" width="20" height="20" alt="">
-                  <div class="asset-col__name">
-                    <span class="asset-col__token">ETH</span>
-                    <span class="asset-col__network">Ethereum</span>
-                  </div>                  
-                </div>
-                <div class="amount-col table-row">                  
-                  <span>$1380</span>
-                  <span class="amount-col__gas">813 ETH</span>                  
-                </div>
-
-                <!-- Table row -->
-                <div class="index-col table-row"><span>2</span></div>
-                <div class="from-col table-row">
-                  <div class="token-cnt">
-                    <div class="token-cnt__icon icon-cnt">
-                      <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
-                      <div class="token-cnt__icon-bg"></div>
-                    </div>
-                    <div class="token-cnt__title">
-                      <span class="token-cnt__name">Polygon</span>                      
+                  <div class="to-col table-row">
+                    <div class="token-cnt">
+                      <div class="token-cnt__icon icon-cnt">
+                        <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
+                        <div class="token-cnt__icon-bg"></div>
+                      </div>
+                      <div class="token-cnt__title">
+                        <span class="token-cnt__name">Gnosis</span>                      
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="to-col table-row">
-                  <div class="token-cnt">
-                    <div class="token-cnt__icon icon-cnt">
-                      <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
-                      <div class="token-cnt__icon-bg"></div>
-                    </div>
-                    <div class="token-cnt__title">
-                      <span class="token-cnt__name">Gnosis</span>                      
-                    </div>
+                  <div class="asset-col table-row">
+                    <img src="@img/asset-icon.png" width="20" height="20" alt="">
+                    <div class="asset-col__name">
+                      <span class="asset-col__token">ETH</span>
+                      <span class="asset-col__network">Ethereum</span>
+                    </div>                  
                   </div>
-                </div>
-                <div class="asset-col table-row">
-                  <img src="@img/asset-icon.png" width="20" height="20" alt="">
-                  <div class="asset-col__name">
-                    <span class="asset-col__token">ETH</span>
-                    <span class="asset-col__network">Ethereum</span>
-                  </div>                  
-                </div>
-                <div class="amount-col table-row">                  
-                  <span>$1380</span>
-                  <span class="amount-col__gas">813 ETH</span>                  
+                  <div class="amount-col table-row">                  
+                    <div class="amount-col__name">
+                      <span class="amount-col__sum">$1380</span>
+                      <span class="amount-col__gas">813 ETH</span>                  
+                    </div>                    
+                  </div>
                 </div>
 
                 <!-- Table row -->
-                <div class="index-col table-row"><span>3</span></div>
-                <div class="from-col table-row">
-                  <div class="token-cnt">
-                    <div class="token-cnt__icon icon-cnt">
-                      <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
-                      <div class="token-cnt__icon-bg"></div>
-                    </div>
-                    <div class="token-cnt__title">
-                      <span class="token-cnt__name">Polygon</span>                      
-                    </div>
-                  </div>
-                </div>
-                <div class="to-col table-row">
-                  <div class="token-cnt">
-                    <div class="token-cnt__icon icon-cnt">
-                      <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
-                      <div class="token-cnt__icon-bg"></div>
-                    </div>
-                    <div class="token-cnt__title">
-                      <span class="token-cnt__name">Gnosis</span>                      
+                <div class="analytics__grid-item-table-row">
+                  <div class="index-col table-row"><span>2</span></div>
+                  <div class="from-col table-row">
+                    <div class="token-cnt">
+                      <div class="token-cnt__icon icon-cnt">
+                        <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
+                        <div class="token-cnt__icon-bg"></div>
+                      </div>
+                      <div class="token-cnt__title">
+                        <span class="token-cnt__name">Polygon</span>                      
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="asset-col table-row">
-                  <img src="@img/asset-icon.png" width="20" height="20" alt="">
-                  <div class="asset-col__name">
-                    <span class="asset-col__token">ETH</span>
-                    <span class="asset-col__network">Ethereum</span>
-                  </div>                  
-                </div>
-                <div class="amount-col table-row">                  
-                  <span>$1380</span>
-                  <span class="amount-col__gas">813 ETH</span>                  
+                  <div class="to-col table-row">
+                    <div class="token-cnt">
+                      <div class="token-cnt__icon icon-cnt">
+                        <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
+                        <div class="token-cnt__icon-bg"></div>
+                      </div>
+                      <div class="token-cnt__title">
+                        <span class="token-cnt__name">Gnosis</span>                      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="asset-col table-row">
+                    <img src="@img/asset-icon.png" width="20" height="20" alt="">
+                    <div class="asset-col__name">
+                      <span class="asset-col__token">ETH</span>
+                      <span class="asset-col__network">Ethereum</span>
+                    </div>                  
+                  </div>
+                  <div class="amount-col table-row">                  
+                    <div class="amount-col__name">
+                      <span class="amount-col__sum">$1380</span>
+                      <span class="amount-col__gas">813 ETH</span>                  
+                    </div>                    
+                  </div>
                 </div>
 
                 <!-- Table row -->
-                <div class="index-col table-row"><span>4</span></div>
-                <div class="from-col table-row">
-                  <div class="token-cnt">
-                    <div class="token-cnt__icon icon-cnt">
-                      <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
-                      <div class="token-cnt__icon-bg"></div>
-                    </div>
-                    <div class="token-cnt__title">
-                      <span class="token-cnt__name">Polygon</span>                      
-                    </div>
-                  </div>
-                </div>
-                <div class="to-col table-row">
-                  <div class="token-cnt">
-                    <div class="token-cnt__icon icon-cnt">
-                      <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
-                      <div class="token-cnt__icon-bg"></div>
-                    </div>
-                    <div class="token-cnt__title">
-                      <span class="token-cnt__name">Gnosis</span>                      
+                <div class="analytics__grid-item-table-row">
+                  <div class="index-col table-row"><span>3</span></div>
+                  <div class="from-col table-row">
+                    <div class="token-cnt">
+                      <div class="token-cnt__icon icon-cnt">
+                        <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
+                        <div class="token-cnt__icon-bg"></div>
+                      </div>
+                      <div class="token-cnt__title">
+                        <span class="token-cnt__name">Polygon</span>                      
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="asset-col table-row">
-                  <img src="@img/asset-icon.png" width="20" height="20" alt="">
-                  <div class="asset-col__name">
-                    <span class="asset-col__token">ETH</span>
-                    <span class="asset-col__network">Ethereum</span>
-                  </div>                  
-                </div>
-                <div class="amount-col table-row">                  
-                  <span>$1380</span>
-                  <span class="amount-col__gas">813 ETH</span>                  
-                </div>                
-
-                <!-- Table row -->
-                <div class="index-col table-row"><span>5</span></div>
-                <div class="from-col table-row">
-                  <div class="token-cnt">
-                    <div class="token-cnt__icon icon-cnt">
-                      <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
-                      <div class="token-cnt__icon-bg"></div>
-                    </div>
-                    <div class="token-cnt__title">
-                      <span class="token-cnt__name">Polygon</span>                      
+                  <div class="to-col table-row">
+                    <div class="token-cnt">
+                      <div class="token-cnt__icon icon-cnt">
+                        <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
+                        <div class="token-cnt__icon-bg"></div>
+                      </div>
+                      <div class="token-cnt__title">
+                        <span class="token-cnt__name">Gnosis</span>                      
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="to-col table-row">
-                  <div class="token-cnt">
-                    <div class="token-cnt__icon icon-cnt">
-                      <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
-                      <div class="token-cnt__icon-bg"></div>
-                    </div>
-                    <div class="token-cnt__title">
-                      <span class="token-cnt__name">Gnosis</span>                      
-                    </div>
+                  <div class="asset-col table-row">
+                    <img src="@img/asset-icon.png" width="20" height="20" alt="">
+                    <div class="asset-col__name">
+                      <span class="asset-col__token">ETH</span>
+                      <span class="asset-col__network">Ethereum</span>
+                    </div>                  
                   </div>
-                </div>
-                <div class="asset-col table-row">
-                  <img src="@img/asset-icon.png" width="20" height="20" alt="">
-                  <div class="asset-col__name">
-                    <span class="asset-col__token">ETH</span>
-                    <span class="asset-col__network">Ethereum</span>
-                  </div>                  
-                </div>
-                <div class="amount-col table-row">                  
-                  <span>$1380</span>
-                  <span class="amount-col__gas">813 ETH</span>                  
+                  <div class="amount-col table-row">                  
+                    <div class="amount-col__name">
+                      <span class="amount-col__sum">$1380</span>
+                      <span class="amount-col__gas">813 ETH</span>                  
+                    </div>                    
+                  </div>
                 </div>
 
                 <!-- Table row -->
-                <div class="index-col table-row"><span>6</span></div>
-                <div class="from-col table-row">
-                  <div class="token-cnt">
-                    <div class="token-cnt__icon icon-cnt">
-                      <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
-                      <div class="token-cnt__icon-bg"></div>
-                    </div>
-                    <div class="token-cnt__title">
-                      <span class="token-cnt__name">Polygon</span>                      
-                    </div>
-                  </div>
-                </div>
-                <div class="to-col table-row">
-                  <div class="token-cnt">
-                    <div class="token-cnt__icon icon-cnt">
-                      <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
-                      <div class="token-cnt__icon-bg"></div>
-                    </div>
-                    <div class="token-cnt__title">
-                      <span class="token-cnt__name">Gnosis</span>                      
+                <div class="analytics__grid-item-table-row">
+                  <div class="index-col table-row"><span>4</span></div>
+                  <div class="from-col table-row">
+                    <div class="token-cnt">
+                      <div class="token-cnt__icon icon-cnt">
+                        <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
+                        <div class="token-cnt__icon-bg"></div>
+                      </div>
+                      <div class="token-cnt__title">
+                        <span class="token-cnt__name">Polygon</span>                      
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="asset-col table-row">
-                  <img src="@img/asset-icon.png" width="20" height="20" alt="">
-                  <div class="asset-col__name">
-                    <span class="asset-col__token">ETH</span>
-                    <span class="asset-col__network">Ethereum</span>
-                  </div>                  
-                </div>
-                <div class="amount-col table-row">                  
-                  <span>$1380</span>
-                  <span class="amount-col__gas">813 ETH</span>                  
+                  <div class="to-col table-row">
+                    <div class="token-cnt">
+                      <div class="token-cnt__icon icon-cnt">
+                        <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
+                        <div class="token-cnt__icon-bg"></div>
+                      </div>
+                      <div class="token-cnt__title">
+                        <span class="token-cnt__name">Gnosis</span>                      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="asset-col table-row">
+                    <img src="@img/asset-icon.png" width="20" height="20" alt="">
+                    <div class="asset-col__name">
+                      <span class="asset-col__token">ETH</span>
+                      <span class="asset-col__network">Ethereum</span>
+                    </div>                  
+                  </div>
+                  <div class="amount-col table-row">                  
+                    <div class="amount-col__name">
+                      <span class="amount-col__sum">$1380</span>
+                      <span class="amount-col__gas">813 ETH</span>                  
+                    </div>                    
+                  </div>
                 </div>
 
                 <!-- Table row -->
-                <div class="index-col table-row"><span>7</span></div>
-                <div class="from-col table-row">
-                  <div class="token-cnt">
-                    <div class="token-cnt__icon icon-cnt">
-                      <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
-                      <div class="token-cnt__icon-bg"></div>
-                    </div>
-                    <div class="token-cnt__title">
-                      <span class="token-cnt__name">Polygon</span>                      
-                    </div>
-                  </div>
-                </div>
-                <div class="to-col table-row">
-                  <div class="token-cnt">
-                    <div class="token-cnt__icon icon-cnt">
-                      <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
-                      <div class="token-cnt__icon-bg"></div>
-                    </div>
-                    <div class="token-cnt__title">
-                      <span class="token-cnt__name">Gnosis</span>                      
+                <div class="analytics__grid-item-table-row">
+                  <div class="index-col table-row"><span>5</span></div>
+                  <div class="from-col table-row">
+                    <div class="token-cnt">
+                      <div class="token-cnt__icon icon-cnt">
+                        <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
+                        <div class="token-cnt__icon-bg"></div>
+                      </div>
+                      <div class="token-cnt__title">
+                        <span class="token-cnt__name">Polygon</span>                      
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="asset-col table-row">
-                  <img src="@img/asset-icon.png" width="20" height="20" alt="">
-                  <div class="asset-col__name">
-                    <span class="asset-col__token">ETH</span>
-                    <span class="asset-col__network">Ethereum</span>
-                  </div>                  
-                </div>
-                <div class="amount-col table-row">                  
-                  <span>$1380</span>
-                  <span class="amount-col__gas">813 ETH</span>                  
+                  <div class="to-col table-row">
+                    <div class="token-cnt">
+                      <div class="token-cnt__icon icon-cnt">
+                        <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
+                        <div class="token-cnt__icon-bg"></div>
+                      </div>
+                      <div class="token-cnt__title">
+                        <span class="token-cnt__name">Gnosis</span>                      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="asset-col table-row">
+                    <img src="@img/asset-icon.png" width="20" height="20" alt="">
+                    <div class="asset-col__name">
+                      <span class="asset-col__token">ETH</span>
+                      <span class="asset-col__network">Ethereum</span>
+                    </div>                  
+                  </div>
+                  <div class="amount-col table-row">                  
+                    <div class="amount-col__name">
+                      <span class="amount-col__sum">$1380</span>
+                      <span class="amount-col__gas">813 ETH</span>                  
+                    </div>                    
+                  </div>
                 </div>
 
                 <!-- Table row -->
-                <div class="index-col table-row"><span>8</span></div>
-                <div class="from-col table-row">
-                  <div class="token-cnt">
-                    <div class="token-cnt__icon icon-cnt">
-                      <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
-                      <div class="token-cnt__icon-bg"></div>
-                    </div>
-                    <div class="token-cnt__title">
-                      <span class="token-cnt__name">Polygon</span>                      
-                    </div>
-                  </div>
-                </div>
-                <div class="to-col table-row">
-                  <div class="token-cnt">
-                    <div class="token-cnt__icon icon-cnt">
-                      <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
-                      <div class="token-cnt__icon-bg"></div>
-                    </div>
-                    <div class="token-cnt__title">
-                      <span class="token-cnt__name">Gnosis</span>                      
+                <div class="analytics__grid-item-table-row">
+                  <div class="index-col table-row"><span>6</span></div>
+                  <div class="from-col table-row">
+                    <div class="token-cnt">
+                      <div class="token-cnt__icon icon-cnt">
+                        <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
+                        <div class="token-cnt__icon-bg"></div>
+                      </div>
+                      <div class="token-cnt__title">
+                        <span class="token-cnt__name">Polygon</span>                      
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="asset-col table-row">
-                  <img src="@img/asset-icon.png" width="20" height="20" alt="">
-                  <div class="asset-col__name">
-                    <span class="asset-col__token">ETH</span>
-                    <span class="asset-col__network">Ethereum</span>
-                  </div>                  
-                </div>
-                <div class="amount-col table-row">                  
-                  <span>$1380</span>
-                  <span class="amount-col__gas">813 ETH</span>                  
+                  <div class="to-col table-row">
+                    <div class="token-cnt">
+                      <div class="token-cnt__icon icon-cnt">
+                        <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
+                        <div class="token-cnt__icon-bg"></div>
+                      </div>
+                      <div class="token-cnt__title">
+                        <span class="token-cnt__name">Gnosis</span>                      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="asset-col table-row">
+                    <img src="@img/asset-icon.png" width="20" height="20" alt="">
+                    <div class="asset-col__name">
+                      <span class="asset-col__token">ETH</span>
+                      <span class="asset-col__network">Ethereum</span>
+                    </div>                  
+                  </div>
+                  <div class="amount-col table-row">                  
+                    <div class="amount-col__name">
+                      <span class="amount-col__sum">$1380</span>
+                      <span class="amount-col__gas">813 ETH</span>                  
+                    </div>                    
+                  </div>
                 </div>
 
                 <!-- Table row -->
-                <div class="index-col table-row"><span>9</span></div>
-                <div class="from-col table-row">
-                  <div class="token-cnt">
-                    <div class="token-cnt__icon icon-cnt">
-                      <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
-                      <div class="token-cnt__icon-bg"></div>
-                    </div>
-                    <div class="token-cnt__title">
-                      <span class="token-cnt__name">Polygon</span>                      
-                    </div>
-                  </div>
-                </div>
-                <div class="to-col table-row">
-                  <div class="token-cnt">
-                    <div class="token-cnt__icon icon-cnt">
-                      <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
-                      <div class="token-cnt__icon-bg"></div>
-                    </div>
-                    <div class="token-cnt__title">
-                      <span class="token-cnt__name">Gnosis</span>                      
+                <div class="analytics__grid-item-table-row">
+                  <div class="index-col table-row"><span>7</span></div>
+                  <div class="from-col table-row">
+                    <div class="token-cnt">
+                      <div class="token-cnt__icon icon-cnt">
+                        <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
+                        <div class="token-cnt__icon-bg"></div>
+                      </div>
+                      <div class="token-cnt__title">
+                        <span class="token-cnt__name">Polygon</span>                      
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="asset-col table-row">
-                  <img src="@img/asset-icon.png" width="20" height="20" alt="">
-                  <div class="asset-col__name">
-                    <span class="asset-col__token">ETH</span>
-                    <span class="asset-col__network">Ethereum</span>
-                  </div>                  
-                </div>
-                <div class="amount-col table-row">                  
-                  <span>$1380</span>
-                  <span class="amount-col__gas">813 ETH</span>                  
+                  <div class="to-col table-row">
+                    <div class="token-cnt">
+                      <div class="token-cnt__icon icon-cnt">
+                        <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
+                        <div class="token-cnt__icon-bg"></div>
+                      </div>
+                      <div class="token-cnt__title">
+                        <span class="token-cnt__name">Gnosis</span>                      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="asset-col table-row">
+                    <img src="@img/asset-icon.png" width="20" height="20" alt="">
+                    <div class="asset-col__name">
+                      <span class="asset-col__token">ETH</span>
+                      <span class="asset-col__network">Ethereum</span>
+                    </div>                  
+                  </div>
+                  <div class="amount-col table-row">                  
+                    <div class="amount-col__name">
+                      <span class="amount-col__sum">$1380</span>
+                      <span class="amount-col__gas">813 ETH</span>                  
+                    </div>                    
+                  </div>
                 </div>
 
                 <!-- Table row -->
-                <div class="index-col table-row"><span>10</span></div>
-                <div class="from-col table-row">
-                  <div class="token-cnt">
-                    <div class="token-cnt__icon icon-cnt">
-                      <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
-                      <div class="token-cnt__icon-bg"></div>
-                    </div>
-                    <div class="token-cnt__title">
-                      <span class="token-cnt__name">Polygon</span>                      
-                    </div>
-                  </div>
-                </div>
-                <div class="to-col table-row">
-                  <div class="token-cnt">
-                    <div class="token-cnt__icon icon-cnt">
-                      <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
-                      <div class="token-cnt__icon-bg"></div>
-                    </div>
-                    <div class="token-cnt__title">
-                      <span class="token-cnt__name">Gnosis</span>                      
+                <div class="analytics__grid-item-table-row">
+                  <div class="index-col table-row"><span>8</span></div>
+                  <div class="from-col table-row">
+                    <div class="token-cnt">
+                      <div class="token-cnt__icon icon-cnt">
+                        <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
+                        <div class="token-cnt__icon-bg"></div>
+                      </div>
+                      <div class="token-cnt__title">
+                        <span class="token-cnt__name">Polygon</span>                      
+                      </div>
                     </div>
                   </div>
+                  <div class="to-col table-row">
+                    <div class="token-cnt">
+                      <div class="token-cnt__icon icon-cnt">
+                        <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
+                        <div class="token-cnt__icon-bg"></div>
+                      </div>
+                      <div class="token-cnt__title">
+                        <span class="token-cnt__name">Gnosis</span>                      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="asset-col table-row">
+                    <img src="@img/asset-icon.png" width="20" height="20" alt="">
+                    <div class="asset-col__name">
+                      <span class="asset-col__token">ETH</span>
+                      <span class="asset-col__network">Ethereum</span>
+                    </div>                  
+                  </div>
+                  <div class="amount-col table-row">                  
+                    <div class="amount-col__name">
+                      <span class="amount-col__sum">$1380</span>
+                      <span class="amount-col__gas">813 ETH</span>                  
+                    </div>                    
+                  </div>
                 </div>
-                <div class="asset-col table-row">
-                  <img src="@img/asset-icon.png" width="20" height="20" alt="">
-                  <div class="asset-col__name">
-                    <span class="asset-col__token">ETH</span>
-                    <span class="asset-col__network">Ethereum</span>
-                  </div>                  
+
+                <!-- Table row -->
+                <div class="analytics__grid-item-table-row">
+                  <div class="index-col table-row"><span>9</span></div>
+                  <div class="from-col table-row">
+                    <div class="token-cnt">
+                      <div class="token-cnt__icon icon-cnt">
+                        <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
+                        <div class="token-cnt__icon-bg"></div>
+                      </div>
+                      <div class="token-cnt__title">
+                        <span class="token-cnt__name">Polygon</span>                      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="to-col table-row">
+                    <div class="token-cnt">
+                      <div class="token-cnt__icon icon-cnt">
+                        <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
+                        <div class="token-cnt__icon-bg"></div>
+                      </div>
+                      <div class="token-cnt__title">
+                        <span class="token-cnt__name">Gnosis</span>                      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="asset-col table-row">
+                    <img src="@img/asset-icon.png" width="20" height="20" alt="">
+                    <div class="asset-col__name">
+                      <span class="asset-col__token">ETH</span>
+                      <span class="asset-col__network">Ethereum</span>
+                    </div>                  
+                  </div>
+                  <div class="amount-col table-row">                  
+                    <div class="amount-col__name">
+                      <span class="amount-col__sum">$1380</span>
+                      <span class="amount-col__gas">813 ETH</span>                  
+                    </div>                    
+                  </div>
                 </div>
-                <div class="amount-col table-row">                  
-                  <span>$1380</span>
-                  <span class="amount-col__gas">813 ETH</span>                  
-                </div>
-              </div>
+
+                <!-- Table row -->
+                <div class="analytics__grid-item-table-row">
+                  <div class="index-col table-row"><span>10</span></div>
+                  <div class="from-col table-row">
+                    <div class="token-cnt">
+                      <div class="token-cnt__icon icon-cnt">
+                        <img class="token-cnt__image" src="@img/polygon-icon.svg" alt="">
+                        <div class="token-cnt__icon-bg"></div>
+                      </div>
+                      <div class="token-cnt__title">
+                        <span class="token-cnt__name">Polygon</span>                      
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="to-col table-row">
+                    <div class="token-cnt">
+                      <div class="token-cnt__icon icon-cnt">
+                        <img class="token-cnt__image" src="./img/gnosis-icon.svg" alt="">
+                        <div class="token-cnt__icon-bg"></div>
+                      </div>
+                      <div class="token-cnt__title">
+                        <span class="token-cnt__name">Gnosis</span>                      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="asset-col table-row">
+                    <img src="@img/asset-icon.png" width="20" height="20" alt="">
+                    <div class="asset-col__name">
+                      <span class="asset-col__token">ETH</span>
+                      <span class="asset-col__network">Ethereum</span>
+                    </div>                  
+                  </div>
+                  <div class="amount-col table-row">                  
+                    <div class="amount-col__name">
+                      <span class="amount-col__sum">$1380</span>
+                      <span class="amount-col__gas">813 ETH</span>                  
+                    </div>                    
+                  </div>
+                </div>  
+              </div>              
             </div>
 
             <div class="analytics__top-addresses analytics__grid-item">

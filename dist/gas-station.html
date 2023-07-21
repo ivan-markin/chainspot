@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <!-- <link rel="stylesheet" href="./css/styles-old.css?_v=20230721000326"> -->
-  <link rel="stylesheet" href="./css/style.min.css?_v=20230721000326">
+  <!-- <link rel="stylesheet" href="./css/styles-old.css"> -->
+  <link rel="stylesheet" href="./css/style.min.css">
   <title>Chainspot</title>
 </head>
 
@@ -592,7 +592,13 @@
     <main class="main" style="background: none;">                   
         <div class="gas-station-wrapper">
 
-          
+          <div class="alert active">
+	<!-- <h3 class="alert__title">Welcome!</h3> -->
+	<p class="alert__caption">
+		We use public rpc networks. If there is a failure on the rpc side and you don't receive your transaction for a long time, please reach us out in Discord or Telegram.
+	</p>
+	<button class="alert__close"></button>
+</div>   
           <div class="alert alert_success">	
 	<p class="alert__caption"> 
 		You will get your native tokensin the requested chains withina couple of ninutes. If youfeel, that something is wrong, just chat us, we are online!		
@@ -1409,7 +1415,7 @@
 </footer>   
   </div>  
 
-  <script src="./js/app.min.js?_v=20230721000326"></script>
+  <script src="./js/app.min.js"></script>
 </body>
 
 </html>
