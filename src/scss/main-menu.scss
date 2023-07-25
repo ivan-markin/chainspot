@@ -30,17 +30,17 @@
 	&__item {		
 		list-style: none;		
 		position: relative;
-		font-size: 16px;
+		font-size: 16px !important;
 		white-space: nowrap;
 		color: var(--font-dark);
 		transition: all .1s;
 		
 		@media (max-width: 1200px) {
-			font-size: 14px;
+			font-size: 14px !important;;
 		}
 
 		@media (max-width: 768px) {
-			font-size: 24px;
+			font-size: 24px !important;;
 		}
 
 		&:hover {
@@ -110,10 +110,14 @@
 		display: flex;
 		align-items: center;
 		gap: 4px;
-		color: var(--font-dark);
+		color: white;
 		text-decoration: none;
 		position: relative;
-		transition: all .1s;		
+		transition: all .1s;	
+		
+		svg {
+			fill: white; 
+		}
 		
 		&.active {
 			&::after {
