@@ -1,13 +1,22 @@
 .select-btn {
-	position: relative;
+	position: absolute;
+	right: 0;
+	top: -5px;	
+	z-index: 10;
+	width: 210px;
+	background-color: white;
+	transform-origin: top center;
+	box-shadow: 0px 12px 53px rgba(0, 0, 135, 0.05), 0px 6.075px 23.1047px rgba(0, 0, 135, 0.03375), 0px 2.4px 8.6125px rgba(0, 0, 135, 0.025), 0px 0.525px 3.06406px rgba(0, 0, 135, 0.01625);
+	border-radius: 16px;	
 
 	&__button {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 		gap: 6px;
 		height: 40px;
-		background: #FFFFFF;
-		box-shadow: 0px 12px 53px rgba(0, 0, 135, 0.05), 0px 6.075px 23.1047px rgba(0, 0, 135, 0.03375), 0px 2.4px 8.6125px rgba(0, 0, 135, 0.025), 0px 0.525px 3.06406px rgba(0, 0, 135, 0.01625);
+		width: 100%;
+		background: #FFFFFF;		
 		border-radius: 16px;
 		border: none;
 		font-size: 14px;
@@ -22,6 +31,51 @@
 			height: 8px;
 			background: url('../img/select-btn-arrow.svg') no-repeat center;
 			background-size: contain;
+			transition: all .2s;
+		}
+
+		.select-btn.active &::after {
+			transform: rotate(180deg);
+		}
+	}
+
+	&__dropdown {
+		display: none;
+	}
+
+	&.active &__dropdown {
+		display: flex;
+		flex-direction: column;
+		border-top: rgba(187, 197, 211, 0.32) 1px solid;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		height: 40px;
+		font-weight: 500;
+		font-size: 14px;
+		transition: all .1s; 
+		cursor: pointer;
+		padding: 0 14px;
+
+		&:hover {
+			color: #2A4DFD;
+		}
+
+		&_selected {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 8px;
+			
+			&::after {
+				content: '';				
+				width: 13px;
+				height: 9px;
+				background: url('../img/selected-icon.svg') no-repeat center;
+				background-size: contain;				
+			}
 		}
 	}
 }

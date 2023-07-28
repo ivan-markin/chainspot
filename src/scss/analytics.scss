@@ -193,7 +193,7 @@
 				padding-left: 10px;
 			}
 
-			.operator-col {
+			.operator-col.table-row {
 				gap: 6px;
 				font-weight: 500;
 				font-size: 15px;
@@ -203,7 +203,7 @@
 			.sent-col {
 				justify-content: flex-end;
 				
-				span {
+				&.table-row span {
 					white-space: nowrap;
 					font-weight: 700;
 					font-size: 16px;
@@ -409,71 +409,100 @@
 					background-color: rgba(148, 156, 178, 0.35);
 				}
 			}
+
+			.header-col {
+				span {
+					display: flex;
+					align-items: center;
+					gap: 2px;
+				}				
+			}
 			
 			.index-col {
 				width: 6.5%;
 			}
 			
-			.from-col {
-				width: 32%;
+			.network-col {
+				width: 23.5%;
 			}
 
-			.to-col {
-				width: 24%;
+			.tvl-col {
+				justify-content: center;
+				width: 28.5%;
 			}
 
-			.operator-col {
-				width: 20%;
+			.avg-col {
+				justify-content: center;
+				width: 21%;
 			}
 
-			.sent-col {
-				width: 17.5%;
+			.volume-col {
+				width: 20.5%;
 			}
 
 			.from-col.table-row {
 				position: relative;
 
 				&::before {
-					content: 'From';
+					content: 'Network';
 				}
 
-				&::after {
-					content: '';
-					flex: none;
-					width: 19px;
-					height: 19px;
-					background: url('../img/table-arrow-right.svg') no-repeat center;
-					background-size: contain;
-					position: absolute;
-					right: 20%;
-					top: 7px;
+				// &::after {
+				// 	content: '';
+				// 	flex: none;
+				// 	width: 19px;
+				// 	height: 19px;
+				// 	background: url('../img/table-arrow-right.svg') no-repeat center;
+				// 	background-size: contain;
+				// 	position: absolute;
+				// 	right: 20%;
+				// 	top: 7px;
 
-					@media (max-width: 768px) {
-						display: none;
-					}
-				}
+				// 	@media (max-width: 768px) {
+				// 		display: none;
+				// 	}
+				// }
 			}
 
-			.to-col.table-row {
+			.tvl-col.table-row {								
+				align-items: center;
+				gap: 2px;
+				font-weight: 500;
+				
 				&::before {
-					content: 'To';
+					content: 'Change in TVL';
 				}
 			}
 
-			.operator-col.table-row {
+			.avg-col.table-row {								
+				align-items: center;
+				gap: 2px;
+				font-weight: 500;
+				
 				@media (max-width: 768px) {
 					justify-content: flex-end;
 				}
 				
 				&::before {
-					content: 'Operator';
+					content: 'Avg. chg.';
 					margin-right: auto;
+				}
+
+				&.up {
+					color: #00C627;
+				}
+
+				&.down {
+					color: #FB3B3D;
 				}
 			}
 
-			.sent-col.table-row {
+			.volume-col.table-row {
+				justify-content: flex-end;
+				font-weight: 700;
+				
 				&::before {
-					content: 'Sent liquidity';
+					content: 'Volume';
 				}
 			}
 		}
@@ -527,23 +556,19 @@
 			row-gap: 18px;
 
 			.index-col {
-				width: 7%;
+				width: 8%;
 			}
 
 			.from-col {
-				width: 28%;
-			}
-
-			.to-col {
-				width: 22%;
+				width: 40%;
 			}
 
 			.asset-col {
-				width: 22%;
+				width: 27%;
 			}
 
 			.amount-col {
-				width: 21%;
+				width: 25%;
 			}
 
 			.from-col.table-row {
@@ -552,26 +577,6 @@
 
 				&::before {
 					content: 'From';
-				}
-
-				&::after {
-					content: '';
-					flex: none;
-					width: 19px;
-					height: 19px;
-					background: url('../img/table-arrow-right.svg') no-repeat center;
-					background-size: contain;
-					position: absolute;
-					right: 12%;
-					top: 10px;
-
-					@media (max-width: 1200px) {
-						right: 25%;
-					}
-
-					@media (max-width: 768px) {
-						display: none;
-					}
 				}
 			}
 
@@ -644,6 +649,7 @@
 				display: flex;
 				flex-direction: column;
 				align-items: flex-end;
+				text-align: right;
 				gap: 2px;
 				font-size: 14px;
 				font-weight: 500;
@@ -744,6 +750,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+			position: relative;
 			margin-bottom: 24px;			
 			
 			@media (max-width: 768px) {

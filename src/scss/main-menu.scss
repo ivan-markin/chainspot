@@ -1,6 +1,6 @@
 .main-menu {	
 	background: none !important;
-	margin: 0 20px;
+	// margin: 0 20px;
 
 	&__items {
 		display: flex;
@@ -110,13 +110,17 @@
 		display: flex;
 		align-items: center;
 		gap: 4px;
-		color: white;
+		color: var(--font-dark);
 		text-decoration: none;
 		position: relative;
-		transition: all .1s;	
+		transition: all .1s;			
 		
 		svg {
-			fill: white; 
+			fill: var(--font-dark); 
+
+			.main-menu.dark & {
+				fill: white; 
+			}
 		}
 		
 		&.active {
@@ -134,25 +138,21 @@
 		}
 	}
 
+	&.dark &__link {
+		color: white;
+
+		&.active {
+			&::after {				
+				background-color: white;				
+			}
+		}
+	}
+
 	&.mobile &__link.active {		
 
 		&::after {
 			display: none;
 		}		
-	}
-
-	&.dark &__link {
-		color: white;
-
-		&.active {
-			&::after {			
-				background-color: white;	
-			}
-		}
-
-		svg {
-			fill: white;
-		}
 	}
 
 	&__item.disabled &__link {		
@@ -174,5 +174,5 @@
 		&.active::after {
 			display: none;
 		} 
-	}
+	}	
 }

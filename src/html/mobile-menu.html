@@ -1,15 +1,25 @@
 <div class="mobile-menu @@className">
 	<div class="mobile-menu__header">
 		
-		@@include('logo.html', {
-			'theme': '_dark'
-		})
+		@@if (className === 'dark') {
+			@@include('logo.html', {
+				'theme': '_dark'
+			})
+		}	
+		
+		@@if (className === '') {
+			@@include('logo.html', {
+				'theme': ''
+			})
+		}	
 
-		<button class="mobile-menu__close"></button>
+		@@include('mobile-menu-close.html', {
+			'className': '@@className'	
+		})
 	</div>
 	
 	@@include('main-menu.html', {
-		'className': 'mobile'
+		'className': 'mobile @@className'
 	})
 
 	<div class="mobile-menu__socials">
@@ -23,6 +33,6 @@
 
 	<div class="mobile-menu__cta">            
 		<!-- <a class="mobile-menu__cta-link" href="">Blog</a> -->
-		<a class="btn btn_dark" href="">Connect wallet</a>      		
+		<a class="btn btn_@@className" href="">Connect wallet</a>      		
 	</div>	     
 </div>

@@ -5,7 +5,7 @@ import Swiper, {Navigation} from "swiper";
 const sortSelectBtn = document.querySelector('#sortSelectBtn');
 const burgerBtn = document.querySelector('.mobile-menu-btn');
 const mobileMenuClose = document.querySelector('.mobile-menu__close');
-const selectButtons = document.querySelectorAll('.select-button');
+const selectButtons = document.querySelectorAll('.select-btn__button');
 const popupCloseButtons = document.querySelectorAll('.popup__close');
 const popups = document.querySelectorAll('.popup');
 const selectElems = Array.from(document.querySelectorAll('.select'));

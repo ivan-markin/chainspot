@@ -15,10 +15,14 @@
 		content: '';
 		width: 9px;
 		height: 5px;
-		background: url('../img/select-arrow_white.svg') no-repeat center;
+		background: url('../img/select-arrow.svg') no-repeat center;
 		background-size: contain;
 		transition: all .2s;
 		margin: 0 12px;
+
+		@media (max-width: 768px) {
+			display: none;
+		}
 	}
 
 	@media (max-width: 768px) {
@@ -27,9 +31,9 @@
 		padding: 3px;
 	}
 
-	// @media (max-width: 768px) {
-	// 	display: none; 
-	// }
+	.header_dark &::after {		
+		background: url('../img/select-arrow_white.svg') no-repeat center;	
+	}
 
 	&.dark {
 		background: none;

@@ -6,4 +6,12 @@
 	background: url('../img/table-info-icon.svg') no-repeat center;
 	background-size: contain;
 	cursor: pointer;
+	position: relative;
+	padding: 0;
+
+	&_outlined {
+		width: 14px;
+		height: 14px;
+		background: none;
+	}
 }

@@ -33,8 +33,7 @@
 			font-size: 16px;
 			font-weight: 700;
 			height: 42px;
-			border-radius: 21px;
-			background-color: #F4F6FB;
+			border-radius: 21px;			
 			cursor: pointer;
 			transition: all .1s;
 			padding: 0 24px;
@@ -42,6 +41,7 @@
 			@media (max-width: 768px) {
 				justify-content: center;
 				width: 100%;
+				background-color: #F4F6FB;
 				padding: 0;
 			}
 
@@ -52,7 +52,11 @@
 
 		input:checked + span {
 			color: white;
-			background-color: #142438;
+			background-color: #2A4DFD;
+
+			@media (max-width: 768px) {
+				background-color: #142438;	
+			}			
 		}
 	}
 }

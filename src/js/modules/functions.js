@@ -15,7 +15,7 @@ export function isWebp() {
 }
 
 export function selectHandler(evt) {
-  evt.target.closest('.btn-select').classList.toggle('active');
+  evt.target.closest('.select-btn').classList.toggle('active');
 }
 
 export function newsBlockWidth() {

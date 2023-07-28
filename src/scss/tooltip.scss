@@ -25,10 +25,49 @@
 		bottom: -6px;
 		left: 26px;
 	}
+
+	&_white {		
+		flex-direction: column;
+		gap: 8px;
+		background-color: white;
+		filter: drop-shadow(0px 2.4000000953674316px 8.125px rgba(0, 0, 135, 0.06)) drop-shadow(0px 12px 50px rgba(0, 0, 135, 0.10));		
+		top: auto;
+		left: 50%;
+		bottom: -16px;
+		transform: translateX(-50%) translateY(100%);	
+		height: auto !important;
+		width: 216px !important;
+		color: #949CB2;
+		font-size: 12px !important;
+		font-weight: 500;
+		line-height: 1.5;
+		white-space: normal;
+		text-align: start !important;
+		justify-content: flex-start !important;
+		cursor: auto;
+		padding: 16px !important;
+
+		@media (max-width: 1200px) {
+			width: 150px;
+		}
+
+		&::before {
+			content: '';
+			width: 24px;
+			height: 14px;
+			background: url('../img/tooltip-pointer_white.svg') no-repeat center;
+			background-size: contain;
+			position: absolute;
+			bottom: auto;
+			left: calc(50% - 12px);
+			top: -12px;			
+		}
+	}
 }
 
-img:hover + .tooltip {
+img:hover + .tooltip,
+.info-btn:hover .tooltip {
 	opacity: 1;
-	z-index: 2;
+	z-index: 10;
 	visibility: visible;
 }
