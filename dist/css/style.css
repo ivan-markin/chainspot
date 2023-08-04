@@ -924,8 +924,17 @@ template {
   background: #FFFFFF;
   border-radius: 6px;
   color: var(--font-dark);
+  font-weight: 400;
   font-size: 16px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
   padding: 0 25px;
+}
+
+.btn_white:hover {
+  color: var(--font-dark);
+  opacity: 0.7;
 }
 
 .btn_gray {
@@ -2438,7 +2447,7 @@ input:checked + .filter__btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 13px;
+  gap: 32px;
   color: white;
   font-size: 16px;
 }
@@ -2449,16 +2458,32 @@ input:checked + .filter__btn {
   height: 6px;
   background: #515566;
   border-radius: 50%;
-  margin-right: 30px;
 }
 
 .footer__socials a:not(:last-child) {
   margin: 0;
 }
 
+.footer__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
 .white-link {
   color: white;
   text-decoration: none;
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.white-link:hover {
+  opacity: 0.7;
 }
 
 .mobile-menu-btn {
@@ -5647,6 +5672,9 @@ input:checked + .filter__btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 60px;
 }
 
@@ -5665,23 +5693,21 @@ input:checked + .filter__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 16px;
   position: relative;
   z-index: 2;
 }
 
 .data-v__timeline-title {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 16px;
+  line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin-bottom: 5px;
+  color: rgb(148, 156, 178);
 }
 
 .data-v__chainspot-badge {
@@ -5843,6 +5869,7 @@ input:checked + .filter__btn {
   font-size: 12px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .data-v__info-general {
@@ -7558,6 +7585,7 @@ img:hover + .tooltip,
   height: 50px;
   position: relative;
   bottom: -2px;
+  white-space: nowrap;
   padding: 18px 18px 0 18px;
 }
 
@@ -7572,6 +7600,7 @@ img:hover + .tooltip,
   font-size: 40px;
   font-weight: 400;
   line-height: 1;
+  white-space: nowrap;
 }
 
 .chains-count img {
@@ -7877,6 +7906,22 @@ fieldset {
     font-size: 14px !important;
   }
 
+  .data-v__info-top-network {
+    font-size: 12px;
+  }
+
+  .data-v__info-top-value {
+    font-size: 24px;
+  }
+
+  .data-v__info-title {
+    font-size: 10px;
+  }
+
+  .data-v__info-value {
+    font-size: 32px;
+  }
+
   .analytics__grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -7919,12 +7964,6 @@ fieldset {
 
   .analytics__top-addresses {
     width: 100%;
-  }
-
-  .analytics__solutions {
-    -webkit-box-ordinal-group: 7;
-        -ms-flex-order: 6;
-            order: 6;
   }
 
   .analytics__solutions .type-col.table-row span {
@@ -8217,8 +8256,11 @@ fieldset {
     padding: 32px 0;
   }
 
-  .footer__socials::before {
-    display: none;
+  .footer__socials {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .gas-station-wrapper {
@@ -8784,12 +8826,6 @@ fieldset {
     font-size: 12px;
   }
 
-  .analytics__rebalancing {
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
-  }
-
   .analytics__rebalancing-table .table-row {
     height: 28px;
   }
@@ -8826,18 +8862,6 @@ fieldset {
             justify-content: flex-end;
   }
 
-  .analytics__most-popular {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-
-  .analytics__largest-amount {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
-  }
-
   .analytics__largest-amount-table .asset-col.table-row {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -8857,12 +8881,6 @@ fieldset {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-
-  .analytics__top-addresses {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
   }
 
   .analytics__top-addresses-table .address-col.table-row {

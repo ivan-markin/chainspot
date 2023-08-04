@@ -10,6 +10,7 @@
 	&__header {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 		gap: 60px;
 	}
 
@@ -21,19 +22,20 @@
 	}
 
 	&__timeline {
-		display: flex;
-		flex-direction: column;
+		display: flex;		
 		align-items: center;
+		gap: 16px;
 		position: relative;
 		z-index: 2;
 	}
 
 	&__timeline-title {
 		font-weight: 700;
-		font-size: 12px;
+		font-size: 16px;
+		line-height: 1;
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
-		margin-bottom: 5px;
+		color: rgb(148, 156, 178);		
 	}
 
 	&__chainspot-badge {	
@@ -88,6 +90,10 @@
 		font-weight: 500;
 		font-size: 15px;
 		margin-bottom: 5px;
+
+		@media (max-width: 1200px) {
+			font-size: 12px;
+		}
 	}
 
 	&__info-top-value {
@@ -98,6 +104,10 @@
 		font-size: 34px;
 		line-height: 1;
 		margin-bottom: 5px;
+
+		@media (max-width: 1200px) {
+			font-size: 24px;
+		}
 	}
 
 	&__info-top-grow {
@@ -157,6 +167,11 @@
 		font-size: 12px;
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
+		text-align: center;
+
+		@media (max-width: 1200px) {
+			font-size: 10px;
+		}
 	}
 
 	&__info-general {
@@ -184,5 +199,9 @@
 		font-weight: 300;
 		font-size: 48px;
 		line-height: 1;
+
+		@media (max-width: 1200px) {
+			font-size: 32px;
+		}
 	}
 }
