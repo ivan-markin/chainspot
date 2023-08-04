@@ -1,17 +1,17 @@
 <div class="mobile-menu @@className">
 	<div class="mobile-menu__header">
 		
-		@@if ('className' === 'dark') {
+		@@if (className === 'dark') {
 			@@include('logo.html', {
 				'theme': '_dark'
 			})
-		}	
+		}	  
 		
-		@@if ('className' === '') {
+		@@if (className === '') {
 			@@include('logo.html', {
 				'theme': ''
 			})
-		}	
+		}			
 
 		@@include('mobile-menu-close.html', {
 			'className': '@@className'	
