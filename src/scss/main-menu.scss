@@ -1,3 +1,16 @@
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	80% {
+		transform: scale(1.8);
+		
+	}
+	100% {		
+		opacity: 0;
+	}
+}
+
 .main-menu {	
 	background: none !important;
 	// margin: 0 20px;
@@ -174,5 +187,31 @@
 		&.active::after {
 			display: none;
 		} 
-	}	
+	}
+	
+	&__link-icon-cnt {
+		width: 24px;
+		height: 24px;
+		position: relative;
+		margin-right: 5px;
+
+		&::after {
+			content: '';
+			display: block;
+			width: 24px;
+			height: 24px;
+			border-radius: 50%;
+			background-color: rgba($color: #fff, $alpha: .5);
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			animation: pulse infinite 1.5s;
+		}
+
+		img {
+			position: relative;
+			z-index: 2;
+		}
+	}
 }
