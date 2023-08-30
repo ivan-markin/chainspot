@@ -56,6 +56,16 @@
 		}
 	}
 
+	&__form-section.celo &__main-logo {
+		svg {
+			fill: black;
+
+			line {
+				stroke: black;
+			}
+		}
+	}
+
 	&__form-header {
 		display: flex;
 		flex-direction: column;
@@ -85,6 +95,11 @@
 			background-size: cover;
 			z-index: 1;
 		}
+	}
+
+	&__form-section.celo &__form-header::after {
+		background: url('../../img/asterizm-form-header-bg_dark.png') no-repeat center;
+		background-size: cover;
 	}
 
 	&__form-section.ethereum &__form-header {
@@ -177,6 +192,10 @@
 		@media (max-width: 440px) {
 			flex-direction: column;
 		}
+	}
+
+	&__form-section.celo &__form-header-description {
+		color: black;
 	}
 
 	&__form-header-label {
@@ -284,6 +303,12 @@
 	&__form-section.zkevm &__form-header-label {						
 		background: #8941E7;
 		box-shadow: 0px -4px 16px 0px #6B1BD2 inset;
+	}
+
+	&__form-section.celo &__form-header-label {						
+		background: #FCFF52;
+		box-shadow: 0px 0px 18px 0px #D3D715 inset;
+		color: black;
 	}
 
 	&__form {

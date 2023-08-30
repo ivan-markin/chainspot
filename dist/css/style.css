@@ -2758,6 +2758,14 @@ input:checked + .filter__btn {
   z-index: 10;
 }
 
+.gas-station__form-section.celo .gas-station__main-logo svg {
+  fill: black;
+}
+
+.gas-station__form-section.celo .gas-station__main-logo svg line {
+  stroke: black;
+}
+
 .gas-station__form-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2794,6 +2802,13 @@ input:checked + .filter__btn {
   right: 0;
   background-size: cover;
   z-index: 1;
+}
+
+.no-webp .gas-station__form-section.celo .gas-station__form-header::after {
+  background: url("../../img/asterizm-form-header-bg_dark.png") no-repeat center; }
+
+.gas-station__form-section.celo .gas-station__form-header::after {
+  background-size: cover;
 }
 
 .gas-station__form-section.ethereum .gas-station__form-header {
@@ -2888,6 +2903,10 @@ input:checked + .filter__btn {
   color: #FFFFFF;
   position: relative;
   z-index: 2;
+}
+
+.gas-station__form-section.celo .gas-station__form-header-description {
+  color: black;
 }
 
 .gas-station__form-header-label {
@@ -3022,6 +3041,13 @@ input:checked + .filter__btn {
   background: #8941E7;
   -webkit-box-shadow: 0px -4px 16px 0px #6B1BD2 inset;
           box-shadow: 0px -4px 16px 0px #6B1BD2 inset;
+}
+
+.gas-station__form-section.celo .gas-station__form-header-label {
+  background: #FCFF52;
+  -webkit-box-shadow: 0px 0px 18px 0px #D3D715 inset;
+          box-shadow: 0px 0px 18px 0px #D3D715 inset;
+  color: black;
 }
 
 .gas-station__form {
@@ -9216,6 +9242,8 @@ fieldset {
 .webp .main { background: url(../img/main-bg.webp) no-repeat top center; }
 
 .webp .gas-station__form-header::after { background: url(../../img/asterizm-form-header-bg.webp) no-repeat center; }
+
+.webp .gas-station__form-section.celo .gas-station__form-header::after { background: url(../../img/asterizm-form-header-bg_dark.webp) no-repeat center; }
 
 .webp .container_bnb { background-image: url(../img/bnb-bg.webp); }
 
