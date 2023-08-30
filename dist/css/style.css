@@ -1440,6 +1440,32 @@ template {
   background: white;
 }
 
+.need-help {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 12px;
+  font-size: 14px;
+  color: white;
+  padding-top: 24px;
+}
+
+.need-help__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
 .primary-title {
   font-family: "Onest", "Roboto", sans-serif;
   font-weight: 500;
@@ -3004,7 +3030,7 @@ input:checked + .filter__btn {
   background: #010216;
   border: 1px solid #2C2D54;
   border-radius: 0 0 16px 16px;
-  padding: 30px 32px 56px;
+  padding: 30px 32px 24px;
 }
 
 .gas-station__input-header {

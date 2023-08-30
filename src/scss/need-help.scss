@@ -1,0 +1,15 @@
+.need-help {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	font-size: 14px;
+	color: white;
+	padding-top: 24px;
+
+	&__links {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+}
