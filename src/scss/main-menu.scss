@@ -27,7 +27,8 @@
 		}
 
 		@media (max-width: 768px) {
-			flex-direction: column;				
+			flex-direction: column;	
+			gap: 46px;			
 		}		
 	}
 
@@ -49,14 +50,14 @@
 		transition: all .1s;
 		
 		@media (max-width: 1200px) {
-			font-size: 14px !important;;
+			font-size: 14px !important;
 		}
 
 		@media (max-width: 768px) {
-			font-size: 24px !important;;
+			font-size: 24px;
 		}
 
-		&:hover {
+		&:not(.disabled):hover {
 			opacity: .55;
 		}
 
@@ -73,14 +74,14 @@
 				color: white;
 				position: absolute;
 				right: 0;
-				top: 0;
-				transform: translateY(-100%);				
-				padding: 0 3px;
+				top: 50%;
+				transform: translateY(calc(-100% - 10px));				
+				padding: 0 3px;				
 			}
 		}
 
 		&.soon::after {
-			content: 'Coming soon';
+			content: 'Soon';
 			background-color: #003980;
 		}
 
@@ -176,7 +177,7 @@
 			fill: #BECCDF;
 		}
 	}
-
+	
 	&.footer &__link {
 		color: white;
 
@@ -186,7 +187,25 @@
 
 		&.active::after {
 			display: none;
-		} 
+		} 		
+	}
+
+	&.footer &__item {
+		&.soon::after,
+		&.new::after {
+			color: #262B40;
+			background-color: white;
+
+			@media (max-width: 768px) {
+				right: auto;
+				left: 50%;
+				transform: translate(-50%, calc(-100% - 15px));		
+			}
+		}
+	}
+	
+	&.footer &__item.disabled &__link {
+		color: #616886;
 	}
 	
 	&__link-icon-cnt {
