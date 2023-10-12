@@ -55,11 +55,7 @@
 
 		@media (max-width: 768px) {
 			font-size: 24px;
-		}
-
-		&:not(.disabled):hover {
-			opacity: .55;
-		}
+		}		
 
 		&.soon,
 		&.new {
@@ -127,7 +123,11 @@
 		color: var(--font-dark);
 		text-decoration: none;
 		position: relative;
-		transition: all .1s;			
+		transition: all .1s;	
+		
+		&:not(.active):hover {
+			opacity: .6 !important;
+		}
 		
 		svg {
 			fill: var(--font-dark); 
@@ -172,6 +172,10 @@
 	&__item.disabled &__link {		
 		color: #BECCDF;
 		cursor: auto;
+
+		&:hover {
+			opacity: 1;
+		}
 
 		svg {
 			fill: #BECCDF;

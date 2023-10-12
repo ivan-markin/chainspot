@@ -1271,10 +1271,6 @@ template {
   transition: all 0.1s;
 }
 
-.main-menu__item:not(.disabled):hover {
-  opacity: 0.55;
-}
-
 .main-menu__item.soon::after,
 .main-menu__item.new::after {
   display: -webkit-box;
@@ -1350,6 +1346,10 @@ template {
   transition: all 0.1s;
 }
 
+.main-menu__link:not(.active):hover {
+  opacity: 0.6;
+}
+
 .main-menu__link svg {
   fill: var(--font-dark);
 }
@@ -1385,6 +1385,10 @@ template {
 .main-menu__item.disabled .main-menu__link {
   color: #BECCDF;
   cursor: auto;
+}
+
+.main-menu__item.disabled .main-menu__link:hover {
+  opacity: 1;
 }
 
 .main-menu__item.disabled .main-menu__link svg {
