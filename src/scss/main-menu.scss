@@ -192,15 +192,22 @@
 	}
 
 	&.footer &__item {
+		@media (max-width: 1024px) {
+			display: flex;	
+			align-items: center;
+			gap: 8px;
+		}
+		
 		&.soon::after,
 		&.new::after {
 			color: #262B40;
 			background-color: white;
 
-			@media (max-width: 768px) {
+			@media (max-width: 1024px) {
+				position: static;
 				right: auto;
 				left: 50%;
-				transform: translate(-50%, calc(-100% - 15px));		
+				transform: translate(0, 0);		
 			}
 		}
 	}

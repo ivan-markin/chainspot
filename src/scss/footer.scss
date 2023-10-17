@@ -29,7 +29,7 @@
 		padding: 0;
 		margin-bottom: 40px;
 
-		@media (max-width: 768px) {
+		@media (max-width: 1024px) {
 			flex-direction: column;
 		}
 	}
@@ -40,7 +40,7 @@
 		gap: 32px;
 		color: white;
 
-		@media (max-width: 768px) {
+		@media (max-width: 1024px) {
 			flex-direction: column;
 		}
 
@@ -62,7 +62,7 @@
 		width: 100%;
 		border-top: #2C2D54 1px solid;
 
-		@media (max-width: 768px) {
+		@media (max-width: 1024px) {
 			flex-direction: column-reverse;
 			height: auto;
 			gap: 24px;
@@ -82,7 +82,7 @@
 		color: white;
 		font-size: 16px;
 
-		@media (max-width: 768px) {
+		@media (max-width: 1024px) {
 			flex-direction: column;
 		}
 
